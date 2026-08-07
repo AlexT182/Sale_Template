@@ -31,7 +31,7 @@ services:
       - --db_password=odoo
       - -d
       - odoo
-      - -u
+      - -i
       - sale_website_home
     restart: unless-stopped
     labels:

@@ -36,16 +36,16 @@ services:
     restart: unless-stopped
     labels:
       - traefik.docker.network=dokploy-network
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.rule=Host(`ely-world.ccvi.com.vn`)
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.entrypoints=web
-      - traefik.http.services.odoo-elyaccess-wvibom-22-web.loadbalancer.server.port=8069
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.service=odoo-elyaccess-wvibom-22-web
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.middlewares=redirect-to-https@file
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.rule=Host(`ely-world.ccvi.com.vn`)
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.entrypoints=websecure
-      - traefik.http.services.odoo-elyaccess-wvibom-22-websecure.loadbalancer.server.port=8069
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.service=odoo-elyaccess-wvibom-22-websecure
-      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.tls=true
+      - traefik.http.routers.odoo-saledemo-web.rule=Host(`saledemo.ccvi.com.vn`)
+      - traefik.http.routers.odoo-saledemo-web.entrypoints=web
+      - traefik.http.services.odoo-saledemo-web.loadbalancer.server.port=8069
+      - traefik.http.routers.odoo-saledemo-web.service=odoo-saledemo-web
+      - traefik.http.routers.odoo-saledemo-web.middlewares=redirect-to-https@file
+      - traefik.http.routers.odoo-saledemo-websecure.rule=Host(`saledemo.ccvi.com.vn`)
+      - traefik.http.routers.odoo-saledemo-websecure.entrypoints=websecure
+      - traefik.http.services.odoo-saledemo-websecure.loadbalancer.server.port=8069
+      - traefik.http.routers.odoo-saledemo-websecure.service=odoo-saledemo-websecure
+      - traefik.http.routers.odoo-saledemo-websecure.tls=true
       - traefik.enable=true
     networks:
       - dokploy-network

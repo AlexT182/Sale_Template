@@ -1,8 +1,8 @@
 {
-    "name": "ElyWorld Website Home",
-    "summary": "Custom ElyWorld homepage, header, footer and CRM contact form",
+    "name": "Sale Website Home",
+    "summary": "Custom Sale Website homepage, header, footer and CRM contact form",
     "description": """
-ElyWorld website presentation layer for Odoo Community 19.
+Sale website presentation layer for Odoo Community 19.
 Replaces the default homepage and provides a branded public website layout.
     """,
     "version": "19.0.1.0.0",
@@ -22,8 +22,8 @@ Replaces the default homepage and provides a branded public website layout.
     ],
     "assets": {
         "web.assets_frontend": [
-            "elyworld_website_home/static/src/scss/elyworld.scss",
-            "elyworld_website_home/static/src/js/elyworld.js",
+            "sale_website_home/static/src/scss/sale_website.scss",
+            "sale_website_home/static/src/js/sale_website.js",
         ],
     },
     "installable": True,

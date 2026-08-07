@@ -2,11 +2,11 @@ from odoo import http, _
 from odoo.http import request
 
 
-class ElyWorldWebsiteController(http.Controller):
-    """Public website endpoints used by the ElyWorld homepage."""
+class SaleWebsiteController(http.Controller):
+    """Public website endpoints used by the Sale Website homepage."""
 
     @http.route(
-        "/elyworld/contact/submit",
+        "/sale/contact/submit",
         type="http",
         auth="public",
         website=True,
@@ -30,7 +30,7 @@ class ElyWorldWebsiteController(http.Controller):
         if not contact_name or not email or "@" not in email:
             return request.redirect("/?contact=invalid#contact")
 
-        lead_name = _("ElyWorld website inquiry - %s") % (
+        lead_name = _("Sale website inquiry - %s") % (
             company_name or contact_name
         )
 

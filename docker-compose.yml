@@ -19,7 +19,7 @@ services:
       PORT: 5432
       USER: odoo
       PASSWORD: odoo
-      AUTO_INSTALL_MODULES: elyworld_website_home
+      AUTO_INSTALL_MODULES: sale_website_home
     volumes:
       - .:/mnt/extra-addons
       - odoo-data:/var/lib/odoo
@@ -32,7 +32,7 @@ services:
       - -d
       - odoo
       - -u
-      - elyworld_website_home
+      - sale_website_home
     restart: unless-stopped
     labels:
       - traefik.docker.network=dokploy-network

@@ -2,7 +2,7 @@ import re
 from xml.etree import ElementTree as ET
 
 def refactor():
-    filepath = r"D:\Project\QQ\odoo-template\elyworld_website_home\views\homepage.xml"
+    filepath = r"D:\Project\QQ\Sale_template\sale_website_home\views\homepage.xml"
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
     
@@ -26,12 +26,12 @@ def refactor():
     
     for i, section in enumerate(sections):
         name = names[i]
-        template = f"""    <template id="{name}" name="{name.replace('s_ew_', 'ElyWorld ').title()}">
+        template = f"""    <template id="{name}" name="{name.replace('s_ew_', 'Sale ').title()}">
 {section}
     </template>
 """
         templates.append(template)
-        snippets_calls.append(f'                <t t-snippet="elyworld_website_home.{name}"/>')
+        snippets_calls.append(f'                <t t-snippet="sale_website_home.{name}"/>')
         
     templates_str = '\n'.join(templates)
     snippets_str = '\n'.join(snippets_calls)
@@ -39,9 +39,9 @@ def refactor():
     new_content = f"""<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 {templates_str}
-    <template id="elyworld_homepage"
+    <template id="sale_homepage"
               inherit_id="website.homepage"
-              name="ElyWorld Homepage"
+              name="Sale Website Homepage"
               priority="1000">
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="oe_structure oe_empty ew-homepage">

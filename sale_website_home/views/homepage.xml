@@ -18,15 +18,15 @@
                             </div>
                             <div class="col-lg-7">
                                 <img class="img-fluid ew-hero-image"
-                                     src="/elyworld_website_home/static/src/img/hero-placeholder.svg"
-                                     alt="ElyWorld export products" loading="eager"/>
+                                     src="/sale_website_home/static/src/img/hero-placeholder.svg"
+                                     alt="Sale Demo export products" loading="eager"/>
                             </div>
                         </div>
                     </div>
                 </section>
     </template>
 
-    <template id="s_ew_categories" name="Elyworld Categories">
+    <template id="s_ew_categories" name="Sale Categories">
 <!-- CATEGORIES -->
                 <section id="ew_categories_edit" class="s_text_block ew-section ew-categories o_colored_level oe_structure" data-snippet="s_text_block" data-name="Categories Block">
                     <div class="container">
@@ -37,7 +37,7 @@
                         <div class="row row-cols-2 row-cols-md-4 row-cols-xl-8 g-3">
                             <div class="col">
                                 <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-food.svg" alt="Thực phẩm tiện lợi" loading="lazy"/>
+                                    <img src="/sale_website_home/static/src/img/cat-food.svg" alt="Thực phẩm tiện lợi" loading="lazy"/>
                                     <strong>Thực phẩm tiện lợi</strong>
                                     <small>Hàng tiêu dùng</small>
                                 </a>
@@ -217,13 +217,13 @@
                                 <p>Quý khách vui lòng để lại thông tin, bộ phận Sales sẽ liên hệ trong thời gian sớm nhất.</p>
 
                                 <div t-if="request.params.get('contact') == 'success'" class="alert alert-success">
-                                    Cảm ơn Quý khách. ElyWorld đã tiếp nhận thông tin liên hệ.
+                                    Cảm ơn Quý khách. Hệ thống đã tiếp nhận thông tin liên hệ.
                                 </div>
                                 <div t-if="request.params.get('contact') == 'invalid'" class="alert alert-danger">
                                     Vui lòng nhập họ tên và địa chỉ email hợp lệ.
                                 </div>
 
-                                <form action="/elyworld/contact/submit" method="post" class="ew-contact-form">
+                                <form action="/sale/contact/submit" method="post" class="ew-contact-form">
                                     <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                     <input type="text" name="website_url" class="d-none" tabindex="-1" autocomplete="off"/>
                                     <div class="row g-3">
@@ -252,24 +252,24 @@
                 </section>
     </template>
 
-    <template id="elyworld_homepage"
+    <template id="sale_homepage"
               inherit_id="website.homepage"
-              name="ElyWorld Homepage"
+              name="Sale Website Homepage"
               priority="1000">
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="ew-homepage">
                 <div class="oe_structure oe_empty" id="ew_zone_1"/>
-                <t t-call="elyworld_website_home.s_ew_hero"/>
+                <t t-call="sale_website_home.s_ew_hero"/>
                 <div class="oe_structure oe_empty" id="ew_zone_2"/>
-                <t t-call="elyworld_website_home.s_ew_categories"/>
+                <t t-call="sale_website_home.s_ew_categories"/>
                 <div class="oe_structure oe_empty" id="ew_zone_3"/>
-                <t t-call="elyworld_website_home.s_ew_about"/>
+                <t t-call="sale_website_home.s_ew_about"/>
                 <div class="oe_structure oe_empty" id="ew_zone_4"/>
-                <t t-call="elyworld_website_home.s_ew_gallery"/>
+                <t t-call="sale_website_home.s_ew_gallery"/>
                 <div class="oe_structure oe_empty" id="ew_zone_5"/>
-                <t t-call="elyworld_website_home.s_ew_news"/>
+                <t t-call="sale_website_home.s_ew_news"/>
                 <div class="oe_structure oe_empty" id="ew_zone_6"/>
-                <t t-call="elyworld_website_home.s_ew_contact"/>
+                <t t-call="sale_website_home.s_ew_contact"/>
                 <div class="oe_structure oe_empty" id="ew_zone_7"/>
             </div>
         </xpath>

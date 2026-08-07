@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_ew_hero" name="Elyworld Hero">
+<!-- HERO -->
+                <section id="ew_hero_edit" class="s_text_block ew-hero o_colored_level oe_structure" data-snippet="s_text_block" data-name="Hero Block">
+                    <div class="container position-relative">
+                        <div class="row align-items-center min-vh-50 g-4">
+                            <div class="col-lg-5 py-5">
+                                <span class="ew-eyebrow">ELY WORLD ACCESS</span>
+                                <h1>KẾT NỐI NÔNG SẢN VIỆT<br/>VỚI THỊ TRƯỜNG TOÀN CẦU</h1>
+                                <p>Sản phẩm chất lượng – Nguồn gốc rõ ràng – Đáp ứng tiêu chuẩn quốc tế.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a class="btn ew-btn-primary" href="/shop">
+                                        Khám phá sản phẩm <i class="fa fa-arrow-right ms-2"/>
+                                    </a>
+                                    <a class="btn ew-btn-outline" href="#contact">Nhận tư vấn</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <img class="img-fluid ew-hero-image"
+                                     src="/elyworld_website_home/static/src/img/hero-placeholder.svg"
+                                     alt="ElyWorld export products" loading="eager"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ew_categories" name="Elyworld Categories">
+<!-- CATEGORIES -->
+                <section id="ew_categories_edit" class="s_text_block ew-section ew-categories o_colored_level oe_structure" data-snippet="s_text_block" data-name="Categories Block">
+                    <div class="container">
+                        <div class="ew-section-heading text-center">
+                            <h2>Danh mục sản phẩm</h2>
+                            <span/>
+                        </div>
+                        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-8 g-3">
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-food.svg" alt="Thực phẩm tiện lợi" loading="lazy"/>
+                                    <strong>Thực phẩm tiện lợi</strong>
+                                    <small>Hàng tiêu dùng</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-fruit.svg" alt="Trái cây &amp; Nông sản sấy" loading="lazy"/>
+                                    <strong>Trái cây &amp;</strong>
+                                    <small>Nông sản sấy</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-nuts.svg" alt="Hạt &amp; Đồ ăn vặt" loading="lazy"/>
+                                    <strong>Hạt &amp;</strong>
+                                    <small>Đồ ăn vặt</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-spice.svg" alt="Gia vị &amp; Rau củ sấy khô" loading="lazy"/>
+                                    <strong>Gia vị &amp;</strong>
+                                    <small>Rau củ sấy khô</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-drink.svg" alt="Đồ uống đóng lon" loading="lazy"/>
+                                    <strong>Đồ uống</strong>
+                                    <small>đóng lon</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-gift.svg" alt="Quà tặng &amp; Giỏ quà" loading="lazy"/>
+                                    <strong>Quà tặng &amp;</strong>
+                                    <small>Giỏ quà</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-package.svg" alt="Bao bì &amp; Giấy kraft" loading="lazy"/>
+                                    <strong>Bao bì &amp;</strong>
+                                    <small>Giấy kraft</small>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="ew-category-card" href="/shop">
+                                    <img src="/elyworld_website_home/static/src/img/cat-export.svg" alt="Sản phẩm xuất khẩu" loading="lazy"/>
+                                    <strong>Sản phẩm</strong>
+                                    <small>xuất khẩu</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ew_about" name="Elyworld About">
+<!-- ABOUT -->
+                <section id="ew_about_edit" class="s_text_block ew-section ew-about o_colored_level oe_structure" data-snippet="s_text_block" data-name="About Block">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-5">
+                                <img class="img-fluid rounded-4 shadow-sm"
+                                     src="/elyworld_website_home/static/src/img/about-placeholder.svg"
+                                     alt="ElyWorld team" loading="lazy"/>
+                            </div>
+                            <div class="col-lg-7">
+                                <span class="ew-eyebrow">VỀ ELY WORLD ACCESS</span>
+                                <h2>Đưa sản phẩm Việt tiếp cận các thị trường toàn cầu</h2>
+                                <p class="ew-lead">
+                                    Chúng tôi chuyên cung cấp nông sản, thực phẩm và đồ uống chất lượng cao từ Việt Nam đến thị trường toàn cầu.
+                                </p>
+                                <div class="row row-cols-2 row-cols-md-4 g-3 my-4">
+                                    <div class="col"><div class="ew-feature"><i class="fa fa-certificate"/><span>Chất lượng tiêu chuẩn quốc tế</span></div></div>
+                                    <div class="col"><div class="ew-feature"><i class="fa fa-shield"/><span>Nguồn gốc rõ ràng</span></div></div>
+                                    <div class="col"><div class="ew-feature"><i class="fa fa-cubes"/><span>Đa dạng sản phẩm</span></div></div>
+                                    <div class="col"><div class="ew-feature"><i class="fa fa-ship"/><span>Hỗ trợ xuất khẩu</span></div></div>
+                                </div>
+                                <a class="btn ew-btn-primary" href="/about-us">
+                                    Tìm hiểu thêm <i class="fa fa-arrow-right ms-2"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ew_gallery" name="Elyworld Gallery">
+<!-- FARM GALLERY -->
+                <section id="ew_gallery_edit" class="s_text_block ew-section ew-gallery o_colored_level oe_structure" data-snippet="s_text_block" data-name="Gallery Block">
+                    <div class="container">
+                        <div class="ew-section-heading text-center">
+                            <h2>Hình ảnh từ Farm</h2>
+                            <span/>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6 col-md">
+                                <a href="/about-us" class="ew-gallery-item">
+                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-1.svg" alt="Farm image 1" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md">
+                                <a href="/about-us" class="ew-gallery-item">
+                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-2.svg" alt="Farm image 2" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md">
+                                <a href="/about-us" class="ew-gallery-item">
+                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-3.svg" alt="Farm image 3" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md">
+                                <a href="/about-us" class="ew-gallery-item">
+                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-4.svg" alt="Farm image 4" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md">
+                                <a href="/about-us" class="ew-gallery-item">
+                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-5.svg" alt="Farm image 5" loading="lazy"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="/about-us" class="btn ew-btn-outline">Xem thêm hình ảnh</a>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ew_news" name="Elyworld News">
+<!-- NEWS -->
+                <section id="ew_news_edit" class="s_text_block ew-section ew-news o_colored_level oe_structure" data-snippet="s_text_block" data-name="News Block">
+                    <div class="container">
+                        <div class="ew-section-heading text-center">
+                            <h2>Tin tức mới nhất</h2>
+                            <span/>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <article class="ew-news-card">
+                                    <img src="/elyworld_website_home/static/src/img/news-1.svg" alt="Healthy food trends" loading="lazy"/>
+                                    <div><small>TIN TỨC</small><h3>Xu hướng thực phẩm lành mạnh trên thị trường quốc tế</h3><a href="/blog">Xem thêm →</a></div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="ew-news-card">
+                                    <img src="/elyworld_website_home/static/src/img/news-2.svg" alt="Dried fruit" loading="lazy"/>
+                                    <div><small>SẢN PHẨM</small><h3>Lợi ích sức khỏe từ các loại hạt dinh dưỡng</h3><a href="/blog">Xem thêm →</a></div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="ew-news-card">
+                                    <img src="/elyworld_website_home/static/src/img/news-3.svg" alt="Export activities" loading="lazy"/>
+                                    <div><small>HOẠT ĐỘNG</small><h3>ElyWorld Access tham gia hội chợ xuất khẩu</h3><a href="/blog">Xem thêm →</a></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ew_contact" name="Elyworld Contact">
+<!-- CONTACT -->
+                <section id="contact" class="s_text_block ew-section ew-contact o_colored_level oe_structure" data-snippet="s_text_block" data-name="Contact Block">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-4">
+                                <img class="img-fluid"
+                                     src="/elyworld_website_home/static/src/img/logistics-placeholder.svg"
+                                     alt="Global logistics" loading="lazy"/>
+                            </div>
+                            <div class="col-lg-5">
+                                <span class="ew-eyebrow">LIÊN HỆ VỚI CHÚNG TÔI</span>
+                                <h2>Nhận tư vấn sản phẩm và xuất khẩu</h2>
+                                <p>Quý khách vui lòng để lại thông tin, bộ phận Sales sẽ liên hệ trong thời gian sớm nhất.</p>
+
+                                <div t-if="request.params.get('contact') == 'success'" class="alert alert-success">
+                                    Cảm ơn Quý khách. ElyWorld đã tiếp nhận thông tin liên hệ.
+                                </div>
+                                <div t-if="request.params.get('contact') == 'invalid'" class="alert alert-danger">
+                                    Vui lòng nhập họ tên và địa chỉ email hợp lệ.
+                                </div>
+
+                                <form action="/elyworld/contact/submit" method="post" class="ew-contact-form">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <input type="text" name="website_url" class="d-none" tabindex="-1" autocomplete="off"/>
+                                    <div class="row g-3">
+                                        <div class="col-md-6"><input class="form-control" name="company_name" placeholder="Tên công ty" maxlength="160"/></div>
+                                        <div class="col-md-6"><input class="form-control" name="contact_name" placeholder="Tên người liên hệ *" required="required" maxlength="160"/></div>
+                                        <div class="col-md-6"><input class="form-control" type="email" name="email" placeholder="Email *" required="required" maxlength="254"/></div>
+                                        <div class="col-md-6"><input class="form-control" name="phone" placeholder="Số điện thoại" maxlength="64"/></div>
+                                        <div class="col-12"><textarea class="form-control" name="message" rows="4" placeholder="Yêu cầu của bạn" maxlength="4000"/></div>
+                                        <div class="col-12"><button class="btn ew-btn-primary" type="submit">Gửi thông tin <i class="fa fa-arrow-right ms-2"/></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="ew-contact-card">
+                                    <div t-if="website.company_id.phone"><i class="fa fa-phone"/><div><strong>Hotline</strong><span t-out="website.company_id.phone"/></div></div>
+                                    <div t-if="website.company_id.email"><i class="fa fa-envelope"/><div><strong>Email</strong><span t-out="website.company_id.email"/></div></div>
+                                    <div t-if="website.company_id.sudo().partner_id.contact_address"><i class="fa fa-map-marker"/><div><strong>Địa chỉ</strong><span t-out="website.company_id.sudo().partner_id.contact_address"/></div></div>
+                                    <div><i class="fa fa-clock-o"/><div><strong>Giờ làm việc</strong><span>Thứ 2 – Thứ 7: 8:00 – 17:30</span></div></div>
+                                </div>
+                                <a class="btn ew-whatsapp w-100 mt-3" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-whatsapp me-2"/>Chat qua WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="elyworld_homepage"
+              inherit_id="website.homepage"
+              name="ElyWorld Homepage"
+              priority="1000">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="ew-homepage">
+                <div class="oe_structure oe_empty" id="ew_zone_1"/>
+                <t t-call="elyworld_website_home.s_ew_hero"/>
+                <div class="oe_structure oe_empty" id="ew_zone_2"/>
+                <t t-call="elyworld_website_home.s_ew_categories"/>
+                <div class="oe_structure oe_empty" id="ew_zone_3"/>
+                <t t-call="elyworld_website_home.s_ew_about"/>
+                <div class="oe_structure oe_empty" id="ew_zone_4"/>
+                <t t-call="elyworld_website_home.s_ew_gallery"/>
+                <div class="oe_structure oe_empty" id="ew_zone_5"/>
+                <t t-call="elyworld_website_home.s_ew_news"/>
+                <div class="oe_structure oe_empty" id="ew_zone_6"/>
+                <t t-call="elyworld_website_home.s_ew_contact"/>
+                <div class="oe_structure oe_empty" id="ew_zone_7"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

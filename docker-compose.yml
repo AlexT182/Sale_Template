@@ -1,0 +1,58 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+    restart: unless-stopped
+  odoo:
+    image: odoo:19.0
+    depends_on:
+      - db
+    environment:
+      HOST: db
+      PORT: 5432
+      USER: odoo
+      PASSWORD: odoo
+      AUTO_INSTALL_MODULES: elyworld_website_home
+    volumes:
+      - .:/mnt/extra-addons
+      - odoo-data:/var/lib/odoo
+    command:
+      - odoo
+      - --db_host=db
+      - --db_port=5432
+      - --db_user=odoo
+      - --db_password=odoo
+      - -d
+      - odoo
+      - -u
+      - elyworld_website_home
+    restart: unless-stopped
+    labels:
+      - traefik.docker.network=dokploy-network
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.rule=Host(`ely-world.ccvi.com.vn`)
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.entrypoints=web
+      - traefik.http.services.odoo-elyaccess-wvibom-22-web.loadbalancer.server.port=8069
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.service=odoo-elyaccess-wvibom-22-web
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-web.middlewares=redirect-to-https@file
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.rule=Host(`ely-world.ccvi.com.vn`)
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.entrypoints=websecure
+      - traefik.http.services.odoo-elyaccess-wvibom-22-websecure.loadbalancer.server.port=8069
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.service=odoo-elyaccess-wvibom-22-websecure
+      - traefik.http.routers.odoo-elyaccess-wvibom-22-websecure.tls=true
+      - traefik.enable=true
+    networks:
+      - dokploy-network
+      - default
+volumes:
+  odoo-db-data: null
+  odoo-data: null
+networks:
+  dokploy-network:
+    external: true

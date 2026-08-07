@@ -1,0 +1,954 @@
+[
+    {
+        "category": "ROASTED COFFEE BEANS",
+        "product_name": "Weasel Coffee",
+        "features": "Fermented in the laboratory, strong taste, very good digestive support --> Beautiful skin",
+        "inner_pack": "200-300 grams in a luxury box + Filter or/and Cup, hand blender",
+        "outer_pack": "10-12 boxes/carton"
+    },
+    {
+        "category": "ROASTED COFFEE BEANS",
+        "product_name": "Robusta",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "500-1,000-3,000 grams for people with blenders, brewing at home or cafes",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "ROASTED COFFEE BEANS",
+        "product_name": "Arabica",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "500-1,000-3,000 grams for people with blenders, brewing at home or cafes",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "ROASTED COFFEE BEANS",
+        "product_name": "Culi",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "500-1,000-3,000 grams for people with blenders, brewing at home or cafes",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "ROASTED COFFEE BEANS",
+        "product_name": "Mixed",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "500-1,000-3,000 grams for people with blenders, brewing at home or cafes",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "COFFEE POWDER (ROASTER)",
+        "product_name": "Weasel Coffee",
+        "features": "Especially high-end",
+        "inner_pack": "200-300 grams in a luxury box + Filter or/and Cup, hand blender",
+        "outer_pack": "10-12 boxes/carton"
+    },
+    {
+        "category": "COFFEE POWDER (ROASTER)",
+        "product_name": "Robusta",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "250-500g sold retail to users, or in drift bags of Coffee",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "COFFEE POWDER (ROASTER)",
+        "product_name": "Arabica",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "250-500g sold retail to users, or in drift bags of Coffee",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "COFFEE POWDER (ROASTER)",
+        "product_name": "Culi",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "250-500g sold retail to users, or in drift bags of Coffee",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "COFFEE POWDER (ROASTER)",
+        "product_name": "Mixed",
+        "features": "The taste and caffeine ratio of each type is characteristic",
+        "inner_pack": "250-500g sold retail to users, or in drift bags of Coffee",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Powdered coffee (roasted) with herbal supplements",
+        "product_name": "Jiaogulan",
+        "features": "New trends, market leads.\nTargeted products for each subject: Diabetes, blood fat, increased resistance",
+        "inner_pack": "Packaging types: Filter bag (Cold Brew), Drift bag or 200-300-500gram",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Powdered coffee (roasted) with herbal supplements",
+        "product_name": "Lingzhi",
+        "features": "New trends, market leads.\nTargeted products for each subject: Diabetes, blood fat, increased resistance",
+        "inner_pack": "Packaging types: Filter bag (Cold Brew), Drift bag or 200-300-500gram",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Powdered coffee (roasted) with herbal supplements",
+        "product_name": "Table spoon",
+        "features": "New trends, market leads.\nTargeted products for each subject: Diabetes, blood fat, increased resistance",
+        "inner_pack": "Packaging types: Filter bag (Cold Brew), Drift bag or 200-300-500gram",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Powdered coffee (roasted) with herbal supplements",
+        "product_name": "Cordyceps mushroom",
+        "features": "New trends, market leads.\nTargeted products for each subject: Diabetes, blood fat, increased resistance",
+        "inner_pack": "Packaging types: Filter bag (Cold Brew), Drift bag or 200-300-500gram",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Powdered coffee (roasted) with herbal supplements",
+        "product_name": "Collection of many herbs",
+        "features": "New trends, market leads.\nTargeted products for each subject: Diabetes, blood fat, increased resistance",
+        "inner_pack": "Packaging types: Filter bag (Cold Brew), Drift bag or 200-300-500gram",
+        "outer_pack": "10-20 bags/carton"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "1in1 spray drying",
+        "features": "Popular",
+        "inner_pack": "2-3 grams/package.",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "1 in 1 freeze drying",
+        "features": "More advanced",
+        "inner_pack": "2-3 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "2in1 with sugar",
+        "features": "Coffee + Sugar (can use diet sugar)",
+        "inner_pack": "10-12 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "2in1 without sugar",
+        "features": "Coffee + cream powder",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "2 in 1 herbal medicine",
+        "features": "Can make more than 1 type",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "Traditional 3 in 1",
+        "features": "Can make more than 1 type",
+        "inner_pack": "16-24 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "4in1 Coconut",
+        "features": "Coconut Flavor",
+        "inner_pack": "16-24 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "4in1 Mango",
+        "features": "Mango flavor",
+        "inner_pack": "16-24 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "4in1 Durian",
+        "features": "Durian Flavor",
+        "inner_pack": "16-24 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "4in1 Chestnut",
+        "features": "Chestnut Flavor",
+        "inner_pack": "16-24 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "Traditional cappuccino",
+        "features": "Lots of flour, fatty milk",
+        "inner_pack": "18-22 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "Coconut Cappuccino",
+        "features": "Lots of foam, milky fat, coconut flavor",
+        "inner_pack": "18-22 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "Chestnut Cappuccino",
+        "features": "Lots of foam, milky fat, coconut flavor",
+        "inner_pack": "18-22 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "5in1",
+        "features": "Supplementing premium herbs and/or Collagen and Whey for the right people: People who need to improve their health, alertness, etc.",
+        "inner_pack": "16-20 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "6in1",
+        "features": "Supplementing premium herbs and/or Collagen and Whey for the right people: People who need to improve their health, alertness, etc.",
+        "inner_pack": "16-20 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant coffee",
+        "product_name": "8in1",
+        "features": "Supplementing premium herbs and/or Collagen and Whey for the right people: People who need to improve their health, alertness, etc.",
+        "inner_pack": "16-20 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Matcha",
+        "product_name": "Pure matcha",
+        "features": "SUBJECTS LIKE MATCHA",
+        "inner_pack": "10 -15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Matcha",
+        "product_name": "Matcha Latter",
+        "features": "SUBJECTS LIKE MATCHA",
+        "inner_pack": "18-22 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Matcha",
+        "product_name": "Matcha milk",
+        "features": "SUBJECTS LIKE MATCHA",
+        "inner_pack": "18-22 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Cacao",
+        "product_name": "Pure cocoa",
+        "features": "For subjects from children to adults, the swirl and effects of Cocoa powder",
+        "inner_pack": "18-22 grams/package or 250-500 grams/jar",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Cacao",
+        "product_name": "Milk cocoa (cream)",
+        "features": "For subjects from children to adults, the swirl and effects of Cocoa powder",
+        "inner_pack": "18-22 grams/package or 250-500 grams/jar",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Cacao",
+        "product_name": "Cocoa + herbs",
+        "features": "For subjects from children to adults, the swirl and effects of Cocoa powder",
+        "inner_pack": "18-22 grams/package or 250-500 grams/jar",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Cacao",
+        "product_name": "Cocoa Coffee Candy",
+        "features": "Convenient to put in your pocket or car, chew instead of drinking coffee. Displayed at the supermarket checkout counter,",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "20-30 plastic boxes/paper boxes"
+    },
+    {
+        "category": "Cacao",
+        "product_name": "Milk Cocoa Candy",
+        "features": "Convenient to put in your pocket or car, chew instead of drinking coffee. Displayed at the supermarket checkout counter,",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "20-30 plastic boxes/paper boxes"
+    },
+    {
+        "category": "Leaf tea",
+        "product_name": "Black tea",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "100-200gram/package"
+    },
+    {
+        "category": "Leaf tea",
+        "product_name": "Green tea",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "100-200gram/package"
+    },
+    {
+        "category": "Leaf tea",
+        "product_name": "Flower tea",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "100-200gram/package"
+    },
+    {
+        "category": "Leaf tea",
+        "product_name": "Fruit tea",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "100-200gram/package"
+    },
+    {
+        "category": "Seed",
+        "product_name": "Macca",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "500g/package"
+    },
+    {
+        "category": "Seed",
+        "product_name": "Thing",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "500g/package"
+    },
+    {
+        "category": "Fruit",
+        "product_name": "Dried fruit",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "500g/package"
+    },
+    {
+        "category": "Fruit",
+        "product_name": "Fresh fruit",
+        "features": "Many types",
+        "inner_pack": "The jar contains about 100-120 tablets",
+        "outer_pack": "500g/package"
+    },
+    {
+        "category": "Instant Milk Tea",
+        "product_name": "Traditional black tea",
+        "features": "Many types",
+        "inner_pack": "20-30gram/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant Milk Tea",
+        "product_name": "Green tea",
+        "features": "Many types",
+        "inner_pack": "20-30gram/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant Milk Tea",
+        "product_name": "Blueberry",
+        "features": "Many types",
+        "inner_pack": "20-30gram/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Instant Milk Tea",
+        "product_name": "Grilled milk tea",
+        "features": "Many types",
+        "inner_pack": "20-30gram/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "Topping (for Coffee + Milk Tea)",
+        "product_name": "Machiato (Foaming - Topping)",
+        "features": "Can make flavors: Chocolate, Coconut, Fat Milk,...",
+        "inner_pack": "200-500 grams, sold online with milk tea, coffee or shop channels",
+        "outer_pack": "20-30 packs/carton"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Dig",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Fabric",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Strawberry",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Ginger Tea",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Honey Choc",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Durian sugarcane juice",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Winter melon ginseng",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Peach Orange Lemongrass Tea",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Blueberry Tea",
+        "features": "Contains tea starch --> Awake, bright",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Passion fruit honey tea for remineralization",
+        "features": "Supplement electrolytes, replenish minerals, prevent fatigue, increase work productivity",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "INSTANT TEA",
+        "product_name": "Mineral remineralizing lemon tea",
+        "features": "Supplement electrolytes, replenish minerals, prevent fatigue, increase work productivity",
+        "inner_pack": "12-15 grams/package",
+        "outer_pack": "10-15 packs/box or 30-50 packs/bag"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Diet cereals",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Chocolate cereal",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Strawberry flavored cereal",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Nutritious cereals",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Vegan cereal",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MEAL REPLACEMENT (Similar to Herbalife)",
+        "product_name": "Cereal for diabetics",
+        "features": "Healthy food group for each subject",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Baby seasoning powder",
+        "features": "It's not easy to make because babies don't eat salt, but it needs a strong flavor",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Baby food powder",
+        "features": "About 20 flavors",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Flour sprinkled with rice",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Baby cake flour",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Rice to cook baby porridge",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Cereal for pregnant mothers",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Weaning cake",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Dried yogurt",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "MOTHER & BABY",
+        "product_name": "Milk-enhancing cereals",
+        "features": "5-10 flavors For babies 12 months and up",
+        "inner_pack": "25-30gram/package",
+        "outer_pack": "12-15 packs/box or jar of 454-500 or 800-900 grams, Paste plastic jar or tin jar"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Quynh Coi fish soup cake",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Nam Dinh Beef Pho",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Chicken Pho",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Duck/Goose Vermicelli",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Duck/Goose pieces",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Hai Phong fish noodle soup",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Chicken Shoot Noodles",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Chicken Bamboo Vermicelli",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "INSTANT NOODLES, NOODLES, PHO\n(Sublimation drying)",
+        "product_name": "Nam Vang noodle soup",
+        "features": "Traditional breakfast and snack dishes from different regions of Vietnam",
+        "inner_pack": "65-75 grams/package",
+        "outer_pack": "25-30 packs/carton"
+    },
+    {
+        "category": "SOUP, SOUP Sublimation drying",
+        "product_name": "Minced beef seaweed soup",
+        "features": "You can create nutritious soups",
+        "inner_pack": "10-15 grams/portion",
+        "outer_pack": "50-100 packs/carton"
+    },
+    {
+        "category": "SOUP, SOUP Sublimation drying",
+        "product_name": "Soup with pig tail, lotus root, peanuts",
+        "features": "You can create nutritious soups",
+        "inner_pack": "10-15 grams/portion",
+        "outer_pack": "50-100 packs/carton"
+    },
+    {
+        "category": "SOUP, SOUP Sublimation drying",
+        "product_name": "Chicken soup with Cordyceps, red apple",
+        "features": "You can create nutritious soups",
+        "inner_pack": "10-15 grams/portion",
+        "outer_pack": "50-100 packs/carton"
+    },
+    {
+        "category": "SOUP, SOUP Sublimation drying",
+        "product_name": "Red Apple Pigeon Bird's Nest",
+        "features": "You can create nutritious soups",
+        "inner_pack": "10-15 grams/portion",
+        "outer_pack": "50-100 packs/carton"
+    },
+    {
+        "category": "TRADITIONAL FISH SAUCE (Partner factory)",
+        "product_name": "Protein 12",
+        "features": "Currently, the partner factory with a capacity of 25 million liters/year in Ca Na wants to cooperate in production, export and distribution.",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "TRADITIONAL FISH SAUCE (Partner factory)",
+        "product_name": "Protein 32",
+        "features": "Currently, the partner factory with a capacity of 25 million liters/year in Ca Na wants to cooperate in production, export and distribution.",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "TRADITIONAL FISH SAUCE (Partner factory)",
+        "product_name": "Protein 45",
+        "features": "Currently, the partner factory with a capacity of 25 million liters/year in Ca Na wants to cooperate in production, export and distribution.",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "TRADITIONAL FISH SAUCE (Partner factory)",
+        "product_name": "Other products from fish sauce",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Shampoo",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Shower gel",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Washing liquid",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Lemongrass juice",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Floor cleaner",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Baby laundry detergent",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "ION milk bottle cleaner",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COSMETIC CHEMISTRY \nPartner factory",
+        "product_name": "Vegetable washing liquid with ION technology",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "BIRD'S NEST\nPartner factory",
+        "product_name": "Sublimated dried bird's nest",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "BIRD'S NEST\nPartner factory",
+        "product_name": "Cereal Nest Cake",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "BIRD'S NEST\nPartner factory",
+        "product_name": "Self Boiling Bird's Nest",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Cinnamon",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Anise",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Clove",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Cardamom",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Chilli",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "INGREDIENTS FOR SPICES (Commodity)",
+        "product_name": "Pepper",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Chili sauce",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Ketchup",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Soy sauce",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Soup Powder (Soup)",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Seasoning seeds",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "XO fever",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Salted egg sauce",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "COMPLETE SPICES",
+        "product_name": "Other sauces",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CONSTRUCTION - INTERIOR",
+        "product_name": "Water paint",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CONSTRUCTION - INTERIOR",
+        "product_name": "Wooden furniture",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CONSTRUCTION - INTERIOR",
+        "product_name": "Exterior wooden furniture",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED SOFT DRINK",
+        "product_name": "Kombucha",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED SOFT DRINK",
+        "product_name": "Canned fruit juice",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED SOFT DRINK",
+        "product_name": "Carbonated soft drinks",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED SOFT DRINK",
+        "product_name": "Non-carbonated soft drinks",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED FOOD",
+        "product_name": "Canned fish",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED FOOD",
+        "product_name": "Canned fruit",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "CANNED FOOD",
+        "product_name": "Canned vegetables",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "PUREE FRUITS",
+        "product_name": "Passion fruit",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "PUREE FRUITS",
+        "product_name": "Butter",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "PUREE FRUITS",
+        "product_name": "Mango",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "PUREE FRUITS",
+        "product_name": "Guava",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "PUREE FRUITS",
+        "product_name": "Pineapple",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    },
+    {
+        "category": "FOOD/PHARMACEUTICAL/COSMETIC INGREDIENTS",
+        "product_name": "SORBITOL SYRUP",
+        "features": "Like salt separating when making products for children",
+        "inner_pack": "100ml - 2 liters/bottle",
+        "outer_pack": "6-24 bottles/blcok"
+    }
+]

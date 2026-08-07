@@ -36,10 +36,17 @@
                 <nav class="navbar navbar-expand-lg navbar-light py-2 sale-navbar">
                     <div class="container">
                         <!-- Brand Logo -->
-                        <a class="navbar-brand sale-brand fw-bold fs-4 text-primary d-flex align-items-center gap-2" href="/" aria-label="Sale Demo Home">
+                        <a class="navbar-brand sale-brand fw-bold fs-4 text-primary d-flex align-items-center gap-2 me-lg-4" href="/" aria-label="Sale Demo Home">
                             <span t-field="website.logo" t-options="{'widget': 'image', 'class': 'img img-fluid navbar-logo', 'alt': 'Sale Demo'}" />
                             <span t-if="not website.logo" class="brand-text text-uppercase tracking-wider">Sale Demo</span>
                         </a>
+
+                        <!-- Mobile Quick Cart -->
+                        <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+                            <a class="btn btn-sm btn-icon btn-light rounded-circle shadow-sm" href="/shop/cart" aria-label="Giỏ hàng">
+                                <i class="fa fa-shopping-bag text-primary"/>
+                            </a>
+                        </div>
 
                         <!-- Mobile Toggler -->
                         <button class="navbar-toggler border-0 shadow-none" type="button"
@@ -51,55 +58,48 @@
                             <span class="navbar-toggler-icon"/>
                         </button>
 
-                        <!-- Nav Links & Actions -->
+                        <!-- Nav Links & Action Bar -->
                         <div class="collapse navbar-collapse" id="saleMainNavigation">
-                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 sale-main-menu fw-medium gap-lg-2">
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" href="/">Trang chủ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" href="/shop">Sản phẩm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" href="/about-us">Giới thiệu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" href="/blog">Tin tức</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" href="/contactus">Liên hệ &amp; Báo giá</a>
-                                </li>
+                            <!-- Dynamic CMS Navigation Menu -->
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 sale-main-menu fw-medium gap-lg-1">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-value="'nav-item'"/>
+                                        <t t-set="link_class" t-value="'nav-link px-3'"/>
+                                    </t>
+                                </t>
                             </ul>
 
-                            <!-- Right Actions (UX Focus) -->
-                            <div class="d-flex align-items-center gap-3 sale-header-actions">
+                            <!-- Action Bar (🔍 Search, 🛒 Cart, 👤 User, 🚀 CTA) -->
+                            <div class="d-flex align-items-center gap-2 gap-md-3 sale-header-actions ms-lg-3 mt-3 mt-lg-0">
+                                <!-- 🔍 Search Icon -->
                                 <a class="btn btn-icon btn-light rounded-circle shadow-sm" href="/shop" aria-label="Tìm kiếm sản phẩm" title="Tìm kiếm">
                                     <i class="fa fa-search text-secondary"/>
                                 </a>
                                 
-                                <!-- Cart Button with Badge -->
-                                <t t-exec="website_sale_cart_quantity = website.sale_get_order().cart_quantity if website and website.sale_get_order() else 0"/>
+                                <!-- 🛒 Cart Icon with Badge -->
+                                <t t-set="website_sale_order" t-value="website.sale_get_order() if website else False"/>
                                 <a class="btn btn-icon btn-light rounded-circle shadow-sm position-relative" href="/shop/cart" aria-label="Giỏ hàng" title="Giỏ hàng">
                                     <i class="fa fa-shopping-bag text-primary"/>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-8">
-                                        <t t-out="website_sale_cart_quantity or 0"/>
+                                        <t t-out="website_sale_order and website_sale_order.cart_quantity or 0"/>
                                     </span>
                                 </a>
 
-                                <!-- User Profile / Login -->
+                                <!-- 👤 User Profile / Login -->
                                 <t t-if="user_id._is_public()">
-                                    <a href="/web/login" class="btn btn-outline-primary rounded-pill px-3 py-1 me-1 fw-semibold fs-7">
+                                    <a href="/web/login" class="btn btn-outline-primary rounded-pill px-3 py-1 me-1 fw-semibold fs-7" title="Đăng nhập">
                                         <i class="fa fa-user me-1"/> Đăng nhập
                                     </a>
                                 </t>
                                 <t t-else="">
-                                    <a href="/my/home" class="btn btn-light rounded-circle shadow-sm" title="Tài khoản của tôi">
+                                    <a href="/my/home" class="btn btn-light rounded-circle shadow-sm me-1" title="Tài khoản của tôi">
                                         <i class="fa fa-user-circle text-primary fs-5"/>
                                     </a>
                                 </t>
 
-                                <!-- Primary CTA Button -->
-                                <a href="/contactus" class="btn btn-primary rounded-pill px-3 py-2 fw-bold text-white shadow-sm d-none d-xl-inline-block">
+                                <!-- 🚀 Primary CTA Button -->
+                                <a href="/contactus" class="btn btn-primary rounded-pill px-3 py-2 fw-bold text-white shadow-sm d-inline-block">
                                     <i class="fa fa-paper-plane me-1"/> Yêu cầu Báo Giá
                                 </a>
                             </div>

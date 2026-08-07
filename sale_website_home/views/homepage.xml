@@ -1,276 +1,337 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_ew_hero" name="Elyworld Hero">
-<!-- HERO -->
-                <section id="ew_hero_edit" class="s_text_block ew-hero o_colored_level oe_structure" data-snippet="s_text_block" data-name="Hero Block">
-                    <div class="container position-relative">
-                        <div class="row align-items-center min-vh-50 g-4">
-                            <div class="col-lg-5 py-5">
-                                <span class="ew-eyebrow">ELY WORLD ACCESS</span>
-                                <h1>KẾT NỐI NÔNG SẢN VIỆT<br/>VỚI THỊ TRƯỜNG TOÀN CẦU</h1>
-                                <p>Sản phẩm chất lượng – Nguồn gốc rõ ràng – Đáp ứng tiêu chuẩn quốc tế.</p>
-                                <div class="d-flex flex-wrap gap-3">
-                                    <a class="btn ew-btn-primary" href="/shop">
-                                        Khám phá sản phẩm <i class="fa fa-arrow-right ms-2"/>
+    <!-- HERO SECTION -->
+    <template id="s_sale_hero" name="Sale Hero">
+        <section id="sale_hero_edit" class="s_text_block ew-hero o_colored_level oe_structure" data-snippet="s_text_block" data-name="Hero Block">
+            <div class="container position-relative">
+                <div class="row align-items-center min-vh-50 g-4">
+                    <div class="col-lg-6 py-5">
+                        <span class="ew-eyebrow text-uppercase">NỀN TẢNG BÁN HÀNG &amp; QUẢN LÝ CRM</span>
+                        <h1 class="fw-bold mt-2">GIẢI PHÁP THƯƠNG MẠI ĐIỆN TỬ &amp; TỰ ĐỘNG HÓA BÁN HÀNG</h1>
+                        <p class="lead text-secondary my-3">
+                            Kết nối mượt mà giữa trải nghiệm mua sắm E-Commerce và quy trình xử lý đơn hàng Bán hàng - Tồn kho - Hóa đơn &amp; CRM doanh nghiệp toàn diện.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a class="btn ew-btn-primary btn-lg rounded-pill px-4" href="/shop">
+                                Khám phá sản phẩm <i class="fa fa-arrow-right ms-2"/>
+                            </a>
+                            <a class="btn ew-btn-outline btn-lg rounded-pill px-4" href="#contact">
+                                <i class="fa fa-paper-plane me-2"/>Nhận báo giá B2B
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid ew-hero-image"
+                             src="/sale_website_home/static/src/img/hero-placeholder.svg"
+                             alt="Sale Demo Platform" loading="eager"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- CATEGORIES SECTION -->
+    <template id="s_sale_categories" name="Sale Categories">
+        <section id="sale_categories_edit" class="s_text_block ew-section ew-categories o_colored_level oe_structure bg-light py-5" data-snippet="s_text_block" data-name="Categories Block">
+            <div class="container">
+                <div class="ew-section-heading text-center mb-4">
+                    <h2 class="fw-bold">DANH MỤC SẢN PHẨM NỔI BẬT</h2>
+                    <p class="text-muted fs-6">Đa dạng dải sản phẩm đáp ứng nhu cầu tiêu dùng B2C và xuất khẩu B2B</p>
+                    <span/>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 row-cols-xl-8 g-3">
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-food.svg" alt="Thực phẩm tiện lợi" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Thực phẩm</strong>
+                            <small class="text-muted">Hàng tiêu dùng</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-fruit.svg" alt="Trái cây &amp; Nông sản" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Nông sản sấy</strong>
+                            <small class="text-muted">Đạt chuẩn ISO</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-nuts.svg" alt="Hạt &amp; Đồ ăn vặt" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Hạt dinh dưỡng</strong>
+                            <small class="text-muted">Nguyên vị tự nhiên</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-spice.svg" alt="Gia vị &amp; Thảo dược" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Gia vị &amp; Thảo dược</strong>
+                            <small class="text-muted">Đậm đà truyền thống</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-drink.svg" alt="Đồ uống đóng lon" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Đồ uống</strong>
+                            <small class="text-muted">Đóng lon vô trùng</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-gift.svg" alt="Quà tặng doanh nghiệp" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Quà tặng</strong>
+                            <small class="text-muted">Bộ quà cao cấp</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-package.svg" alt="Bao bì &amp; Đóng gói" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Bao bì Kraff</strong>
+                            <small class="text-muted">Thân thiện môi trường</small>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="ew-category-card text-decoration-none text-center d-block p-3 bg-white rounded-3 shadow-sm hover-top" href="/shop">
+                            <img src="/sale_website_home/static/src/img/cat-export.svg" alt="Sản phẩm Xuất khẩu" loading="lazy" class="mb-2"/>
+                            <strong class="d-block text-dark">Hàng xuất khẩu</strong>
+                            <small class="text-muted">Tiêu chuẩn quốc tế</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <template id="s_sale_featured_products" name="Sale Featured Products">
+        <section id="sale_featured_edit" class="s_text_block ew-section ew-products o_colored_level oe_structure py-5" data-snippet="s_text_block" data-name="Featured Products Block">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+                    <div>
+                        <span class="ew-eyebrow text-uppercase">SẢN PHẨM BÁN CHẠY</span>
+                        <h2 class="fw-bold m-0">SẢN PHẨM TÍCH HỢP BÁO GIÁ NHANH</h2>
+                    </div>
+                    <a href="/shop" class="btn btn-outline-primary rounded-pill px-3 py-2 fw-semibold fs-7">
+                        Xem tất cả cửa hàng <i class="fa fa-arrow-right ms-1"/>
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1 px-2 py-1 fs-8">Bán chạy</span>
+                            <img src="/sale_website_home/static/src/img/farm-1.svg" class="card-img-top bg-light p-3" alt="Cà phê Chồn Đặc sản" style="height: 180px; object-fit: contain;"/>
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title fw-bold text-dark">Cà phê Chồn Thượng Hạng</h6>
+                                <p class="card-text text-muted fs-7 mb-2">Hộp 500g nguyên chất 100%</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="fs-6 fw-bold text-primary">350.000đ</span>
+                                    <a href="/shop" class="btn btn-sm btn-primary rounded-circle shadow-sm" title="Thêm vào giỏ">
+                                        <i class="fa fa-shopping-cart"/>
                                     </a>
-                                    <a class="btn ew-btn-outline" href="#contact">Nhận tư vấn</a>
                                 </div>
                             </div>
-                            <div class="col-lg-7">
-                                <img class="img-fluid ew-hero-image"
-                                     src="/sale_website_home/static/src/img/hero-placeholder.svg"
-                                     alt="Sale Demo export products" loading="eager"/>
-                            </div>
                         </div>
                     </div>
-                </section>
-    </template>
-
-    <template id="s_ew_categories" name="Sale Categories">
-<!-- CATEGORIES -->
-                <section id="ew_categories_edit" class="s_text_block ew-section ew-categories o_colored_level oe_structure" data-snippet="s_text_block" data-name="Categories Block">
-                    <div class="container">
-                        <div class="ew-section-heading text-center">
-                            <h2>Danh mục sản phẩm</h2>
-                            <span/>
-                        </div>
-                        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-8 g-3">
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/sale_website_home/static/src/img/cat-food.svg" alt="Thực phẩm tiện lợi" loading="lazy"/>
-                                    <strong>Thực phẩm tiện lợi</strong>
-                                    <small>Hàng tiêu dùng</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-fruit.svg" alt="Trái cây &amp; Nông sản sấy" loading="lazy"/>
-                                    <strong>Trái cây &amp;</strong>
-                                    <small>Nông sản sấy</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-nuts.svg" alt="Hạt &amp; Đồ ăn vặt" loading="lazy"/>
-                                    <strong>Hạt &amp;</strong>
-                                    <small>Đồ ăn vặt</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-spice.svg" alt="Gia vị &amp; Rau củ sấy khô" loading="lazy"/>
-                                    <strong>Gia vị &amp;</strong>
-                                    <small>Rau củ sấy khô</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-drink.svg" alt="Đồ uống đóng lon" loading="lazy"/>
-                                    <strong>Đồ uống</strong>
-                                    <small>đóng lon</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-gift.svg" alt="Quà tặng &amp; Giỏ quà" loading="lazy"/>
-                                    <strong>Quà tặng &amp;</strong>
-                                    <small>Giỏ quà</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-package.svg" alt="Bao bì &amp; Giấy kraft" loading="lazy"/>
-                                    <strong>Bao bì &amp;</strong>
-                                    <small>Giấy kraft</small>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="ew-category-card" href="/shop">
-                                    <img src="/elyworld_website_home/static/src/img/cat-export.svg" alt="Sản phẩm xuất khẩu" loading="lazy"/>
-                                    <strong>Sản phẩm</strong>
-                                    <small>xuất khẩu</small>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-    </template>
-
-    <template id="s_ew_about" name="Elyworld About">
-<!-- ABOUT -->
-                <section id="ew_about_edit" class="s_text_block ew-section ew-about o_colored_level oe_structure" data-snippet="s_text_block" data-name="About Block">
-                    <div class="container">
-                        <div class="row align-items-center g-5">
-                            <div class="col-lg-5">
-                                <img class="img-fluid rounded-4 shadow-sm"
-                                     src="/elyworld_website_home/static/src/img/about-placeholder.svg"
-                                     alt="ElyWorld team" loading="lazy"/>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="ew-eyebrow">VỀ ELY WORLD ACCESS</span>
-                                <h2>Đưa sản phẩm Việt tiếp cận các thị trường toàn cầu</h2>
-                                <p class="ew-lead">
-                                    Chúng tôi chuyên cung cấp nông sản, thực phẩm và đồ uống chất lượng cao từ Việt Nam đến thị trường toàn cầu.
-                                </p>
-                                <div class="row row-cols-2 row-cols-md-4 g-3 my-4">
-                                    <div class="col"><div class="ew-feature"><i class="fa fa-certificate"/><span>Chất lượng tiêu chuẩn quốc tế</span></div></div>
-                                    <div class="col"><div class="ew-feature"><i class="fa fa-shield"/><span>Nguồn gốc rõ ràng</span></div></div>
-                                    <div class="col"><div class="ew-feature"><i class="fa fa-cubes"/><span>Đa dạng sản phẩm</span></div></div>
-                                    <div class="col"><div class="ew-feature"><i class="fa fa-ship"/><span>Hỗ trợ xuất khẩu</span></div></div>
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-2 py-1 fs-8">Xuất khẩu</span>
+                            <img src="/sale_website_home/static/src/img/farm-2.svg" class="card-img-top bg-light p-3" alt="Xoài sấy dẻo" style="height: 180px; object-fit: contain;"/>
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title fw-bold text-dark">Xoài Sấy Dẻo Xuất Khẩu</h6>
+                                <p class="card-text text-muted fs-7 mb-2">Túi 250g công nghệ sấy lanh</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="fs-6 fw-bold text-primary">120.000đ</span>
+                                    <a href="/shop" class="btn btn-sm btn-primary rounded-circle shadow-sm" title="Thêm vào giỏ">
+                                        <i class="fa fa-shopping-cart"/>
+                                    </a>
                                 </div>
-                                <a class="btn ew-btn-primary" href="/about-us">
-                                    Tìm hiểu thêm <i class="fa fa-arrow-right ms-2"/>
-                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
-    </template>
-
-    <template id="s_ew_gallery" name="Elyworld Gallery">
-<!-- FARM GALLERY -->
-                <section id="ew_gallery_edit" class="s_text_block ew-section ew-gallery o_colored_level oe_structure" data-snippet="s_text_block" data-name="Gallery Block">
-                    <div class="container">
-                        <div class="ew-section-heading text-center">
-                            <h2>Hình ảnh từ Farm</h2>
-                            <span/>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-6 col-md">
-                                <a href="/about-us" class="ew-gallery-item">
-                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-1.svg" alt="Farm image 1" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-6 col-md">
-                                <a href="/about-us" class="ew-gallery-item">
-                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-2.svg" alt="Farm image 2" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-6 col-md">
-                                <a href="/about-us" class="ew-gallery-item">
-                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-3.svg" alt="Farm image 3" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-6 col-md">
-                                <a href="/about-us" class="ew-gallery-item">
-                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-4.svg" alt="Farm image 4" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-6 col-md">
-                                <a href="/about-us" class="ew-gallery-item">
-                                    <img class="img-fluid" src="/elyworld_website_home/static/src/img/farm-5.svg" alt="Farm image 5" loading="lazy"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <a href="/about-us" class="btn ew-btn-outline">Xem thêm hình ảnh</a>
-                        </div>
-                    </div>
-                </section>
-    </template>
-
-    <template id="s_ew_news" name="Elyworld News">
-<!-- NEWS -->
-                <section id="ew_news_edit" class="s_text_block ew-section ew-news o_colored_level oe_structure" data-snippet="s_text_block" data-name="News Block">
-                    <div class="container">
-                        <div class="ew-section-heading text-center">
-                            <h2>Tin tức mới nhất</h2>
-                            <span/>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <article class="ew-news-card">
-                                    <img src="/elyworld_website_home/static/src/img/news-1.svg" alt="Healthy food trends" loading="lazy"/>
-                                    <div><small>TIN TỨC</small><h3>Xu hướng thực phẩm lành mạnh trên thị trường quốc tế</h3><a href="/blog">Xem thêm →</a></div>
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="ew-news-card">
-                                    <img src="/elyworld_website_home/static/src/img/news-2.svg" alt="Dried fruit" loading="lazy"/>
-                                    <div><small>SẢN PHẨM</small><h3>Lợi ích sức khỏe từ các loại hạt dinh dưỡng</h3><a href="/blog">Xem thêm →</a></div>
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="ew-news-card">
-                                    <img src="/elyworld_website_home/static/src/img/news-3.svg" alt="Export activities" loading="lazy"/>
-                                    <div><small>HOẠT ĐỘNG</small><h3>ElyWorld Access tham gia hội chợ xuất khẩu</h3><a href="/blog">Xem thêm →</a></div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-    </template>
-
-    <template id="s_ew_contact" name="Elyworld Contact">
-<!-- CONTACT -->
-                <section id="contact" class="s_text_block ew-section ew-contact o_colored_level oe_structure" data-snippet="s_text_block" data-name="Contact Block">
-                    <div class="container">
-                        <div class="row align-items-center g-5">
-                            <div class="col-lg-4">
-                                <img class="img-fluid"
-                                     src="/elyworld_website_home/static/src/img/logistics-placeholder.svg"
-                                     alt="Global logistics" loading="lazy"/>
-                            </div>
-                            <div class="col-lg-5">
-                                <span class="ew-eyebrow">LIÊN HỆ VỚI CHÚNG TÔI</span>
-                                <h2>Nhận tư vấn sản phẩm và xuất khẩu</h2>
-                                <p>Quý khách vui lòng để lại thông tin, bộ phận Sales sẽ liên hệ trong thời gian sớm nhất.</p>
-
-                                <div t-if="request.params.get('contact') == 'success'" class="alert alert-success">
-                                    Cảm ơn Quý khách. Hệ thống đã tiếp nhận thông tin liên hệ.
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden position-relative">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 fs-8">B2B Giá sỉ</span>
+                            <img src="/sale_website_home/static/src/img/farm-3.svg" class="card-img-top bg-light p-3" alt="Hạt Macca Úc" style="height: 180px; object-fit: contain;"/>
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title fw-bold text-dark">Hạt Macca Nứt Vỏ Cao Cấp</h6>
+                                <p class="card-text text-muted fs-7 mb-2">Hũ 500g nứt vỏ tự nhiên</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="fs-6 fw-bold text-primary">185.000đ</span>
+                                    <a href="/shop" class="btn btn-sm btn-primary rounded-circle shadow-sm" title="Thêm vào giỏ">
+                                        <i class="fa fa-shopping-cart"/>
+                                    </a>
                                 </div>
-                                <div t-if="request.params.get('contact') == 'invalid'" class="alert alert-danger">
-                                    Vui lòng nhập họ tên và địa chỉ email hợp lệ.
-                                </div>
-
-                                <form action="/sale/contact/submit" method="post" class="ew-contact-form">
-                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                    <input type="text" name="website_url" class="d-none" tabindex="-1" autocomplete="off"/>
-                                    <div class="row g-3">
-                                        <div class="col-md-6"><input class="form-control" name="company_name" placeholder="Tên công ty" maxlength="160"/></div>
-                                        <div class="col-md-6"><input class="form-control" name="contact_name" placeholder="Tên người liên hệ *" required="required" maxlength="160"/></div>
-                                        <div class="col-md-6"><input class="form-control" type="email" name="email" placeholder="Email *" required="required" maxlength="254"/></div>
-                                        <div class="col-md-6"><input class="form-control" name="phone" placeholder="Số điện thoại" maxlength="64"/></div>
-                                        <div class="col-12"><textarea class="form-control" name="message" rows="4" placeholder="Yêu cầu của bạn" maxlength="4000"/></div>
-                                        <div class="col-12"><button class="btn ew-btn-primary" type="submit">Gửi thông tin <i class="fa fa-arrow-right ms-2"/></button></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="ew-contact-card">
-                                    <div t-if="website.company_id.phone"><i class="fa fa-phone"/><div><strong>Hotline</strong><span t-out="website.company_id.phone"/></div></div>
-                                    <div t-if="website.company_id.email"><i class="fa fa-envelope"/><div><strong>Email</strong><span t-out="website.company_id.email"/></div></div>
-                                    <div t-if="website.company_id.sudo().partner_id.contact_address"><i class="fa fa-map-marker"/><div><strong>Địa chỉ</strong><span t-out="website.company_id.sudo().partner_id.contact_address"/></div></div>
-                                    <div><i class="fa fa-clock-o"/><div><strong>Giờ làm việc</strong><span>Thứ 2 – Thứ 7: 8:00 – 17:30</span></div></div>
-                                </div>
-                                <a class="btn ew-whatsapp w-100 mt-3" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa fa-whatsapp me-2"/>Chat qua WhatsApp
-                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden position-relative">
+                            <span class="badge bg-info text-white position-absolute top-0 start-0 m-3 z-1 px-2 py-1 fs-8">Quà tặng</span>
+                            <img src="/sale_website_home/static/src/img/farm-4.svg" class="card-img-top bg-light p-3" alt="Trà Đông Trùng Hạ Thảo" style="height: 180px; object-fit: contain;"/>
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title fw-bold text-dark">Trà Đông Trùng Thảo Mộc</h6>
+                                <p class="card-text text-muted fs-7 mb-2">Hộp quà 20 túi lọc premium</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="fs-6 fw-bold text-primary">290.000đ</span>
+                                    <a href="/shop" class="btn btn-sm btn-primary rounded-circle shadow-sm" title="Thêm vào giỏ">
+                                        <i class="fa fa-shopping-cart"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </template>
 
+    <!-- CORPORATE CREDIBILITY / ABOUT SECTION -->
+    <template id="s_sale_about" name="Sale Corporate Credibility">
+        <section id="sale_about_edit" class="s_text_block ew-section ew-about o_colored_level oe_structure bg-light py-5" data-snippet="s_text_block" data-name="About Block">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <img class="img-fluid rounded-4 shadow-sm"
+                             src="/sale_website_home/static/src/img/about-placeholder.svg"
+                             alt="Sale Platform Credibility" loading="lazy"/>
+                    </div>
+                    <div class="col-lg-7">
+                        <span class="ew-eyebrow text-uppercase">NĂNG LỰC DOANH NGHIỆP &amp; QUY TRÌNH</span>
+                        <h2 class="fw-bold my-2">Nền tảng vận hành mượt mà từ Online đến Kho hàng</h2>
+                        <p class="ew-lead text-secondary fs-6">
+                            Tích hợp sức mạnh của Odoo 19 (Web + Sales + CRM + Kho + Hóa đơn), giúp doanh nghiệp tự động hóa luồng xử lý đơn hàng và tối ưu từng điểm chạm khách hàng.
+                        </p>
+                        <div class="row row-cols-2 row-cols-md-4 g-3 my-4">
+                            <div class="col">
+                                <div class="p-3 bg-white rounded-3 shadow-sm text-center h-100">
+                                    <i class="fa fa-certificate text-primary fs-3 mb-2"/>
+                                    <span class="d-block fw-semibold text-dark fs-7">Tiêu chuẩn ISO / FDA</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 bg-white rounded-3 shadow-sm text-center h-100">
+                                    <i class="fa fa-database text-primary fs-3 mb-2"/>
+                                    <span class="d-block fw-semibold text-dark fs-7">Tồn kho Realtime</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 bg-white rounded-3 shadow-sm text-center h-100">
+                                    <i class="fa fa-user-plus text-primary fs-3 mb-2"/>
+                                    <span class="d-block fw-semibold text-dark fs-7">Tự động CRM Lead</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 bg-white rounded-3 shadow-sm text-center h-100">
+                                    <i class="fa fa-ship text-primary fs-3 mb-2"/>
+                                    <span class="d-block fw-semibold text-dark fs-7">Hỗ trợ Báo giá Sỉ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn ew-btn-primary rounded-pill px-4 py-2" href="/about-us">
+                            Tìm hiểu thêm năng lực <i class="fa fa-arrow-right ms-2"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- LEAD CAPTURE FORM SECTION -->
+    <template id="s_sale_contact" name="Sale Contact CRM Form">
+        <section id="contact" class="s_text_block ew-section ew-contact o_colored_level oe_structure py-5" data-snippet="s_text_block" data-name="Contact Block">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <img class="img-fluid"
+                             src="/sale_website_home/static/src/img/logistics-placeholder.svg"
+                             alt="Global logistics &amp; CRM" loading="lazy"/>
+                    </div>
+                    <div class="col-lg-5">
+                        <span class="ew-eyebrow text-uppercase">DÀNH CHO KHÁCH HÀNG &amp; ĐỐI TÁC B2B</span>
+                        <h2 class="fw-bold my-2">Yêu cầu Báo giá Sỉ &amp; Tư vấn giải pháp</h2>
+                        <p class="text-secondary fs-6">Quý khách vui lòng để lại thông tin, nhân viên tư vấn sẽ liên hệ và gửi báo giá trong vòng 30 phút.</p>
+
+                        <div t-if="request.params.get('contact') == 'success'" class="alert alert-success shadow-sm">
+                            <i class="fa fa-check-circle me-2"/> Cảm ơn Quý khách! Yêu cầu của bạn đã được ghi nhận vào hệ thống CRM.
+                        </div>
+                        <div t-if="request.params.get('contact') == 'invalid'" class="alert alert-danger shadow-sm">
+                            <i class="fa fa-exclamation-triangle me-2"/> Vui lòng nhập họ tên và địa chỉ email hợp lệ.
+                        </div>
+
+                        <form action="/sale/contact/submit" method="post" class="ew-contact-form bg-light p-4 rounded-4 shadow-sm">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="text" name="website_url" class="d-none" tabindex="-1" autocomplete="off"/>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input class="form-control rounded-3" name="company_name" placeholder="Tên công ty / Đại lý" maxlength="160"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control rounded-3" name="contact_name" placeholder="Họ và tên người liên hệ *" required="required" maxlength="160"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control rounded-3" type="email" name="email" placeholder="Địa chỉ Email *" required="required" maxlength="254"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control rounded-3" name="phone" placeholder="Số điện thoại / Zalo" maxlength="64"/>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control rounded-3" name="message" rows="4" placeholder="Nội dung yêu cầu báo giá / sản phẩm quan tâm..." maxlength="4000"/>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-lg rounded-pill w-100 fw-bold shadow-sm" type="submit">
+                                        Gửi Yêu Cầu Báo Giá <i class="fa fa-paper-plane ms-2"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ew-contact-card bg-light p-4 rounded-4 shadow-sm">
+                            <h6 class="fw-bold text-primary text-uppercase mb-3">Kênh hỗ trợ trực tiếp</h6>
+                            <div t-if="website.company_id.phone" class="mb-3 d-flex align-items-start gap-2">
+                                <i class="fa fa-phone text-primary fs-5 mt-1"/>
+                                <div><strong class="d-block">Hotline Bán Hàng</strong><span t-out="website.company_id.phone"/></div>
+                            </div>
+                            <div t-if="website.company_id.email" class="mb-3 d-flex align-items-start gap-2">
+                                <i class="fa fa-envelope text-primary fs-5 mt-1"/>
+                                <div><strong class="d-block">Email Tư vấn</strong><span t-out="website.company_id.email"/></div>
+                            </div>
+                            <div t-if="website.company_id.sudo().partner_id.contact_address" class="mb-3 d-flex align-items-start gap-2">
+                                <i class="fa fa-map-marker text-primary fs-5 mt-1"/>
+                                <div><strong class="d-block">Địa chỉ Trụ sở</strong><span t-out="website.company_id.sudo().partner_id.contact_address"/></div>
+                            </div>
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fa fa-clock-o text-primary fs-5 mt-1"/>
+                                <div><strong class="d-block">Giờ phục vụ</strong><span>T2 – T7: 08:00 – 18:00</span></div>
+                            </div>
+                        </div>
+                        <a class="btn btn-success btn-lg rounded-pill w-100 mt-3 fw-bold text-white shadow-sm" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-whatsapp me-2"/>Tư vấn qua WhatsApp / Zalo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- HOMEPAGE TEMPLATE OVERRIDE -->
     <template id="sale_homepage"
               inherit_id="website.homepage"
               name="Sale Website Homepage"
               priority="1000">
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="ew-homepage">
-                <div class="oe_structure oe_empty" id="ew_zone_1"/>
-                <t t-call="sale_website_home.s_ew_hero"/>
-                <div class="oe_structure oe_empty" id="ew_zone_2"/>
-                <t t-call="sale_website_home.s_ew_categories"/>
-                <div class="oe_structure oe_empty" id="ew_zone_3"/>
-                <t t-call="sale_website_home.s_ew_about"/>
-                <div class="oe_structure oe_empty" id="ew_zone_4"/>
-                <t t-call="sale_website_home.s_ew_gallery"/>
-                <div class="oe_structure oe_empty" id="ew_zone_5"/>
-                <t t-call="sale_website_home.s_ew_news"/>
-                <div class="oe_structure oe_empty" id="ew_zone_6"/>
-                <t t-call="sale_website_home.s_ew_contact"/>
-                <div class="oe_structure oe_empty" id="ew_zone_7"/>
+                <div class="oe_structure oe_empty" id="sale_zone_1"/>
+                <t t-call="sale_website_home.s_sale_hero"/>
+                <div class="oe_structure oe_empty" id="sale_zone_2"/>
+                <t t-call="sale_website_home.s_sale_categories"/>
+                <div class="oe_structure oe_empty" id="sale_zone_3"/>
+                <t t-call="sale_website_home.s_sale_featured_products"/>
+                <div class="oe_structure oe_empty" id="sale_zone_4"/>
+                <t t-call="sale_website_home.s_sale_about"/>
+                <div class="oe_structure oe_empty" id="sale_zone_5"/>
+                <t t-call="sale_website_home.s_sale_contact"/>
+                <div class="oe_structure oe_empty" id="sale_zone_6"/>
             </div>
         </xpath>
     </template>

@@ -26,6 +26,9 @@ Replaces the default homepage and provides a branded public website layout.
             "sale_website_home/static/src/scss/sale_website.scss",
             "sale_website_home/static/src/js/sale_website.js",
         ],
+        "web.assets_backend": [
+            "sale_website_home/static/src/scss/sale_backend.scss",
+        ],
     },
     "installable": True,
     "application": False,

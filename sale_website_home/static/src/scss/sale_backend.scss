@@ -1,0 +1,20 @@
+/* Custom Sale Backend Admin CMS Styling for Odoo 19 */
+
+.o_main_navbar {
+    background-color: #0f172a !important; /* Dark Slate Header Bar */
+    border-bottom: 2px solid #0d6efd !important;
+    
+    .o_nav_entry, .o_menu_brand, .o_menu_sections .nav-link {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+}
+
+.o_action_manager {
+    background-color: #f8fafc !important;
+}
+
+/* Custom App Switcher Icons Accent */
+.o_app_switcher_menu {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+}

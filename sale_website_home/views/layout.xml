@@ -5,6 +5,45 @@
               name="Sale Website Header and Footer"
               priority="1000">
 
+        <xpath expr="//head" position="inside">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+            <style>
+                body { font-family: 'Inter', -apple-system, sans-serif; color: #1e293b; }
+                h1, h2, h3, h4, h5, h6, .display-4, .display-6, .sale-brand { font-family: 'Outfit', -apple-system, sans-serif; }
+                .text-secondary-dark { color: #334155 !important; }
+                .text-light-muted { color: #cbd5e1 !important; }
+                .footer-link { color: #cbd5e1 !important; transition: color 0.2s ease; }
+                .footer-link:hover { color: #ffffff !important; }
+                
+                @keyframes shine { 0% { left: -100%; } 100% { left: 125%; } }
+                @keyframes pulseGlow { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(13, 110, 253, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 110, 253, 0); } }
+                @keyframes floatCard { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+                @keyframes salesToastSlide { 0% { transform: translateX(-120%); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+
+                .btn-primary { position: relative; overflow: hidden; transition: all 0.3s ease; }
+                .btn-primary::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transform: skewX(-20deg); animation: shine 3.5s infinite; }
+                .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(13, 110, 253, 0.4) !important; }
+
+                .backdrop-blur { backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+                .hero-card { animation: floatCard 4s ease-in-out infinite; }
+                .hover-lift { transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease; }
+                .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important; }
+                .hover-card { transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+                .hover-card:hover { transform: translateY(-4px); }
+
+                .sale-floating-contact { position: fixed; bottom: 25px; right: 25px; z-index: 1040; display: flex; flex-direction: column; gap: 12px; }
+                .sale-floating-contact .btn-floating { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #fff; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s ease; text-decoration: none; }
+                .sale-floating-contact .btn-floating:hover { transform: scale(1.12); }
+                .sale-floating-contact .btn-zalo { background: #0068ff; }
+                .sale-floating-contact .btn-phone { background: #ff4757; animation: pulseGlow 2s infinite; }
+                .sale-floating-contact .btn-quote { background: #0d6efd; }
+
+                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 350px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-left: 5px solid #0d6efd; padding: 12px 16px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
+            </style>
+        </xpath>
+
         <!-- Header Replacement -->
         <xpath expr="//header" position="replace">
             <header id="top" class="sale-site-header sticky-top bg-white shadow-sm">
@@ -182,6 +221,19 @@
                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 fs-7 text-light-muted">
                         <span class="text-light-muted">© 2026 Sale Demo Template. All rights reserved. Powered by Odoo &amp; CCVI.</span>
                     </div>
+                </div>
+
+                <!-- Floating Contact Action Group -->
+                <div class="sale-floating-contact d-none d-sm-flex">
+                    <a href="https://zalo.me/0901234567" target="_blank" rel="noopener" class="btn-floating btn-zalo" title="Chat Zalo B2B">
+                        <i class="fa fa-comments"/>
+                    </a>
+                    <a href="tel:0901234567" class="btn-floating btn-phone" title="Gọi Hotline 090 123 4567">
+                        <i class="fa fa-phone"/>
+                    </a>
+                    <a href="/contactus" class="btn-floating btn-quote" title="Nhận Báo Giá Sỉ">
+                        <i class="fa fa-paper-plane"/>
+                    </a>
                 </div>
             </footer>
         </xpath>

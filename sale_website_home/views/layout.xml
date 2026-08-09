@@ -5,6 +5,7 @@
               name="Sale Website Header and Footer"
               priority="1000">
 
+        <!-- Header Replacement -->
         <xpath expr="//header" position="replace">
             <header id="top" class="sale-site-header sticky-top bg-white shadow-sm">
                 <!-- Topbar -->
@@ -37,8 +38,8 @@
                     <div class="container">
                         <!-- Brand Logo -->
                         <a class="navbar-brand sale-brand fw-bold fs-4 text-primary d-flex align-items-center gap-2 me-lg-4" href="/" aria-label="Sale Demo Home">
-                            <span t-field="website.logo" t-options="{'widget': 'image', 'class': 'img img-fluid navbar-logo', 'alt': 'Sale Demo'}" />
-                            <span t-if="not website.logo" class="brand-text text-uppercase tracking-wider">Sale Demo</span>
+                            <img src="/logo.png" alt="Sale Demo" class="img-fluid navbar-logo" style="max-height: 40px;"/>
+                            <span class="brand-text text-uppercase tracking-wider fw-bold">Sale Demo</span>
                         </a>
 
                         <!-- Mobile Quick Cart -->
@@ -60,12 +61,29 @@
 
                         <!-- Nav Links & Action Bar -->
                         <div class="collapse navbar-collapse" id="saleMainNavigation">
-                            <!-- Dynamic CMS Navigation Menu -->
+                            <!-- Dynamic CMS Navigation Menu with Dropdown Support -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 sale-main-menu fw-medium gap-lg-1">
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                    <t t-call="website.submenu">
-                                        <t t-set="item_class" t-value="'nav-item'"/>
-                                        <t t-set="link_class" t-value="'nav-link px-3'"/>
+                                    <t t-if="submenu.is_visible">
+                                        <li t-if="not submenu.child_id" class="nav-item">
+                                            <a class="nav-link px-3 fw-semibold text-dark" t-att-href="submenu.url">
+                                                <t t-out="submenu.name"/>
+                                            </a>
+                                        </li>
+                                        <li t-else="" class="nav-item dropdown">
+                                            <a class="nav-link px-3 dropdown-toggle fw-semibold text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <t t-out="submenu.name"/>
+                                            </a>
+                                            <ul class="dropdown-menu border-0 shadow-sm rounded-3 p-2">
+                                                <t t-foreach="submenu.child_id" t-as="child">
+                                                    <li t-if="child.is_visible">
+                                                        <a class="dropdown-item py-2 px-3 rounded-2 fw-medium fs-7" t-att-href="child.url">
+                                                            <t t-out="child.name"/>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </li>
                                     </t>
                                 </t>
                             </ul>
@@ -78,12 +96,8 @@
                                 </a>
                                 
                                 <!-- 🛒 Cart Icon with Badge -->
-                                <t t-set="website_sale_order" t-value="website.sale_get_order() if website else False"/>
                                 <a class="btn btn-icon btn-light rounded-circle shadow-sm position-relative" href="/shop/cart" aria-label="Giỏ hàng" title="Giỏ hàng">
                                     <i class="fa fa-shopping-bag text-primary"/>
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-8">
-                                        <t t-out="website_sale_order and website_sale_order.cart_quantity or 0"/>
-                                    </span>
                                 </a>
 
                                 <!-- 👤 User Profile / Login -->
@@ -109,24 +123,24 @@
             </header>
         </xpath>
 
-        <!-- Footer UX Layout -->
+        <!-- Footer Replacement -->
         <xpath expr="//footer" position="replace">
             <footer class="sale-footer bg-dark text-light pt-5 pb-3">
                 <div class="container">
                     <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
                         <div class="col-lg-4 col-md-6">
-                            <a class="sale-footer-logo text-decoration-none fs-3 fw-bold text-white d-inline-block mb-3" href="/">
-                                <span t-field="website.logo" t-options="{'widget': 'image', 'class': 'img img-fluid', 'alt': 'Sale Demo'}" />
-                                <span t-if="not website.logo">Sale Demo</span>
+                            <a class="sale-footer-logo text-decoration-none fs-3 fw-bold text-white d-inline-flex align-items-center gap-2 mb-3" href="/">
+                                <img src="/logo.png" alt="Sale Demo" class="img-fluid" style="max-height: 35px;"/>
+                                <span>Sale Demo</span>
                             </a>
                             <p class="text-secondary fs-6 pe-lg-4">
-                                Nền tảng Bán hàng &amp; CRM doanh nghiệp toàn diện. Tối ưu trải nghiệm mua sắm và quy trình quản lý đơn hàng chuẩn hóa.
+                                Nền tảng Bán hàng &amp; Quản lý CRM doanh nghiệp toàn diện. Tối ưu trải nghiệm mua sắm và quy trình quản lý đơn hàng chuẩn hóa.
                             </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="fa fa-facebook"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="fa fa-linkedin"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="fa fa-youtube-play"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="fa fa-instagram"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="Facebook"><i class="fa fa-facebook"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="Instagram"><i class="fa fa-instagram"/></a>
                             </div>
                         </div>
 
@@ -161,19 +175,12 @@
                                     <i class="fa fa-envelope text-primary me-2"/>
                                     <t t-out="website.company_id.email"/>
                                 </li>
-                                <li t-if="website.company_id.sudo().partner_id.contact_address" class="mb-2">
-                                    <i class="fa fa-map-marker text-primary me-2"/>
-                                    <t t-out="website.company_id.sudo().partner_id.contact_address"/>
-                                </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 fs-7 text-secondary">
                         <span>© 2026 Sale Demo Template. All rights reserved. Powered by Odoo &amp; CCVI.</span>
-                        <button type="button" class="btn btn-sm btn-primary rounded-circle js_sale_scroll_top" aria-label="Lên đầu trang">
-                            <i class="fa fa-arrow-up"/>
-                        </button>
                     </div>
                 </div>
             </footer>

@@ -1,100 +1,179 @@
-# 🎨 Sơ Đồ Kiến Trúc Giao Diện & Wireframe Website Sale Demo (UX/UI Standard)
-
-## 📌 1. Tổng Quan Hệ Thống Giao Diện (UX/UI Design System)
-
-### 🎨 1.1 Palette Màu Sắc Thương Hiệu (Brand Palette)
-- **Primary Color**: `#0d6efd` (Deep Royal Blue) - Thể hiện tính chuyên nghiệp, tin cậy B2B.
-- **Secondary Color**: `#0b5ed7` (Navy Accent) - Tăng độ tương phản cho button & badge.
-- **Accent Color**: `#ff4757` (Vibrant Coral Red) - Nổi bật cho nút *"Báo Giá B2B"*, Badge *"🔥 HOT"*.
-- **Dark Mode Background**: `#0f172a` (Slate Dark) - Dùng cho Topbar, Hero Overlay & Footer.
-- **Light Surface**: `#f8fafc` (Soft Snow White) - Nền trang nhã tôn vinh hình ảnh nông sản & sản phẩm.
-- **Text Primary**: `#1e293b` - Chữ đậm dễ đọc chuẩn Accessibility WCAG 2.1.
-
-### ✒️ 1.2 Typography & Grid System
-- **Font-Family**: `'Outfit', 'Inter', -apple-system, sans-serif`.
-- **Grid Layout**: Bootstrap 5 Responsive Grid (12 Columns, Container Max-Width 1320px).
-- **Border Radius**: Cards `1rem` (16px), Buttons `50rem` (Pill Shapes), Modals `1.25rem`.
-
-### ✨ 1.3 Hiệu Ứng Động & Micro-Animations
-1. **Hero Video Ambient Banner**: Video nền lặp mượt phủ lớp mờ Glassmorphism (`backdrop-filter: blur(12px)`).
-2. **Hover Lift & Zoom**: Thẻ sản phẩm nổi nhẹ `translateY(-6px)` kèm hiệu ứng zoom ảnh nhẹ.
-3. **CTA Shine Effect**: Ánh kim luân chuyển trên các nút CTA báo giá chính.
-4. **Sales Toast Notification**: Thẻ thông báo chốt đơn thời gian thực góc trái dưới màn hình.
-5. **Floating Action Bar**: Bộ ba nút Zalo / Hotline / Báo giá góc phải màn hình với hiệu ứng mạch đập (`pulse`).
-6. **Mobile Sticky CTA**: Thanh hành động cố định chân màn hình di động cho trải nghiệm mua sắm 1-touch.
+# 🎨 Sơ Đồ Kiến Trúc Giao Diện, Wireframe & Triết Lý UX/UI Sale Demo
 
 ---
 
-## 🏛️ 2. Structure & Wireframe Các Trang Frontend
+## 📌 1. Tổng Quan Hệ Thống Giao Diện (Design System & Color Psychology)
 
-```
-+-----------------------------------------------------------------------------------+
-| TOPBAR: 🕒 T2 - T7: 08:00 - 18:00  |  📞 Hotline  |  ✉️ Email  | 🌐 VI/EN Selector|
-+-----------------------------------------------------------------------------------+
-| HEADER: [LOGO Sale Demo]   [ Trang chủ | Sản phẩm (Dropdown) | Giới thiệu | Tin tức ]|
-|                            [🔍 Search]  [🛒 Cart (Badge)]  [👤 User]  [🚀 Báo Giá] |
-+-----------------------------------------------------------------------------------+
-```
+### 🎨 1.1 Bộ Bảng Màu & Tâm Lý Học Thiết Kế B2B
+- **Primary Color (`#0d6efd` - Deep Royal Blue)**: 
+  - *Mục đích*: Tạo sự tin tưởng tuyệt đối, tính chính trực và chuyên nghiệp của một doanh nghiệp cung ứng B2B quy mô lớn.
+- **Dark Mode Background (`#0f172a` - Slate Dark)**:
+  - *Mục đích*: Tăng chiều sâu thị giác ở Topbar, Hero Overlay và Footer, tạo cảm giác sang trọng và tập trung ánh nhìn vào các khối nội dung trắng giữa trang.
+- **Light Surface (`#f8fafc` - Soft Snow White)**:
+  - *Mục đích*: Làm nền cho sản phẩm nông sản / cà phê, giúp hình ảnh nổi bật 100% không bị chi phối bởi màu sắc tương phản gắt.
+- **Accent Color (`#ff4757` - Vibrant Coral Red)**:
+  - *Mục đích*: Dùng cho các nút báo giá gấp, badge *"🔥 HOT"* và icon số điện thoại để kích thích hành động (Call To Action).
+
+### ✒️ 1.2 Typography & Quy Tắc Tỷ Lệ Vàng Về Độ Tương Phản (WCAG 2.1)
+- **Font Tiêu đề**: `'Outfit', sans-serif` (Bo tròn hiện đại, mạnh mẽ).
+- **Font Văn bản**: `'Inter', sans-serif` (Sắc nét, chuẩn đọc hiểu trên mọi màn hình di động/desktop).
+- **Độ tương phản (Contrast Ratio)**: Mọi chữ trên trang chủ & footer đều tuân thủ độ tương phản **4.5:1 đến 18:1** (Đã loại bỏ hoàn toàn chữ xám đục mờ).
+
+---
+
+## 🏛️ 2. Wireframe Chi Tiết & Triết Lý UX Bố Trí Cấu Trúc Các Trang
+
+---
 
 ### 🏠 2.1 Trang Chủ (Homepage `/`)
-- **Block 1: Hero Video Banner**:
-  - Video ambient nền nông sản / cà phê / xưởng đóng gói xuất khẩu.
-  - Tiêu đề nổi bật: *"Nâng Tầm Thương Hiệu Bán Hàng & Xuất Khẩu B2B"*.
-  - Thẻ Glassmorphism hiển thị KPI *"Tối Ưu 300% Tỷ Lệ Chuyển Đổi"*.
-- **Block 2: Dynamic Category Carousel / Grid**:
-  - Tự động quét từ `product.public.category`.
-  - Hiệu ứng Hover Lift 3D & nút *"Xem ngay"*.
-- **Block 3: Featured Products Grid**:
-  - Tự động quét từ `product.template` (Top 8 sản phẩm bán chạy).
-  - Giá bán định dạng VNĐ, Badge *"HOT"*, Nút thêm giỏ hàng nhanh.
-- **Block 4: Company Capacity & Quality Badges**:
-  - Các chứng nhận chất lượng: HACCP, ISO 22000, VietGAP, FDA.
-- **Block 5: Fast Lead Capture Form**:
-  - Form nhận bảng giá sỉ B2B đẩy trực tiếp về CRM Odoo Backend.
 
-### 🛍️ 2.2 Trang Cửa Hàng & Danh Mục (`/shop`)
-- **Sidebar Filter**:
-  - Bộ lọc theo Danh mục công khai (`product.public.category`).
-  - Bộ lọc khoảng giá & Từ khóa tìm kiếm.
-- **Product Main Grid**:
-  - Phân trang chuẩn UX (Grid 3-4 cột).
-  - Tải động hình ảnh sản phẩm từ Odoo DB.
+#### 📐 ASCII Layout Structure Diagram:
+```
++-----------------------------------------------------------------------------------+
+| 🕒 TOPBAR: Giờ làm việc | 📞 Hotline | ✉️ Email | 🌐 VI/EN Language Switcher      |
++-----------------------------------------------------------------------------------+
+| 🧭 HEADER: [Logo Sale Demo]  [Trang chủ | Sản phẩm ▾ | Giới thiệu | Liên hệ]        |
+|                              [🔍 Tìm kiếm] [🛒 Giỏ hàng] [👤 User] [🚀 Báo Giá B2B] |
++-----------------------------------------------------------------------------------+
+| 🚀 HERO SECTION (Dark Blue Gradient / Ambient Media Video)                        |
+| +-----------------------------------------+ +-----------------------------------+ |
+| | - Badge: Solution B2B                   | | 💳 HERO CARD (Solid White Card)   | |
+| | - Title: Nâng Tầm Thương Hiệu B2B       | | - Icon: 📊 Growth Chart         | |
+| | - Subtitle: Hệ thống tự động CRM        | | - Title: Tối Ưu 300% Chuyển Đổi  | |
+| | - Action: [🛒 Khám Phá] [🚀 Nhận Báo Giá]| | - Desc: Tải dưới 1s, CRM Odoo     | |
+| +-----------------------------------------+ | - Action: [Tư Vấn Trực Tiếp]      | |
+|                                             +-----------------------------------+ |
++-----------------------------------------------------------------------------------+
+| 📦 BLOCK 2: DYNAMIC PRODUCT CATEGORIES (Light Gray Background)                    |
+| Header: "Danh mục sản phẩm" -> "Khám Phá Danh Mục Nông Sản B2B"                   |
+| Grid 4 Cột: [Nông Sản Sấy]   [Cà Phê Robusta]   [Hạt Điều]   [Combo B2B]          |
+| (Mỗi Card: Icon 3D + Tên Danh mục + Button "Xem ngay ➔")                           |
++-----------------------------------------------------------------------------------+
+| 🔥 BLOCK 3: FEATURED PRODUCTS GRID (White Background)                              |
+| Header: "Sản phẩm bán chạy" -> "Sản Phẩm Xuất Khẩu Tiêu Biểu" [Xem Tất Cả ➔]       |
+| Grid 4 Cột Sản Phẩm:                                                              |
+| +------------------+ +------------------+ +------------------+ +------------------+ |
+| | [Badge HOT]      | | [Badge HOT]      | | [Badge HOT]      | | [Badge HOT]      | |
+| | [Ảnh Sản Phẩm]   | | [Ảnh Sản Phẩm]   | | [Ảnh Sản Phẩm]   | | [Ảnh Sản Phẩm]   | |
+| | - Tên sản phẩm   | | - Tên sản phẩm   | | - Tên sản phẩm   | | - Tên sản phẩm   | |
+| | - Giá: 125.000đ  | | - Giá: 240.000đ  | | - Giá: 165.000đ  | | - Giá: 210.000đ  | |
+| | - [🛒 Thêm Giỏ]  | | - [🛒 Thêm Giỏ]  | | - [🛒 Thêm Giỏ]  | | - [🛒 Thêm Giỏ]  | |
+| +------------------+ +------------------+ +------------------+ +------------------+ |
++-----------------------------------------------------------------------------------+
+| 🛡️ BLOCK 4: CAPACITY & CERTIFICATIONS (Light Gray Background)                     |
+| Left Column: Shield Icon + Text "Chứng Nhận Quốc Tế HACCP, ISO 22000, VietGAP, FDA" |
+| Right Column: "Năng Lực Cung Ứng & Xuất Khẩu Toàn Cầu" + 2 Tích chọn Nguồn Hàng    |
++-----------------------------------------------------------------------------------+
+| 📩 BLOCK 5: FAST LEAD CAPTURE FORM (Blue Gradient Container)                      |
+| Left Column: "Yêu Cầu Báo Giá Xuất Khẩu / Bán Sỉ" + Stat (1500+ Đơn B2B, 99.8% OK)|
+| Right Column: Form [Họ tên] [SĐT] [Email] [Nội dung yêu cầu] -> [🚀 Gửi Báo Giá]  |
++-----------------------------------------------------------------------------------+
+| 💬 FLOATING WIDGETS (Bottom Overlay):                                             |
+| [Left: 🛒 Sales Toast Notification]             [Right: 📞 Zalo/Phone/Quote Floating]|
++-----------------------------------------------------------------------------------+
+| ⚓ FOOTER: [Logo + Slogan] | [Về Chúng Tôi] | [Sản Phẩm] | [Liên Hệ] | © 2026      |
++-----------------------------------------------------------------------------------+
+```
 
-### 📝 2.3 Trang Chi Tiết Sản Phẩm (`/shop/product/<id>`)
-- **Left Column**: Gallery ảnh sản phẩm sắc nét, nút Zoom full-size.
-- **Right Column**: Tên sản phẩm, Mã SKU, Giá niêm yết, Mô tả ngắn B2B, Nút *"Thêm vào giỏ hàng"* & *"Yêu cầu báo giá sỉ lượng lớn"*.
-- **Bottom Tabs**: Thông số kỹ thuật sản phẩm, Chứng nhận & Đánh giá khách hàng.
-
-### 🏢 2.4 Trang Giới Thiệu (`/about-us`)
-- **Section Mission & Vision**: Tầm nhìn trở thành nhà cung ứng nông sản hàng đầu.
-- **Interactive Timeline**: Lịch sử phát triển & Cột mốc doanh nghiệp.
-- **Core Values**: 4 Trụ cột giá trị cốt lõi.
-
-### 📞 2.5 Trang Liên Hệ & Yêu Cầu Báo Giá (`/contactus`)
-- **Form Báo Giá Chuyên Nghiệp**: Tên, Số điện thoại, Email, Công ty, Danh mục quan tâm & Số lượng dự kiến.
-- **Embedded Google Map & Chi tiết Chi nhánh**: Trụ sở chính & Nhà máy sản xuất.
+#### 🎯 UX Rationale (Vì sao lại sắp xếp Layout Trang chủ như vậy?):
+1. **Hero Section đặt đầu tiên**: 
+   - *Lý do*: Khách hàng B2B truy cập website chỉ dành 3 giây đầu tiên để xác định *"Doanh nghiệp này làm gì & có đáng tin không?"*. Tiêu đề rõ ràng + Khối Hero Card trắng nổi bật giúp truyền tải ngay lập tức giá trị cốt lõi.
+2. **Danh mục sản phẩm (Block 2) đặt ngay sau Hero**:
+   - *Lý do*: Giúp phân loại luồng nhu cầu người mua (Nông sản, Cà phê hay Hạt điều), giảm tỷ lệ thoát trang (Bounce Rate).
+3. **Sản phẩm xuất khẩu tiêu biểu (Block 3) đặt ở trung tâm**:
+   - *Lý do*: Đưa sản phẩm thực tế kèm giá niêm yết minh bạch ra mặt tiền, kích thích hành động bỏ giỏ hàng hoặc bấm xem chi tiết ngay.
+4. **Chứng nhận năng lực (Block 4)**:
+   - *Lý do*: Khách hàng mua buôn / mua xuất khẩu luôn lo ngại rủi ro chất lượng. Khối chứng nhận ISO/HACCP/FDA đóng vai trò giải tỏa tâm lý nghi ngờ (Trust Building).
+5. **Form đăng ký báo giá (Block 5) ở cuối cùng**:
+   - *Lý do*: Điểm chốt hạ hành trình trải nghiệm người dùng (Conversion Point). Sau khi đã xem qua năng lực, danh mục và sản phẩm, khách hàng sẵn sàng điền form báo giá 15 phút.
 
 ---
 
-## 🛠️ 3. Structure & Wireframe Backend Admin CMS (`/web`)
+### 🛍️ 2.2 Trang Cửa Hàng & Danh Mục Sản Phẩm (`/shop`)
+
+#### 📐 ASCII Layout Structure Diagram:
+```
++-----------------------------------------------------------------------------------+
+| TOPBAR & HEADER NAV                                                               |
++-----------------------------------------------------------------------------------+
+| BREADCRUMB: Trang chủ / Cửa Hàng / Danh Mục Nông Sản                             |
++-----------------------------------------------------------------------------------+
+| LEFT SIDEBAR (Bộ Lọc Taxonomy - 25% Width)| MAIN PRODUCT GRID (75% Width)         |
+| +---------------------------------------+ | Header: Hiển thị 8 sản phẩm [Sắp xếp ▾]|
+| | 🔍 TÌM KIẾM SẢN PHẨM                  | | Grid 3 Cột:                           |
+| | [Input search...                   ]  | | +-------------+ +-------------+       |
+| |                                       | | | [Ảnh]       | | [Ảnh]       |       |
+| | 📁 DANH MỤC CÔNG KHAI                 | | | Tên SP      | | Tên SP      |       |
+| |  [x] Tất cả sản phẩm                  | | | Giá VNĐ     | | Giá VNĐ     |       |
+| |  [ ] Nông sản & Trái cây sấy          | | | [🛒 Bỏ Giỏ] | | [🛒 Bỏ Giỏ] |       |
+| |  [ ] Cà phê & Đồ uống                 | | +-------------+ +-------------+       |
+| |  [ ] Hạt dinh dưỡng & Gia vị          | |                                       |
+| |                                       | | PAGINATION: [1] [2] [Next ➔]          |
+| | 💰 KHOẢNG GIÁ                         | |                                       |
+| | [Slider 100k - 1,000k              ]  | |                                       |
+| +---------------------------------------+ +---------------------------------------+
++-----------------------------------------------------------------------------------+
+| FOOTER                                                                            |
++-----------------------------------------------------------------------------------+
+```
+
+#### 🎯 UX Rationale (Mục đích layout `/shop`):
+- **Cấu trúc Sidebar Trái + Grid Phải**: Là chuẩn mực e-Commerce kinh điển (Golden Standard). Dễ dàng cho người mua sỉ lọc danh mục và khoảng giá mà không mất phương hướng.
+- **Sắp xếp theo thứ tự ưu tiên**: Ô tìm kiếm đặt trên cùng Sidebar giúp khách có mã sản phẩm tìm thấy kết quả chỉ trong 1s.
+
+---
+
+### 📦 2.3 Trang Chi Tiết Sản Phẩm (`/shop/product/<id>`)
+
+#### 📐 ASCII Layout Structure Diagram:
+```
++-----------------------------------------------------------------------------------+
+| HEADER NAV                                                                        |
++-----------------------------------------------------------------------------------+
+| LEFT GALLERY (50% Width)                 | RIGHT PRODUCT ACTION BOX (50% Width)   |
+| +--------------------------------------+ | - Badge: Nông Sản Sấy Export           |
+| | [ Ảnh Sản Phẩm Chính HD - 400px ]    | | - Title: XOÀI SẤY DẺO EXPORT PREMIUM   |
+| |                                      | | - Rating: ⭐⭐⭐⭐⭐ (4.9/5 - 48 đánh giá) |
+| | [Thumbnail 1] [Thumbnail 2] [Thumb 3]| | - Price: 125.000 đ / Gói 500g          |
+| +--------------------------------------+ | - Mô tả ngắn B2B: Chuẩn xuất khẩu EU...|
+|                                          | - Số lượng: [-] [ 1 ] [+]              |
+|                                          | - Buttons:                             |
+|                                          |   [ 🛒 THÊM VÀO GIỎ HÀNG (Primary) ]   |
+|                                          |   [ 🚀 YÊU CẦU BÁO GIÁ SỈ (Red CTA) ]  |
+|                                          | - Cam kết: 🚚 Giao toàn quốc | 🛡️ ISO  |
++-----------------------------------------------------------------------------------+
+| TABS NỘI DUNG CHI TIẾT (Below Grid):                                              |
+| [ Thẻ 1: Mô Tả Kỹ Thuật ]  [ Thẻ 2: Tiêu Chuẩn Xuất Khẩu ]  [ Thẻ 3: Đánh Giá ]    |
+| - Độ ẩm: <15% | Hạn sử dụng: 12 tháng | Quy cách đóng thùng: 20kg/thùng.           |
++-----------------------------------------------------------------------------------+
+| FOOTER                                                                            |
++-----------------------------------------------------------------------------------+
+```
+
+#### 🎯 UX Rationale (Mục đích layout Chi tiết Sản phẩm):
+- **Khối mua hàng & Báo giá sỉ đặt sát tầm mắt (Right Sticky Column)**: Người dùng không cần cuộn trang vẫn nhìn thấy ngay Giá, Nút Mua và Nút Báo Giá Sỉ.
+- **Phân tách Tabs kỹ thuật bên dưới**: Giúp trang chi tiết gọn gàng, khách muốn xem sâu chỉ số độ ẩm hay chứng nhận chỉ cần chuyển tab.
+
+---
+
+## 🛠️ 3. Wireframe & Cấu Trúc Backend Admin CMS (`/web`)
 
 ```
 +-----------------------------------------------------------------------------------+
-| ODOO BACKEND HEADER: [LOGO CCVI / Sale Demo]  [Search Apps...]  [🔔] [👤 Admin]   |
+| ODOO BACKEND TOPBAR: [Logo CCVI ERP]  [Search Apps...]  [💬 Messages] [👤 Admin]  |
 +-----------------------------------------------------------------------------------+
-| DASHBOARD MAIN:                                                                   |
-| [ 📊 DOANH SỐ BÁN HÀNG ] [ 📑 LEAD MỚI TỪ WEBSITE ] [ 📦 CẢNH BÁO TỒN KHO ]       |
-+-----------------------------------------------------------------------------------+
-| APPS DASHBOARD:                                                                   |
+| APPS DASHBOARD MAIN (Modern App Switcher Icons):                                  |
 |  [ 🌐 Website ]    [ 🎯 CRM ]    [ 🛍️ Sales ]    [ 📦 Inventory ]  [ 🧾 Invoicing ] |
+|  (Quản lý Web)     (Quản lý Lead)(Đơn hàng B2B)  (Quản lý Kho)    (Thu tiền/Thẻ)  |
++-----------------------------------------------------------------------------------+
+| KPI METRICS SUMMARY DASHBOARD (Khi truy cập CRM/Sales):                           |
+| +------------------+ +------------------+ +------------------+ +------------------+ |
+| | 📈 DOANH SỐ      | | 📑 LEAD BÁO GIÁ  | | 📦 TỒN KHO CANH  | | 🛒 ĐƠN HÀNG MỚI  | |
+| | 1.250.000.000 đ  | | 48 Yêu cầu mới   | | 12 Mặt hàng      | | 15 Đơn chờ duyệt| |
++------------------+ +------------------+ +------------------+ +------------------+ |
 +-----------------------------------------------------------------------------------+
 ```
 
-### ⚙️ 3.1 Màn Hình Đăng Nhập CMS (`/web/login`)
-- Phủ màu Gradient thương hiệu chuyên nghiệp.
-- Card Đăng nhập căn giữa thiết kế bo tròn mượt mà, chứa Logo Sale Demo & slogan *"Hệ Thống Quản Trị Doanh Nghiệp Toàn Diện"*.
-
-### 📊 3.2 Màn Hình Tổng Quan Administration (`/web`)
-- **Icon App Switcher**: Các icon được thiết kế lại nổi bật với màu sắc phân biệt từng phân hệ.
-- **Thanh Navigation Bar Topbar**: Hiển thị tên doanh nghiệp *"Sale Demo - CCVI ERP"*, bộ công cụ tìm kiếm nhanh & thông báo.
-- **Tích hợp Tự động hóa CRM**: Mọi Yêu cầu báo giá gửi từ Frontend lập tức biến thành Lead trong App CRM Backend.
+#### 🎯 UX Rationale (Mục đích layout Backend Admin):
+- **Tập trung vào 5 Ứng dụng Cốt lõi**: Đã tinh gọn bảng điều khiển Odoo ERP để nhân viên không bị rối mắt bởi hàng chục module phụ.
+- **Tự động hóa hoàn toàn Lead từ Website**: Mọi thông tin khách điền form báo giá từ Frontend lập tức đẩy thẳng về App CRM Backend với trạng thái *"Cần xử lý gấp trong 15 phút"*.

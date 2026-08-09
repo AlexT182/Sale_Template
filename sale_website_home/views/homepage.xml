@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Snippet 1: Hero Section -->
+    <!-- Snippet 1: Video Hero Section -->
     <template id="s_sale_hero" name="Sale Hero">
         <section class="sale-hero bg-gradient-dark text-white py-5 position-relative overflow-hidden">
+            <!-- Ambient Video / Graphic Overlay -->
             <div class="hero-bg-overlay position-absolute top-0 start-0 w-100 h-100 opacity-25"
-                 style="background: radial-gradient(circle, rgba(13,110,253,0.3) 0%, rgba(0,0,0,0.9) 100%);"/>
+                 style="background: radial-gradient(circle, rgba(13,110,253,0.35) 0%, rgba(15,23,42,0.95) 100%);"/>
             <div class="container position-relative z-1 py-lg-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7 text-center text-lg-start">
-                        <span class="badge bg-primary px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3">
+                        <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3">
                             🚀 Giải Pháp Bán Hàng &amp; ERP Doanh Nghiệp
                         </span>
                         <h1 class="display-4 fw-extrabold text-white mb-4 lh-tight">
                             Nâng Tầm Thương Hiệu <br/>
-                            <span class="text-primary gradient-text">Bán Hàng &amp; Xuất Khẩu B2B</span>
+                            <span class="text-primary gradient-text fw-bold">Bán Hàng &amp; Xuất Khẩu B2B</span>
                         </h1>
-                        <p class="lead text-light opacity-75 mb-4 pe-lg-4">
-                            Hệ thống tích hợp toàn diện Website Bán Hàng, Thương Mại Điện Tử, Quản Lý Kho &amp; CRM Chăm Sóc Khách Hàng tự động hóa trên nền tảng Dokploy &amp; Odoo Cloud.
+                        <p class="lead text-light opacity-85 mb-4 pe-lg-4 fs-5">
+                            Hệ thống tích hợp toàn diện Website Bán Hàng, Thương Mại Điện Tử, Quản Lý Kho &amp; CRM Chăm Sóc Khách Hàng tự động hóa chuẩn hóa quy trình chốt đơn.
                         </p>
                         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                             <a href="/shop" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg text-white">
@@ -33,8 +34,8 @@
                                 <i class="fa fa-line-chart text-primary fs-1"/>
                             </div>
                             <h4 class="fw-bold text-white mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h4>
-                            <p class="text-light fs-7 opacity-75 mb-4">Giao diện tối chuẩn UX/UI, tốc độ tải trang dưới 1s, chuẩn hóa quy trình chốt đơn.</p>
-                            <a href="/contactus" class="btn btn-light rounded-pill w-100 fw-bold py-2 text-primary">Tư Vấn Giải Pháp Trực Tiếp</a>
+                            <p class="text-light fs-7 opacity-75 mb-4">Giao diện tối ưu chuẩn UX/UI, tốc độ tải trang cực nhanh, tự động đồng bộ CRM Odoo Backend.</p>
+                            <a href="/contactus" class="btn btn-light rounded-pill w-100 fw-bold py-2 text-primary shadow-sm">Tư Vấn Giải Pháp Trực Tiếp</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@
         <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
+                    <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
                     <h2 class="display-6 fw-bold text-dark mb-3">Khám Phá Danh Mục Nông Sản B2B</h2>
                     <p class="text-muted fs-6 max-w-2xl mx-auto">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
                 </div>
@@ -79,7 +80,7 @@
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
                     <div>
-                        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">🔥 Sản phẩm bán chạy</span>
+                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">🔥 Sản phẩm bán chạy</span>
                         <h2 class="display-6 fw-bold text-dark mb-0">Sản Phẩm Xuất Khẩu Tiêu Biểu</h2>
                     </div>
                     <a href="/shop" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Tất cả sản phẩm <i class="fa fa-arrow-right ms-1"/></a>
@@ -145,7 +146,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <span class="badge bg-success-subtle text-success fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Về Sale Demo</span>
+                        <span class="badge bg-success bg-opacity-10 text-success fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Về Sale Demo</span>
                         <h2 class="display-6 fw-bold text-dark mb-4">Năng Lực Cung Ứng &amp; Xuất Khẩu Toàn Cầu</h2>
                         <p class="text-secondary fs-6 mb-4">
                             Chúng tôi chuyên sản xuất và cung ứng các mặt hàng nông sản sấy dẻo, hạt dinh dưỡng và cà phê chất lượng cao. Với quy trình kiểm soát nghiêm ngặt từ nông trại tới nhà máy, Sale Demo tự hào là đối tác tin cậy của hơn 500+ doanh nghiệp bán lẻ và đối tác xuất khẩu.

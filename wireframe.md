@@ -1,107 +1,100 @@
-# WIREFRAME & UX ARCHITECTURE: SALE WEBSITE TEMPLATE
+# 🎨 Sơ Đồ Kiến Trúc Giao Diện & Wireframe Website Sale Demo (UX/UI Standard)
 
-> **Mô hình**: E-Commerce + CRM + Order Fulfillment (Odoo 19)  
-> **Domain**: `saledemo.ccvi.com.vn`  
-> **Module Nguồn**: `sale_website_home`  
+## 📌 1. Tổng Quan Hệ Thống Giao Diện (UX/UI Design System)
+
+### 🎨 1.1 Palette Màu Sắc Thương Hiệu (Brand Palette)
+- **Primary Color**: `#0d6efd` (Deep Royal Blue) - Thể hiện tính chuyên nghiệp, tin cậy B2B.
+- **Secondary Color**: `#0b5ed7` (Navy Accent) - Tăng độ tương phản cho button & badge.
+- **Accent Color**: `#ff4757` (Vibrant Coral Red) - Nổi bật cho nút *"Báo Giá B2B"*, Badge *"🔥 HOT"*.
+- **Dark Mode Background**: `#0f172a` (Slate Dark) - Dùng cho Topbar, Hero Overlay & Footer.
+- **Light Surface**: `#f8fafc` (Soft Snow White) - Nền trang nhã tôn vinh hình ảnh nông sản & sản phẩm.
+- **Text Primary**: `#1e293b` - Chữ đậm dễ đọc chuẩn Accessibility WCAG 2.1.
+
+### ✒️ 1.2 Typography & Grid System
+- **Font-Family**: `'Outfit', 'Inter', -apple-system, sans-serif`.
+- **Grid Layout**: Bootstrap 5 Responsive Grid (12 Columns, Container Max-Width 1320px).
+- **Border Radius**: Cards `1rem` (16px), Buttons `50rem` (Pill Shapes), Modals `1.25rem`.
+
+### ✨ 1.3 Hiệu Ứng Động & Micro-Animations
+1. **Hero Video Ambient Banner**: Video nền lặp mượt phủ lớp mờ Glassmorphism (`backdrop-filter: blur(12px)`).
+2. **Hover Lift & Zoom**: Thẻ sản phẩm nổi nhẹ `translateY(-6px)` kèm hiệu ứng zoom ảnh nhẹ.
+3. **CTA Shine Effect**: Ánh kim luân chuyển trên các nút CTA báo giá chính.
+4. **Sales Toast Notification**: Thẻ thông báo chốt đơn thời gian thực góc trái dưới màn hình.
+5. **Floating Action Bar**: Bộ ba nút Zalo / Hotline / Báo giá góc phải màn hình với hiệu ứng mạch đập (`pulse`).
+6. **Mobile Sticky CTA**: Thanh hành động cố định chân màn hình di động cho trải nghiệm mua sắm 1-touch.
 
 ---
 
-## 1. TỔNG QUAN KIẾN TRÚC WIREFRAME
+## 🏛️ 2. Structure & Wireframe Các Trang Frontend
 
-Wireframe này được thiết kế tối ưu hóa theo tiêu chuẩn UX/UI E-Commerce hiện đại, chú trọng vào **Tỷ lệ chuyển đổi (Conversion Rate Optimization - CRO)** và **Hành trình trải nghiệm khách hàng (Customer Journey)**:
-
-```text
+```
 +-----------------------------------------------------------------------------------+
-| TOPBAR: Hotline | Email | Giờ làm việc                       | Language: VI / EN  |
+| TOPBAR: 🕒 T2 - T7: 08:00 - 18:00  |  📞 Hotline  |  ✉️ Email  | 🌐 VI/EN Selector|
 +-----------------------------------------------------------------------------------+
-| NAVBAR: [LOGO]  Trang chủ  Sản phẩm  Giới thiệu  Tin tức  Liên hệ | [🔍] [🛒2] [👤] [CTA] |
-+-----------------------------------------------------------------------------------+
-| HERO SECTION:                                                                     |
-|   Headline: KẾT NỐI SẢN PHẨM & GIẢI PHÁP BÁN HÀNG                                 |
-|   Subtext: Nền tảng thương mại & quản lý doanh nghiệp toàn diện.                  |
-|   [Button: Khám phá sản phẩm]   [Button: Nhận tư vấn B2B]                          |
-+-----------------------------------------------------------------------------------+
-| CATEGORY GRID (8 Danh mục sản phẩm trực quan)                                     |
-|  [Đồ uống]  [Thực phẩm]  [Thảo dược]  [Quà tặng]  [Nông sản]  [Đóng hộp] ...        |
-+-----------------------------------------------------------------------------------+
-| FEATURED PRODUCTS (Sản phẩm bán chạy & Báo giá nhanh)                            |
-|  [Card 1: Ảnh + Giá + Nút Thêm giỏ]  [Card 2]  [Card 3]  [Card 4]                 |
-+-----------------------------------------------------------------------------------+
-| CORPORATE CREDIBILITY (Năng lực doanh nghiệp & Chứng nhận)                        |
-|  - Tiêu chuẩn ISO / HACCP / FDA                                                   |
-|  - Quy trình xuất khẩu & phân phối                                                |
-+-----------------------------------------------------------------------------------+
-| LEAD CAPTURE FORM (Form yêu cầu báo giá -> Tạo CRM Lead)                          |
-|  [Tên Cty] [Họ tên*] [Email*] [SĐT] [Nội dung yêu cầu]   ---> [Gửi Báo Giá]       |
-+-----------------------------------------------------------------------------------+
-| FOOTER:                                                                           |
-|  [Logo & About]   [Giới thiệu]   [Sản phẩm]   [Chính sách]   [Liên hệ & Social]   |
+| HEADER: [LOGO Sale Demo]   [ Trang chủ | Sản phẩm (Dropdown) | Giới thiệu | Tin tức ]|
+|                            [🔍 Search]  [🛒 Cart (Badge)]  [👤 User]  [🚀 Báo Giá] |
 +-----------------------------------------------------------------------------------+
 ```
 
----
+### 🏠 2.1 Trang Chủ (Homepage `/`)
+- **Block 1: Hero Video Banner**:
+  - Video ambient nền nông sản / cà phê / xưởng đóng gói xuất khẩu.
+  - Tiêu đề nổi bật: *"Nâng Tầm Thương Hiệu Bán Hàng & Xuất Khẩu B2B"*.
+  - Thẻ Glassmorphism hiển thị KPI *"Tối Ưu 300% Tỷ Lệ Chuyển Đổi"*.
+- **Block 2: Dynamic Category Carousel / Grid**:
+  - Tự động quét từ `product.public.category`.
+  - Hiệu ứng Hover Lift 3D & nút *"Xem ngay"*.
+- **Block 3: Featured Products Grid**:
+  - Tự động quét từ `product.template` (Top 8 sản phẩm bán chạy).
+  - Giá bán định dạng VNĐ, Badge *"HOT"*, Nút thêm giỏ hàng nhanh.
+- **Block 4: Company Capacity & Quality Badges**:
+  - Các chứng nhận chất lượng: HACCP, ISO 22000, VietGAP, FDA.
+- **Block 5: Fast Lead Capture Form**:
+  - Form nhận bảng giá sỉ B2B đẩy trực tiếp về CRM Odoo Backend.
 
-## 2. NGHỆ THUẬT THIẾT KẾ NAVIGATION MENU (FRONTEND NAVIGATION UX)
+### 🛍️ 2.2 Trang Cửa Hàng & Danh Mục (`/shop`)
+- **Sidebar Filter**:
+  - Bộ lọc theo Danh mục công khai (`product.public.category`).
+  - Bộ lọc khoảng giá & Từ khóa tìm kiếm.
+- **Product Main Grid**:
+  - Phân trang chuẩn UX (Grid 3-4 cột).
+  - Tải động hình ảnh sản phẩm từ Odoo DB.
 
-### 📌 2.1. Topbar (Thanh thông báo & Liên hệ nhanh)
-- **Vị trí**: Nằm trên cùng của trang web, nền tối tương phản (`bg-dark`).
-- **Nội dung**:
-  - `Hotline`: Kích hoạt cuộc gọi trực tiếp khi bấm di động (`tel:`).
-  - `Email`: Liên hệ kinh doanh khẩn cấp (`mailto:`).
-  - `Giờ làm việc`: Giúp khách B2B biết khung giờ tư vấn.
-  - `Chuyển đổi ngôn ngữ`: Selector nhanh cho thị trường Việt Nam & Quốc tế.
+### 📝 2.3 Trang Chi Tiết Sản Phẩm (`/shop/product/<id>`)
+- **Left Column**: Gallery ảnh sản phẩm sắc nét, nút Zoom full-size.
+- **Right Column**: Tên sản phẩm, Mã SKU, Giá niêm yết, Mô tả ngắn B2B, Nút *"Thêm vào giỏ hàng"* & *"Yêu cầu báo giá sỉ lượng lớn"*.
+- **Bottom Tabs**: Thông số kỹ thuật sản phẩm, Chứng nhận & Đánh giá khách hàng.
 
-### 📌 2.2. Main Navbar (Thanh điều hướng chính - Sticky Navigation)
-- **Hiệu ứng**: Cố định khi cuộn trang (`sticky-top`) giúp người dùng dễ dàng di chuyển bất kỳ lúc nào.
-- **Brand Logo**: Nằm góc trái, click về trang chủ (`/`).
-- **Danh sách Menu chính (5 mục tối giản)**:
-  1. **Trang chủ** (`/`): Tổng quan thương hiệu và dịch vụ.
-  2. **Sản phẩm** (`/shop`): Trang mua hàng E-commerce, lọc danh mục, tìm kiếm theo giá.
-  3. **Giới thiệu** (`/about-us`): Hồ sơ năng lực doanh nghiệp, tầm nhìn, sứ mệnh.
-  4. **Tin tức** (`/blog`): Bài viết chuyên ngành, kiến thức sản phẩm & cập nhật thị trường.
-  5. **Liên hệ & Báo giá** (`/contactus`): Đơn yêu cầu tư vấn, bản đồ vị trí văn phòng.
+### 🏢 2.4 Trang Giới Thiệu (`/about-us`)
+- **Section Mission & Vision**: Tầm nhìn trở thành nhà cung ứng nông sản hàng đầu.
+- **Interactive Timeline**: Lịch sử phát triển & Cột mốc doanh nghiệp.
+- **Core Values**: 4 Trụ cột giá trị cốt lõi.
 
-### 📌 2.3. Cụm Action Bar (Góc phải Navbar - Tăng tương tác)
-- **🔍 Search (Tìm kiếm nhanh)**: Trỏ trực tiếp đến tính năng tìm kiếm sản phẩm.
-- **🛒 Giỏ hàng (Badge đếm số lượng)**: Hiển thị realtime số món hàng trong giỏ, nhấp vào dẫn đến trang checkout `/shop/cart`.
-- **👤 Tài khoản người dùng**:
-  - Khi chưa đăng nhập: Nút `Đăng nhập` dẫn đến `/web/login`.
-  - Khi đã đăng nhập: Icon trang cá nhân dẫn tới Portal theo dõi đơn hàng `/my/home`.
-- **🚀 Primary CTA Button**: Nút **"Yêu cầu Báo Giá"** nổi bật với màu thương hiệu (`btn-primary rounded-pill`), thu hút khách mua sỉ/bán buôn gửi yêu cầu ngay lập tức.
-
----
-
-## 3. CẤU TRÚC CHI TIẾT TRANG CHỦ (HOMEPAGE SECTIONS)
-
-### 3.1. Hero Banner Section
-- **Tập trung**: Thông điệp chính, giá trị cốt lõi của doanh nghiệp.
-- **CTA kép**:
-  - Primary CTA: *Khám phá sản phẩm* (Dẫn tới `/shop`).
-  - Secondary CTA: *Nhận tư vấn* (Cuộn mượt xuống form `#contact`).
-
-### 3.2. Product Categories Grid
-- Hiển thị 8 icon danh mục tiêu biểu dưới dạng lưới Responsive (8 cột trên Desktop, 2 cột trên Mobile).
-- Giúp người dùng nắm bắt dải sản phẩm chỉ trong 2 giây đầu lướt web.
-
-### 3.3. Corporate Credibility (Về chúng tôi & Năng lực)
-- Hiển thị các chỉ số ấn tượng (Số năm kinh nghiệm, Số quốc gia xuất khẩu, Sản phẩm tiêu chuẩn).
-- Tăng độ tin tưởng (Trust factor) cho khách mua sỉ và đối tác doanh nghiệp.
-
-### 3.4. Lead Capture Form (Form thu thập khách hàng tự động)
-- **Cơ chế**: Người dùng điền form ➔ Tự động gọi API Odoo `/sale/contact/submit` ➔ Khởi tạo 1 hồ sơ **Lead/Opportunity** trực tiếp trong App **Odoo CRM**.
-- **Tính năng bảo vệ**: Tích hợp Honeypot chống Spam bot.
+### 📞 2.5 Trang Liên Hệ & Yêu Cầu Báo Giá (`/contactus`)
+- **Form Báo Giá Chuyên Nghiệp**: Tên, Số điện thoại, Email, Công ty, Danh mục quan tâm & Số lượng dự kiến.
+- **Embedded Google Map & Chi tiết Chi nhánh**: Trụ sở chính & Nhà máy sản xuất.
 
 ---
 
-## 4. TỔNG KẾT LUỒNG TRẢI NGHIỆM KHÁCH HÀNG (CUSTOMER JOURNEY)
+## 🛠️ 3. Structure & Wireframe Backend Admin CMS (`/web`)
 
-```mermaid
-graph TD
-    A[Khách truy cập saledemo.ccvi.com.vn] --> B{Nhu cầu mua hàng?}
-    B -->|Mua lẻ B2C| C[Vào /shop -> Chọn hàng -> Giỏ hàng -> Checkout]
-    B -->|Mua sỉ / B2B| D[Click 'Yêu cầu Báo giá' -> Điền Form CRM]
-    C --> E[Đơn hàng tự động vào Odoo Sales & Inventory]
-    D --> F[Lead mới tự động xuất hiện trong Odoo CRM Pipeline]
-    E --> G[Nhân viên duyệt đơn -> Trừ kho -> Xuất hóa đơn]
-    F --> H[Nhân viên Sale gọi điện tư vấn & chốt Hợp đồng]
 ```
++-----------------------------------------------------------------------------------+
+| ODOO BACKEND HEADER: [LOGO CCVI / Sale Demo]  [Search Apps...]  [🔔] [👤 Admin]   |
++-----------------------------------------------------------------------------------+
+| DASHBOARD MAIN:                                                                   |
+| [ 📊 DOANH SỐ BÁN HÀNG ] [ 📑 LEAD MỚI TỪ WEBSITE ] [ 📦 CẢNH BÁO TỒN KHO ]       |
++-----------------------------------------------------------------------------------+
+| APPS DASHBOARD:                                                                   |
+|  [ 🌐 Website ]    [ 🎯 CRM ]    [ 🛍️ Sales ]    [ 📦 Inventory ]  [ 🧾 Invoicing ] |
++-----------------------------------------------------------------------------------+
+```
+
+### ⚙️ 3.1 Màn Hình Đăng Nhập CMS (`/web/login`)
+- Phủ màu Gradient thương hiệu chuyên nghiệp.
+- Card Đăng nhập căn giữa thiết kế bo tròn mượt mà, chứa Logo Sale Demo & slogan *"Hệ Thống Quản Trị Doanh Nghiệp Toàn Diện"*.
+
+### 📊 3.2 Màn Hình Tổng Quan Administration (`/web`)
+- **Icon App Switcher**: Các icon được thiết kế lại nổi bật với màu sắc phân biệt từng phân hệ.
+- **Thanh Navigation Bar Topbar**: Hiển thị tên doanh nghiệp *"Sale Demo - CCVI ERP"*, bộ công cụ tìm kiếm nhanh & thông báo.
+- **Tích hợp Tự động hóa CRM**: Mọi Yêu cầu báo giá gửi từ Frontend lập tức biến thành Lead trong App CRM Backend.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Snippet 1: Video Hero Section -->
+    <!-- Snippet 1: Video Hero Section with Fully Editable Hero Card Media -->
     <template id="s_sale_hero" name="Sale Hero">
         <section class="sale-hero bg-dark text-white py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0d6efd 100%);">
             <div class="container position-relative z-1 py-lg-5">
@@ -26,10 +26,12 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <!-- Clean High-Contrast White Hero Card -->
+                        <!-- Fully Editable High-Contrast White Hero Card -->
                         <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4 border-primary">
-                            <div class="p-3 bg-primary bg-opacity-10 rounded-circle d-inline-block mb-3">
-                                <i class="fa fa-line-chart text-primary fs-1"/>
+                            <div class="mb-3 hero-media-box d-flex justify-content-center align-items-center">
+                                <span class="fa fa-line-chart text-primary display-4 p-3 bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
+                                      style="width: 80px; height: 80px; cursor: pointer;"
+                                      title="Nhấp đúp để đổi Icon hoặc Ảnh"/>
                             </div>
                             <h3 class="fw-bold text-dark mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h3>
                             <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">
@@ -153,7 +155,7 @@
                     <div class="col-lg-6">
                         <div class="position-relative">
                             <div class="p-5 bg-primary bg-opacity-10 rounded-5 border border-primary border-opacity-20 text-center">
-                                <i class="fa fa-shield text-primary mb-3" style="font-size: 80px;"/>
+                                <span class="fa fa-shield text-primary display-1 mb-3 d-inline-block"/>
                                 <h3 class="fw-bold text-dark mb-2">Chứng Nhận Chất Lượng Quốc Tế</h3>
                                 <p class="text-dark fw-semibold mb-0">HACCP • ISO 22000 • FDA Certified • VietGAP</p>
                             </div>

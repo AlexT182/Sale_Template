@@ -40,28 +40,31 @@
                 .sale-floating-contact .btn-phone { background: #ff4757; animation: pulseGlow 2s infinite; }
                 .sale-floating-contact .btn-quote { background: #0d6efd; }
 
-                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 350px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-left: 5px solid #0d6efd; padding: 12px 16px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
+                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 360px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-left: 5px solid #0d6efd; padding: 12px 16px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
             </style>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     if (!document.querySelector('.sale-toast-notification')) {
-                        const toasts = [
-                            { name: "Anh Minh (TP.HCM)", text: "vừa gửi yêu cầu báo giá 500kg Cà phê Robusta Honey", time: "2 phút trước" },
-                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 hộp Xoài Sấy Dẻo Export", time: "5 phút trước" },
-                            { name: "Công ty Nông Sản Á Châu", text: "vừa đăng ký đại lý phân phối Hạt Điều Bội Thu", time: "12 phút trước" },
-                            { name: "Anh Hoàng (Bình Dương)", text: "vừa yêu cầu bảng giá sỉ Hạt Macca Úc B2B", time: "18 phút trước" }
+                        let toasts = [
+                            { name: "Anh Minh (TP.HCM)", text: "vừa gửi yêu cầu báo giá sỉ <strong>Cà Phê Robusta Honey</strong>", time: "2 phút trước", image: "" },
+                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 hộp <strong>Xoài Sấy Dẻo Export</strong>", time: "5 phút trước", image: "" },
+                            { name: "Công ty Nông Sản Á Châu", text: "vừa đăng ký đại lý <strong>Hạt Điều Rang Muối</strong>", time: "12 phút trước", image: "" }
                         ];
-                        let index = 0;
+
                         const toastContainer = document.createElement('div');
                         toastContainer.className = 'sale-toast-notification d-none d-md-flex align-items-center gap-3';
                         document.body.appendChild(toastContainer);
 
+                        let index = 0;
                         const showToast = function () {
+                            if (!toasts.length) return;
                             const item = toasts[index];
+                            const imgHtml = item.image 
+                                ? `<img src="${item.image}" class="rounded-circle shadow-sm" style="width: 42px; height: 42px; object-fit: cover; flex-shrink: 0;" onerror="this.style.display='none'"/>`
+                                : `<div class="toast-icon bg-primary bg-opacity-10 text-primary rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; flex-shrink: 0;"><i class="fa fa-shopping-bag fs-5"></i></div>`;
+
                             toastContainer.innerHTML = `
-                                <div class="toast-icon bg-primary bg-opacity-10 text-primary rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; flex-shrink: 0;">
-                                    <i class="fa fa-shopping-bag fs-5"></i>
-                                </div>
+                                ${imgHtml}
                                 <div class="toast-body flex-grow-1">
                                     <div class="d-flex justify-content-between align-items-center mb-1">
                                         <strong class="fs-7 text-dark">${item.name}</strong>
@@ -83,6 +86,18 @@
                             }
                             index = (index + 1) % toasts.length;
                         };
+
+                        // Fetch dynamic toasts from Odoo controller endpoint /sale/get_toasts
+                        fetch('/sale/get_toasts', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ jsonrpc: "2.0", method: "call", params: {} })
+                        }).then(function(res) { return res.json(); })
+                          .then(function(data) {
+                              if (data &amp;&amp; data.result &amp;&amp; data.result.length) {
+                                  toasts = data.result;
+                              }
+                          }).catch(function(e){ console.log("Toast RPC info:", e); });
 
                         setTimeout(showToast, 3000);
                         setInterval(showToast, 10000);

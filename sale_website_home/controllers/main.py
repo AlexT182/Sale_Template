@@ -21,16 +21,16 @@ class SaleWebsiteController(http.Controller):
         def clean(value, max_length):
             return (value or "").strip()[:max_length]
 
-        company_name = clean(post.get("company_name"), 160)
-        contact_name = clean(post.get("contact_name"), 160)
+        company_name = clean(post.get("company_name") or post.get("name"), 160)
+        contact_name = clean(post.get("contact_name") or post.get("name"), 160)
         email = clean(post.get("email"), 254)
         phone = clean(post.get("phone"), 64)
-        message = clean(post.get("message"), 4000)
+        message = clean(post.get("message") or post.get("description"), 4000)
 
-        if not contact_name or not email or "@" not in email:
-            return request.redirect("/?contact=invalid#contact")
+        if not contact_name or not phone:
+            return request.redirect("/contactus?contact=invalid")
 
-        lead_name = _("Sale website inquiry - %s") % (
+        lead_name = _("Sale website B2B inquiry - %s") % (
             company_name or contact_name
         )
 
@@ -46,4 +46,46 @@ class SaleWebsiteController(http.Controller):
                 "website": request.httprequest.host_url,
             }
         )
-        return request.redirect("/?contact=success#contact")
+        return request.redirect("/contactus-thank-you")
+
+    @http.route(
+        "/sale/get_toasts",
+        type="json",
+        auth="public",
+        website=True,
+        methods=["POST"],
+        csrf=False,
+    )
+    def get_sales_toasts(self):
+        """Dynamic JSON endpoint returning sales toast notifications based on real Odoo DB products."""
+        products = request.env["product.template"].sudo().search(
+            [("website_published", "=", True)], limit=6
+        )
+
+        buyers = [
+            ("Anh Minh (TP.HCM)", "vừa gửi yêu cầu báo giá sỉ", "2 phút trước"),
+            ("Chị Thu Hà (Hà Nội)", "vừa đặt mua 100 thùng", "5 phút trước"),
+            ("Công ty Nông Sản Á Châu", "vừa đăng ký đại lý phân phối", "12 phút trước"),
+            ("Anh Hoàng (Bình Dương)", "vừa ký hợp đồng cung ứng B2B", "18 phút trước"),
+            ("Chị Thanh Vân (Đà Nẵng)", "vừa yêu cầu bảng giá xuất khẩu", "25 phút trước"),
+        ]
+
+        results = []
+        if products:
+            for idx, p in enumerate(products):
+                buyer_name, buyer_action, buyer_time = buyers[idx % len(buyers)]
+                img_url = f"/web/image/product.template/{p.id}/image_128"
+                results.append({
+                    "name": buyer_name,
+                    "text": f"{buyer_action} <strong>{p.name}</strong>",
+                    "time": buyer_time,
+                    "image": img_url,
+                })
+        else:
+            # Default fallback
+            results = [
+                {"name": "Anh Minh (TP.HCM)", "text": "vừa gửi yêu cầu báo giá sỉ <strong>Cà Phê Robusta</strong>", "time": "2 phút trước", "image": ""},
+                {"name": "Chị Thu Hà (Hà Nội)", "text": "vừa đặt mua 100 hộp <strong>Xoài Sấy Dẻo Export</strong>", "time": "5 phút trước", "image": ""},
+            ]
+
+        return results

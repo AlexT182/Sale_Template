@@ -1,4 +1,4 @@
-/* Sale Website SCSS Design System & Micro-Animations */
+/* Sale Website SCSS Design System & High-Contrast WCAG Styling */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
@@ -9,6 +9,23 @@ body {
 
 h1, h2, h3, h4, h5, h6, .display-4, .display-6, .sale-brand {
     font-family: 'Outfit', -apple-system, sans-serif;
+}
+
+/* Contrast Utility Classes */
+.text-secondary-dark {
+    color: #334155 !important; /* Slate 700 - High contrast 10:1 */
+}
+
+.text-light-muted {
+    color: #cbd5e1 !important; /* Slate 300 - High contrast 8.5:1 on dark */
+}
+
+.footer-link {
+    color: #cbd5e1 !important;
+    transition: color 0.2s ease;
+    &:hover {
+        color: #ffffff !important;
+    }
 }
 
 /* Animations Keyframes */
@@ -81,22 +98,6 @@ h1, h2, h3, h4, h5, h6, .display-4, .display-6, .sale-brand {
     &:hover {
         transform: translateY(-4px);
     }
-}
-
-/* Video Background Banner Overlay */
-.sale-hero-video-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.25;
-    filter: brightness(0.6);
 }
 
 /* Floating Action Contact Group */

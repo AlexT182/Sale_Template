@@ -12,19 +12,19 @@
                 <div class="sale-topbar bg-dark text-white py-1 fs-7">
                     <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
                         <div class="d-flex align-items-center gap-3">
-                            <span class="d-none d-md-inline"><i class="fa fa-clock-o me-1 text-primary"/> T2 - T7: 08:00 - 18:00</span>
-                            <span class="fw-semibold text-light">Mẫu Website Bán Hàng &amp; Quản Lý CRM Doanh Nghiệp</span>
+                            <span class="d-none d-md-inline text-white-50"><i class="fa fa-clock-o me-1 text-primary"/> T2 - T7: 08:00 - 18:00</span>
+                            <span class="fw-semibold text-white">Mẫu Website Bán Hàng &amp; Quản Lý CRM Doanh Nghiệp</span>
                         </div>
                         <div class="d-flex align-items-center gap-3">
                             <a t-if="website.company_id.phone"
                                t-att-href="'tel:%s' % website.company_id.phone.replace(' ', '')"
-                               class="text-white text-decoration-none hover-primary">
+                               class="text-white text-decoration-none hover-primary fw-medium">
                                 <i class="fa fa-phone me-1 text-primary"/>
                                 <t t-out="website.company_id.phone"/>
                             </a>
                             <a t-if="website.company_id.email"
                                t-att-href="'mailto:%s' % website.company_id.email"
-                               class="text-white text-decoration-none d-none d-sm-inline hover-primary">
+                               class="text-white text-decoration-none d-none d-sm-inline hover-primary fw-medium">
                                 <i class="fa fa-envelope me-1 text-primary"/>
                                 <t t-out="website.company_id.email"/>
                             </a>
@@ -39,7 +39,7 @@
                         <!-- Brand Logo -->
                         <a class="navbar-brand sale-brand fw-bold fs-4 text-primary d-flex align-items-center gap-2 me-lg-4" href="/" aria-label="Sale Demo Home">
                             <img src="/logo.png" alt="Sale Demo" class="img-fluid navbar-logo" style="max-height: 40px;"/>
-                            <span class="brand-text text-uppercase tracking-wider fw-bold">Sale Demo</span>
+                            <span class="brand-text text-uppercase tracking-wider fw-bold text-dark">Sale Demo</span>
                         </a>
 
                         <!-- Mobile Quick Cart -->
@@ -77,7 +77,7 @@
                                             <ul class="dropdown-menu border-0 shadow-sm rounded-3 p-2">
                                                 <t t-foreach="submenu.child_id" t-as="child">
                                                     <li t-if="child.is_visible">
-                                                        <a class="dropdown-item py-2 px-3 rounded-2 fw-medium fs-7" t-att-href="child.url">
+                                                        <a class="dropdown-item py-2 px-3 rounded-2 fw-medium fs-7 text-dark" t-att-href="child.url">
                                                             <t t-out="child.name"/>
                                                         </a>
                                                     </li>
@@ -91,8 +91,8 @@
                             <!-- Action Bar (🔍 Search, 🛒 Cart, 👤 User, 🚀 CTA) -->
                             <div class="d-flex align-items-center gap-2 gap-md-3 sale-header-actions ms-lg-3 mt-3 mt-lg-0">
                                 <!-- 🔍 Search Icon -->
-                                <a class="btn btn-icon btn-light rounded-circle shadow-sm" href="/shop" aria-label="Tìm kiếm sản phẩm" title="Tìm kiếm">
-                                    <i class="fa fa-search text-secondary"/>
+                                <a class="btn btn-icon btn-light rounded-circle shadow-sm text-dark" href="/shop" aria-label="Tìm kiếm sản phẩm" title="Tìm kiếm">
+                                    <i class="fa fa-search text-dark"/>
                                 </a>
                                 
                                 <!-- 🛒 Cart Icon with Badge -->
@@ -123,64 +123,64 @@
             </header>
         </xpath>
 
-        <!-- Footer Replacement -->
+        <!-- Footer Replacement (High Contrast WCAG Standard) -->
         <xpath expr="//footer" position="replace">
-            <footer class="sale-footer bg-dark text-light pt-5 pb-3">
+            <footer class="sale-footer bg-dark text-white pt-5 pb-3">
                 <div class="container">
                     <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
                         <div class="col-lg-4 col-md-6">
                             <a class="sale-footer-logo text-decoration-none fs-3 fw-bold text-white d-inline-flex align-items-center gap-2 mb-3" href="/">
                                 <img src="/logo.png" alt="Sale Demo" class="img-fluid" style="max-height: 35px;"/>
-                                <span>Sale Demo</span>
+                                <span class="text-white">Sale Demo</span>
                             </a>
-                            <p class="text-secondary fs-6 pe-lg-4">
+                            <p class="text-light-muted fs-6 pe-lg-4">
                                 Nền tảng Bán hàng &amp; Quản lý CRM doanh nghiệp toàn diện. Tối ưu trải nghiệm mua sắm và quy trình quản lý đơn hàng chuẩn hóa.
                             </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="Facebook"><i class="fa fa-facebook"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="Facebook"><i class="fa fa-facebook"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
+                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="Instagram"><i class="fa fa-instagram"/></a>
                             </div>
                         </div>
 
                         <div class="col-lg-2 col-md-6">
                             <h6 class="text-uppercase fw-bold text-primary mb-3">Về chúng tôi</h6>
-                            <ul class="list-unstyled sale-footer-links text-secondary">
-                                <li class="mb-2"><a href="/about-us" class="text-secondary text-decoration-none hover-white">Giới thiệu</a></li>
-                                <li class="mb-2"><a href="/about-us#mission" class="text-secondary text-decoration-none hover-white">Tầm nhìn &amp; Sứ mệnh</a></li>
-                                <li class="mb-2"><a href="/about-us#certificates" class="text-secondary text-decoration-none hover-white">Năng lực doanh nghiệp</a></li>
-                                <li class="mb-2"><a href="/contactus" class="text-secondary text-decoration-none hover-white">Đối tác &amp; Đại lý</a></li>
+                            <ul class="list-unstyled sale-footer-links">
+                                <li class="mb-2"><a href="/about-us" class="footer-link text-decoration-none">Giới thiệu</a></li>
+                                <li class="mb-2"><a href="/about-us#mission" class="footer-link text-decoration-none">Tầm nhìn &amp; Sứ mệnh</a></li>
+                                <li class="mb-2"><a href="/about-us#certificates" class="footer-link text-decoration-none">Năng lực doanh nghiệp</a></li>
+                                <li class="mb-2"><a href="/contactus" class="footer-link text-decoration-none">Đối tác &amp; Đại lý</a></li>
                             </ul>
                         </div>
 
                         <div class="col-lg-3 col-md-6">
                             <h6 class="text-uppercase fw-bold text-primary mb-3">Sản phẩm &amp; Dịch vụ</h6>
-                            <ul class="list-unstyled sale-footer-links text-secondary">
-                                <li class="mb-2"><a href="/shop" class="text-secondary text-decoration-none hover-white">Tất cả sản phẩm</a></li>
-                                <li class="mb-2"><a href="/shop" class="text-secondary text-decoration-none hover-white">Sản phẩm bán chạy</a></li>
-                                <li class="mb-2"><a href="/shop" class="text-secondary text-decoration-none hover-white">Sản phẩm mới về</a></li>
-                                <li class="mb-2"><a href="/contactus" class="text-secondary text-decoration-none hover-white">Báo giá sỉ / Xuất khẩu</a></li>
+                            <ul class="list-unstyled sale-footer-links">
+                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Tất cả sản phẩm</a></li>
+                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Sản phẩm bán chạy</a></li>
+                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Sản phẩm mới về</a></li>
+                                <li class="mb-2"><a href="/contactus" class="footer-link text-decoration-none">Báo giá sỉ / Xuất khẩu</a></li>
                             </ul>
                         </div>
 
                         <div class="col-lg-3 col-md-6">
                             <h6 class="text-uppercase fw-bold text-primary mb-3">Thông tin liên hệ</h6>
-                            <ul class="list-unstyled sale-contact-list text-secondary">
+                            <ul class="list-unstyled sale-contact-list text-light-muted">
                                 <li t-if="website.company_id.phone" class="mb-2">
                                     <i class="fa fa-phone text-primary me-2"/>
-                                    <t t-out="website.company_id.phone"/>
+                                    <span class="text-light"><t t-out="website.company_id.phone"/></span>
                                 </li>
                                 <li t-if="website.company_id.email" class="mb-2">
                                     <i class="fa fa-envelope text-primary me-2"/>
-                                    <t t-out="website.company_id.email"/>
+                                    <span class="text-light"><t t-out="website.company_id.email"/></span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 fs-7 text-secondary">
-                        <span>© 2026 Sale Demo Template. All rights reserved. Powered by Odoo &amp; CCVI.</span>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 fs-7 text-light-muted">
+                        <span class="text-light-muted">© 2026 Sale Demo Template. All rights reserved. Powered by Odoo &amp; CCVI.</span>
                     </div>
                 </div>
             </footer>

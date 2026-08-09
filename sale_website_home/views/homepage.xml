@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Snippet 1: Video Hero Section -->
+    <!-- Snippet 1: Video Hero Section (High Contrast) -->
     <template id="s_sale_hero" name="Sale Hero">
         <section class="sale-hero bg-gradient-dark text-white py-5 position-relative overflow-hidden">
-            <!-- Ambient Video / Graphic Overlay -->
+            <!-- Ambient Overlay -->
             <div class="hero-bg-overlay position-absolute top-0 start-0 w-100 h-100 opacity-25"
                  style="background: radial-gradient(circle, rgba(13,110,253,0.35) 0%, rgba(15,23,42,0.95) 100%);"/>
             <div class="container position-relative z-1 py-lg-5">
@@ -16,14 +16,14 @@
                             Nâng Tầm Thương Hiệu <br/>
                             <span class="text-primary gradient-text fw-bold">Bán Hàng &amp; Xuất Khẩu B2B</span>
                         </h1>
-                        <p class="lead text-light opacity-85 mb-4 pe-lg-4 fs-5">
+                        <p class="lead text-white fw-medium mb-4 pe-lg-4 fs-5" style="text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
                             Hệ thống tích hợp toàn diện Website Bán Hàng, Thương Mại Điện Tử, Quản Lý Kho &amp; CRM Chăm Sóc Khách Hàng tự động hóa chuẩn hóa quy trình chốt đơn.
                         </p>
                         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                             <a href="/shop" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg text-white">
                                 <i class="fa fa-shopping-cart me-2"/> Khám Phá Sản Phẩm
                             </a>
-                            <a href="/contactus" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold">
+                            <a href="/contactus" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold text-white">
                                 <i class="fa fa-paper-plane me-2"/> Nhận Báo Giá Sỉ
                             </a>
                         </div>
@@ -34,7 +34,7 @@
                                 <i class="fa fa-line-chart text-primary fs-1"/>
                             </div>
                             <h4 class="fw-bold text-white mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h4>
-                            <p class="text-light fs-7 opacity-75 mb-4">Giao diện tối ưu chuẩn UX/UI, tốc độ tải trang cực nhanh, tự động đồng bộ CRM Odoo Backend.</p>
+                            <p class="text-white fw-normal fs-7 mb-4">Giao diện tối ưu chuẩn UX/UI, tốc độ tải trang cực nhanh, tự động đồng bộ CRM Odoo Backend.</p>
                             <a href="/contactus" class="btn btn-light rounded-pill w-100 fw-bold py-2 text-primary shadow-sm">Tư Vấn Giải Pháp Trực Tiếp</a>
                         </div>
                     </div>
@@ -43,14 +43,14 @@
         </section>
     </template>
 
-    <!-- Snippet 2: Dynamic Product Categories -->
+    <!-- Snippet 2: Dynamic Product Categories (High Contrast) -->
     <template id="s_sale_categories" name="Sale Categories">
         <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
             <div class="container">
                 <div class="text-center mb-5">
                     <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
                     <h2 class="display-6 fw-bold text-dark mb-3">Khám Phá Danh Mục Nông Sản B2B</h2>
-                    <p class="text-muted fs-6 max-w-2xl mx-auto">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
+                    <p class="text-secondary-dark fs-6 max-w-2xl mx-auto fw-medium">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
                 </div>
                 
                 <t t-set="categories" t-value="request.env['product.public.category'].search([], order='sequence asc')"/>
@@ -74,7 +74,7 @@
         </section>
     </template>
 
-    <!-- Snippet 3: Dynamic Featured Products -->
+    <!-- Snippet 3: Dynamic Featured Products (High Contrast) -->
     <template id="s_sale_featured_products" name="Sale Featured Products">
         <section class="sale-featured-products py-5 bg-white position-relative">
             <div class="container">
@@ -131,7 +131,7 @@
         </section>
     </template>
 
-    <!-- Snippet 4: About Section -->
+    <!-- Snippet 4: About Section (High Contrast) -->
     <template id="s_sale_about" name="Sale About Us">
         <section class="sale-about py-5 bg-light position-relative">
             <div class="container py-lg-4">
@@ -141,14 +141,14 @@
                             <div class="p-5 bg-primary bg-opacity-10 rounded-5 border border-primary border-opacity-20 text-center">
                                 <i class="fa fa-shield text-primary mb-3" style="font-size: 80px;"/>
                                 <h3 class="fw-bold text-dark mb-2">Chứng Nhận Chất Lượng Quốc Tế</h3>
-                                <p class="text-muted mb-0">HACCP • ISO 22000 • FDA Certified • VietGAP</p>
+                                <p class="text-dark fw-semibold mb-0">HACCP • ISO 22000 • FDA Certified • VietGAP</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <span class="badge bg-success bg-opacity-10 text-success fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Về Sale Demo</span>
                         <h2 class="display-6 fw-bold text-dark mb-4">Năng Lực Cung Ứng &amp; Xuất Khẩu Toàn Cầu</h2>
-                        <p class="text-secondary fs-6 mb-4">
+                        <p class="text-secondary-dark fs-6 mb-4 fw-normal">
                             Chúng tôi chuyên sản xuất và cung ứng các mặt hàng nông sản sấy dẻo, hạt dinh dưỡng và cà phê chất lượng cao. Với quy trình kiểm soát nghiêm ngặt từ nông trại tới nhà máy, Sale Demo tự hào là đối tác tin cậy của hơn 500+ doanh nghiệp bán lẻ và đối tác xuất khẩu.
                         </p>
                         <div class="row g-3 mb-4">
@@ -165,14 +165,14 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="/about-us" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Tìm Hiểu Thêm <i class="fa fa-arrow-right ms-1"/></a>
+                        <a href="/about-us" class="btn btn-dark rounded-pill px-4 py-2 fw-bold text-white">Tìm Hiểu Thêm <i class="fa fa-arrow-right ms-1"/></a>
                     </div>
                 </div>
             </div>
         </section>
     </template>
 
-    <!-- Snippet 5: Contact Lead Form -->
+    <!-- Snippet 5: Contact Lead Form (High Contrast) -->
     <template id="s_sale_contact" name="Sale Contact Snippet">
         <section class="sale-contact py-5 bg-white position-relative">
             <div class="container">
@@ -180,18 +180,18 @@
                     <div class="row align-items-center g-4">
                         <div class="col-lg-6">
                             <h2 class="display-6 fw-bold text-white mb-3">Yêu Cầu Báo Giá Xuất Khẩu / Bán Sỉ</h2>
-                            <p class="text-white opacity-85 fs-6 mb-4">
+                            <p class="text-white fs-6 mb-4 fw-normal">
                                 Để nhận bảng giá sỉ chi tiết và chính sách chiết khấu tốt nhất cho đại lý / doanh nghiệp, vui lòng điền thông tin bên dưới. Đội ngũ kinh doanh sẽ tư vấn ngay trong 15 phút.
                             </p>
                             <div class="d-flex align-items-center gap-4">
                                 <div>
                                     <h4 class="fw-bold text-white mb-0">1500+</h4>
-                                    <span class="fs-7 opacity-75">Đơn hàng B2B</span>
+                                    <span class="fs-7 text-white fw-medium">Đơn hàng B2B</span>
                                 </div>
                                 <div class="vr bg-white opacity-50"/>
                                 <div>
                                     <h4 class="fw-bold text-white mb-0">99.8%</h4>
-                                    <span class="fs-7 opacity-75">Hài lòng</span>
+                                    <span class="fs-7 text-white fw-medium">Hài lòng</span>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Snippet 1: Video Hero Section (High Contrast White Card) -->
+    <!-- Snippet 1: Video Hero Section -->
     <template id="s_sale_hero" name="Sale Hero">
         <section class="sale-hero bg-dark text-white py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0d6efd 100%);">
             <div class="container position-relative z-1 py-lg-5">
@@ -45,7 +45,7 @@
         </section>
     </template>
 
-    <!-- Snippet 2: Dynamic Product Categories -->
+    <!-- Snippet 2: Dynamic Product Categories with Image Upload Support -->
     <template id="s_sale_categories" name="Sale Categories">
         <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
             <div class="container">
@@ -62,8 +62,16 @@
                         <div class="col-lg-3 col-md-6">
                             <a t-att-href="'/shop/category/%s' % cat.id" class="text-decoration-none">
                                 <div class="card border-0 shadow-sm rounded-4 h-100 p-4 text-center hover-lift transition-all bg-white">
-                                    <div class="icon-wrapper mx-auto mb-3 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
-                                        <i class="fa fa-cubes fs-3"/>
+                                    <div class="icon-wrapper mx-auto mb-3 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center overflow-hidden" style="width: 75px; height: 75px;">
+                                        <t t-if="cat.image_128">
+                                            <img t-att-src="'/web/image/product.public.category/%s/image_128' % cat.id"
+                                                 t-att-alt="cat.name"
+                                                 class="img-fluid w-100 h-100"
+                                                 style="object-fit: cover;"/>
+                                        </t>
+                                        <t t-else="">
+                                            <i class="fa fa-cubes fs-3"/>
+                                        </t>
                                     </div>
                                     <h5 class="fw-bold text-dark mb-2"><t t-out="cat.name"/></h5>
                                     <span class="btn btn-sm btn-outline-primary rounded-pill px-3 mt-2 fw-semibold">Xem ngay <i class="fa fa-arrow-right ms-1"/></span>
@@ -102,7 +110,7 @@
                                              t-att-alt="product.name"
                                              class="img-fluid rounded-3"
                                              style="max-height: 170px; object-fit: contain;"
-                                             onerror="this.onerror=null; this.src='/sale_website_home/static/src/img/world-map.svg';"/>
+                                             onerror="this.onerror=null; this.src='/web/static/src/img/placeholder.png';"/>
                                     </div>
                                 </a>
                                 

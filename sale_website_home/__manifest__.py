@@ -1,6 +1,6 @@
 {
     "name": "Sale Website Home",
-    "summary": "Custom Sale Website homepage, header, footer and CRM contact form",
+    "summary": "Custom Sale Website homepage, header, footer, pages and CRM contact form",
     "description": """
 Sale website presentation layer for Odoo Community 19.
 Replaces the default homepage and provides a branded public website layout.
@@ -19,6 +19,7 @@ Replaces the default homepage and provides a branded public website layout.
     "data": [
         "views/layout.xml",
         "views/homepage.xml",
+        "views/pages.xml",
     ],
     "assets": {
         "web.assets_frontend": [

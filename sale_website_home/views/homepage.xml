@@ -6,18 +6,18 @@
             <div class="container position-relative z-1 py-lg-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7 text-center text-lg-start">
-                        <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3">
+                        <span class="badge bg-danger bg-opacity-20 text-ccvi-red border border-danger border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3">
                             🚀 Giải Pháp Bán Hàng &amp; ERP Doanh Nghiệp
                         </span>
                         <h1 class="display-4 fw-extrabold text-white mb-4 lh-tight">
                             Nâng Tầm Thương Hiệu <br/>
-                            <span class="text-primary gradient-text fw-bold">Bán Hàng &amp; Xuất Khẩu B2B</span>
+                            <span class="text-ccvi-red gradient-text fw-bold">Bán Hàng &amp; Xuất Khẩu B2B</span>
                         </h1>
                         <p class="lead text-white fw-medium mb-4 pe-lg-4 fs-5" style="text-shadow: 0 1px 3px rgba(0,0,0,0.6);">
                             Hệ thống tích hợp toàn diện Website Bán Hàng, Thương Mại Điện Tử, Quản Lý Kho &amp; CRM Chăm Sóc Khách Hàng tự động hóa chuẩn hóa quy trình chốt đơn.
                         </p>
                         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                            <a href="/shop" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg text-white">
+                            <a href="/shop" class="btn btn-ccvi-red btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg text-white">
                                 <i class="fa fa-shopping-cart me-2"/> Khám Phá Sản Phẩm
                             </a>
                             <a href="/contactus" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold text-white">
@@ -26,10 +26,10 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <!-- Fully Editable High-Contrast White Hero Card -->
-                        <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4 border-primary">
+                        <!-- Fully Editable High-Contrast Hero Card -->
+                        <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4" style="border-top-color: #e84336 !important;">
                             <div class="mb-3 hero-media-box d-flex justify-content-center align-items-center">
-                                <span class="fa fa-line-chart text-primary display-4 p-3 bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
+                                <span class="fa fa-line-chart text-ccvi-red display-4 p-3 bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
                                       style="width: 80px; height: 80px; cursor: pointer;"
                                       title="Nhấp đúp để đổi Icon hoặc Ảnh"/>
                             </div>
@@ -37,7 +37,7 @@
                             <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">
                                 Giao diện tối ưu chuẩn UX/UI, tốc độ tải trang dưới 1s, tự động đồng bộ Yêu cầu Báo giá về CRM Odoo Backend.
                             </p>
-                            <a href="/contactus" class="btn btn-primary rounded-pill w-100 fw-bold py-3 shadow-md text-white fs-6">
+                            <a href="/contactus" class="btn btn-ccvi-red rounded-pill w-100 fw-bold py-3 shadow-md text-white fs-6">
                                 Tư Vấn Giải Pháp Trực Tiếp <i class="fa fa-arrow-right ms-1"/>
                             </a>
                         </div>
@@ -52,7 +52,7 @@
         <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
+                    <span class="badge bg-danger bg-opacity-10 text-ccvi-red fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
                     <h2 class="display-6 fw-bold text-dark mb-3">Khám Phá Danh Mục Nông Sản B2B</h2>
                     <p class="text-secondary-dark fs-6 max-w-2xl mx-auto fw-medium" style="color: #334155;">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
                 </div>
@@ -64,7 +64,7 @@
                         <div class="col-lg-3 col-md-6">
                             <a t-att-href="'/shop/category/%s' % cat.id" class="text-decoration-none">
                                 <div class="card border-0 shadow-sm rounded-4 h-100 p-4 text-center hover-lift transition-all bg-white">
-                                    <div class="icon-wrapper mx-auto mb-3 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center overflow-hidden" style="width: 75px; height: 75px;">
+                                    <div class="icon-wrapper mx-auto mb-3 bg-danger bg-opacity-10 text-ccvi-red rounded-circle d-flex align-items-center justify-content-center overflow-hidden" style="width: 75px; height: 75px;">
                                         <t t-if="cat.image_128">
                                             <img t-att-src="'/web/image/product.public.category/%s/image_128' % cat.id"
                                                  t-att-alt="cat.name"
@@ -118,7 +118,7 @@
                                 
                                 <div class="card-body p-4 d-flex flex-column justify-content-between">
                                     <div>
-                                        <span t-if="product.public_categ_ids" class="text-primary fs-7 fw-bold text-uppercase d-block mb-1">
+                                        <span t-if="product.public_categ_ids" class="text-ccvi-blue fs-7 fw-bold text-uppercase d-block mb-1">
                                             <t t-out="product.public_categ_ids[0].name"/>
                                         </span>
                                         <h6 class="fw-bold text-dark mb-2 text-truncate-2" style="min-height: 2.8rem;">
@@ -134,7 +134,7 @@
                                                 <t t-out="'{:,.0f}'.format(product.list_price).replace(',', '.') + ' đ'"/>
                                             </span>
                                         </div>
-                                        <a t-att-href="'/shop/%s' % product.id" class="btn btn-primary rounded-circle btn-icon shadow-sm" title="Xem chi tiết">
+                                        <a t-att-href="'/shop/%s' % product.id" class="btn btn-ccvi-red rounded-circle btn-icon shadow-sm text-white" title="Xem chi tiết">
                                             <i class="fa fa-shopping-cart"/>
                                         </a>
                                     </div>
@@ -154,8 +154,8 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <div class="p-5 bg-primary bg-opacity-10 rounded-5 border border-primary border-opacity-20 text-center">
-                                <span class="fa fa-shield text-primary display-1 mb-3 d-inline-block"/>
+                            <div class="p-5 bg-danger bg-opacity-10 rounded-5 border border-danger border-opacity-20 text-center">
+                                <span class="fa fa-shield text-ccvi-red display-1 mb-3 d-inline-block"/>
                                 <h3 class="fw-bold text-dark mb-2">Chứng Nhận Chất Lượng Quốc Tế</h3>
                                 <p class="text-dark fw-semibold mb-0">HACCP • ISO 22000 • FDA Certified • VietGAP</p>
                             </div>
@@ -170,13 +170,13 @@
                         <div class="row g-3 mb-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div class="bg-primary text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
+                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
                                     <span class="fw-semibold text-dark">Nguồn hàng ổn định</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div class="bg-primary text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
+                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
                                     <span class="fw-semibold text-dark">Giá gốc tận xưởng</span>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
     <template id="s_sale_contact" name="Sale Contact Snippet">
         <section class="sale-contact py-5 bg-white position-relative">
             <div class="container">
-                <div class="bg-primary bg-gradient rounded-5 p-4 p-lg-5 text-white shadow-lg">
+                <div class="bg-dark bg-gradient rounded-5 p-4 p-lg-5 text-white shadow-lg" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #e84336 100%) !important;">
                     <div class="row align-items-center g-4">
                         <div class="col-lg-6">
                             <h2 class="display-6 fw-bold text-white mb-3">Yêu Cầu Báo Giá Xuất Khẩu / Bán Sỉ</h2>
@@ -214,7 +214,7 @@
                         <div class="col-lg-6">
                             <form action="/sale/contact/submit" method="post" class="bg-white p-4 rounded-4 shadow-sm text-dark">
                                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                <h5 class="fw-bold text-primary mb-3">Đăng Ký Tư Vấn Báo Giá</h5>
+                                <h5 class="fw-bold text-ccvi-red mb-3">Đăng Ký Tư Vấn Báo Giá</h5>
                                 <div class="mb-3">
                                     <input type="text" name="name" class="form-control rounded-pill px-3" placeholder="Họ và tên *" required="required"/>
                                 </div>
@@ -229,7 +229,7 @@
                                 <div class="mb-3">
                                     <textarea name="description" class="form-control rounded-3 px-3" rows="3" placeholder="Sản phẩm quan tâm &amp; Số lượng dự kiến..."/>
                                 </div>
-                                <button type="submit" class="btn btn-primary rounded-pill w-100 fw-bold py-2 shadow-sm">
+                                <button type="submit" class="btn btn-ccvi-red rounded-pill w-100 fw-bold py-2 shadow-sm">
                                     Gửi Yêu Cầu Báo Giá <i class="fa fa-paper-plane ms-1"/>
                                 </button>
                             </form>

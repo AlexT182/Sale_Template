@@ -65,19 +65,27 @@
                 .sale-floating-contact .btn-quote { background: #2563eb; }
 
                 /* Ultra-Readable High-Contrast Sales Toast Styling */
-                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 380px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.18); border-left: 5px solid #e84336; padding: 14px 18px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
-                .sale-toast-notification .toast-title { color: #0f172a !important; font-weight: 700; font-size: 0.9rem; }
-                .sale-toast-notification .toast-time { background-color: #f1f5f9; color: #475569 !important; font-weight: 600; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; }
-                .sale-toast-notification p { color: #334155 !important; font-size: 0.85rem; line-height: 1.35; margin-bottom: 0; }
-                .sale-toast-notification p strong { color: #e84336 !important; font-weight: 700; }
+                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 380px; background: #ffffff !important; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.18) !important; border-left: 5px solid #e84336 !important; padding: 14px 18px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
+                .sale-toast-notification,
+                .sale-toast-notification *,
+                .sale-toast-notification p,
+                .sale-toast-notification span { color: #334155 !important; font-size: 0.85rem; line-height: 1.35; margin-bottom: 0; }
+                .sale-toast-notification strong,
+                .sale-toast-notification b,
+                .sale-toast-notification p strong,
+                .sale-toast-notification p b,
+                .sale-toast-notification span strong,
+                .sale-toast-notification span b { color: #e84336 !important; font-weight: 700 !important; }
+                .sale-toast-notification .toast-title { color: #0f172a !important; font-weight: 700 !important; font-size: 0.9rem !important; }
+                .sale-toast-notification .toast-time { background-color: #f1f5f9 !important; color: #475569 !important; font-weight: 600 !important; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem !important; }
             </style>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     if (!document.querySelector('.sale-toast-notification')) {
                         let toasts = [
-                            { name: "Anh Minh (TP.HCM)", text: "vừa gửi yêu cầu báo giá sỉ <strong>Cà Phê Robusta Honey</strong>", time: "2 phút trước", image: "" },
-                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 thùng <strong>Xoài Sấy Dẻo Export</strong>", time: "5 phút trước", image: "" },
-                            { name: "Công ty Nông Sản Á Châu", text: "vừa đăng ký đại lý <strong>Hạt Điều Rang Muối</strong>", time: "12 phút trước", image: "" }
+                            { name: "Anh Minh (TP.HCM)", text: "vừa gửi yêu cầu báo giá sỉ <strong>Cà Phê Robusta Honey</strong>", time: "2 phút trước", image: "/logo.png" },
+                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 thùng <strong>Xoài Sấy Dẻo Export</strong>", time: "5 phút trước", image: "/logo.png" },
+                            { name: "Công ty Nông Sản Á Châu", text: "vừa đăng ký đại lý <strong>Hạt Điều Rang Muối</strong>", time: "12 phút trước", image: "/logo.png" }
                         ];
 
                         const toastContainer = document.createElement('div');
@@ -88,9 +96,8 @@
                         const showToast = function () {
                             if (!toasts.length) return;
                             const item = toasts[index];
-                            const imgHtml = item.image 
-                                ? `<img src="${item.image}" class="rounded-circle shadow-sm" style="width: 44px; height: 44px; object-fit: cover; flex-shrink: 0;" onerror="this.style.display='none'"/>`
-                                : `<div class="toast-icon bg-danger bg-opacity-10 text-danger rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; flex-shrink: 0;"><i class="fa fa-shopping-bag fs-5"></i></div>`;
+                            const imgSrc = (item.image &amp;&amp; item.image.trim()) ? item.image : '/logo.png';
+                            const imgHtml = `<img src="${imgSrc}" class="rounded-circle shadow-sm p-1 bg-light border" style="width: 46px; height: 46px; object-fit: contain; flex-shrink: 0;" onerror="this.onerror=null; this.src='/logo.png';"/>`;
 
                             toastContainer.innerHTML = `
                                 ${imgHtml}

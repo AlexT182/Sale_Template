@@ -26,13 +26,13 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <!-- Fully Editable High-Contrast Hero Card with Direct Image Support -->
+                        <!-- Fully Editable High-Contrast Hero Card with Valid Image Source -->
                         <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4" style="border-top-color: #e84336 !important;">
                             <div class="mb-3 hero-media-box d-flex justify-content-center align-items-center">
-                                <img src="/web/static/src/img/placeholder.png"
+                                <img src="/logo.png"
                                      class="img-fluid hero-media-img p-2 bg-danger bg-opacity-10 rounded-circle"
                                      style="width: 80px; height: 80px; object-fit: contain; cursor: pointer;"
-                                     alt="Hero Media"
+                                     alt="CCVI Logo Media"
                                      title="Nhấp đúp để thay thế Ảnh hoặc Upload ảnh mới"/>
                             </div>
                             <h3 class="fw-bold text-dark mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h3>
@@ -114,7 +114,7 @@
                                              t-att-alt="product.name"
                                              class="img-fluid rounded-3"
                                              style="max-height: 170px; object-fit: contain;"
-                                             onerror="this.onerror=null; this.src='/web/static/src/img/placeholder.png';"/>
+                                             onerror="this.onerror=null; this.src='/logo.png';"/>
                                     </div>
                                 </a>
                                 

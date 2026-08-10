@@ -17,9 +17,11 @@ Replaces the default homepage and provides a branded public website layout.
         "crm",
     ],
     "data": [
+        "security/ir.model.access.csv",
         "views/layout.xml",
         "views/homepage.xml",
         "views/pages.xml",
+        "views/toast_views.xml",
     ],
     "installable": True,
     "application": False,

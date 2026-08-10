@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View for Toast Notifications -->
+    <record id="view_sale_toast_notification_tree" model="ir.ui.view">
+        <field name="name">sale.toast.notification.tree</field>
+        <field name="model">sale.toast.notification</field>
+        <field name="arch" type="xml">
+            <list string="Thông Báo Mua Hàng Popup" editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="action_text"/>
+                <field name="time_text"/>
+                <field name="product_id"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View for Toast Notifications -->
+    <record id="view_sale_toast_notification_form" model="ir.ui.view">
+        <field name="name">sale.toast.notification.form</field>
+        <field name="model">sale.toast.notification</field>
+        <field name="arch" type="xml">
+            <form string="Thông Báo Mua Hàng Popup">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="Tên Khách Hàng / Địa Phương"/>
+                        <h1><field name="name" placeholder="Ví dụ: Chị Thu Hà (Hà Nội)"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="action_text" placeholder="Ví dụ: vừa đặt mua 100 thùng"/>
+                            <field name="time_text" placeholder="Ví dụ: 5 phút trước"/>
+                        </group>
+                        <group>
+                            <field name="product_id" placeholder="Chọn sản phẩm trong Odoo..."/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Window Action -->
+    <record id="action_sale_toast_notification" model="ir.actions.act_window">
+        <field name="name">Thông Báo Mua Hàng Popup</field>
+        <field name="res_model">sale.toast.notification</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Tạo thông báo mua hàng popup xuất hiện ở góc dưới màn hình!
+            </p>
+            <p>
+                Bạn có thể tự do thêm, sửa, đổi tên người mua, hành động và thời gian trực tiếp tại đây mà không cần đụng tới mã nguồn.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item under Website -> Configuration -->
+    <menuitem id="menu_sale_toast_notification"
+              name="Thông Báo Mua Hàng Popup"
+              parent="website.menu_website_global_configuration"
+              action="action_sale_toast_notification"
+              sequence="99"/>
+</odoo>

@@ -1,52 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="sale_website_layout_header_footer"
-              inherit_id="website.layout"
-              name="Sale Website Header and Footer"
-              priority="1000">
-
+    <!-- Master Website Layout Override -->
+    <template id="sale_layout_override" inherit_id="website.layout" name="Sale Master Layout" priority="1000">
+        <!-- Error boundary & Unhandled Rejection Suppressor for Lazy Load Chrome Interventions -->
         <xpath expr="//head" position="inside">
             <script>
                 window.addEventListener('unhandledrejection', function (event) {
-                    if (event &amp;&amp; event.reason &amp;&amp; event.reason.message &amp;&amp; event.reason.message.indexOf('querySelector') !== -1) {
+                    if (event.reason &amp;&amp; (
+                        event.reason.message &amp;&amp; (
+                            event.reason.message.includes("querySelector") || 
+                            event.reason.message.includes("placeholder")
+                        )
+                    )) {
                         event.preventDefault();
                     }
                 });
             </script>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+            <!-- Custom Brand Theme Utilities -->
             <style>
                 :root {
                     --ccvi-red: #e84336;
                     --ccvi-blue: #2563eb;
                     --ccvi-green: #31a853;
-                    --ccvi-yellow: #ffdd0e;
                     --ccvi-dark: #0f172a;
-                    --ccvi-slate: #1e293b;
                 }
-
-                body { font-family: 'Inter', -apple-system, sans-serif; color: #1e293b; }
-                h1, h2, h3, h4, h5, h6, .display-4, .display-6, .sale-brand { font-family: 'Outfit', -apple-system, sans-serif; }
-                
-                .text-ccvi-red { color: #e84336 !important; }
-                .text-ccvi-blue { color: #2563eb !important; }
-                .text-ccvi-green { color: #31a853 !important; }
                 .bg-ccvi-red { background-color: #e84336 !important; }
+                .text-ccvi-red { color: #e84336 !important; }
+                .border-ccvi-red { border-color: #e84336 !important; }
+                
                 .bg-ccvi-blue { background-color: #2563eb !important; }
-                .bg-ccvi-dark { background-color: #0f172a !important; }
-                
-                .text-secondary-dark { color: #334155 !important; }
-                .text-light-muted { color: #cbd5e1 !important; }
-                .footer-link { color: #cbd5e1 !important; transition: color 0.2s ease; }
-                .footer-link:hover { color: #ffffff !important; }
-                
-                @keyframes shine { 0% { left: -100%; } 100% { left: 125%; } }
-                @keyframes pulseGlow { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(232, 67, 54, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(232, 67, 54, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(232, 67, 54, 0); } }
-                @keyframes floatCard { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
-                @keyframes salesToastSlide { 0% { transform: translateX(-120%); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+                .text-ccvi-blue { color: #2563eb !important; }
 
-                .btn-ccvi-red, .btn-primary { background-color: #e84336 !important; border-color: #e84336 !important; color: #ffffff !important; position: relative; overflow: hidden; transition: all 0.3s ease; }
+                .bg-ccvi-dark { background-color: #0f172a !important; }
+                .text-ccvi-dark { color: #0f172a !important; }
+
+                .btn-ccvi-red, .btn-primary {
+                    background-color: #e84336 !important;
+                    border-color: #e84336 !important;
+                    color: #ffffff !important;
+                    box-shadow: 0 4px 15px rgba(232, 67, 54, 0.3) !important;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    overflow: hidden;
+                }
                 .btn-ccvi-red::after, .btn-primary::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transform: skewX(-20deg); animation: shine 3.5s infinite; }
                 .btn-ccvi-red:hover, .btn-primary:hover { background-color: #d32f2f !important; border-color: #d32f2f !important; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(232, 67, 54, 0.4) !important; }
 
@@ -67,14 +64,19 @@
                 .sale-floating-contact .btn-phone { background: #e84336; animation: pulseGlow 2s infinite; }
                 .sale-floating-contact .btn-quote { background: #2563eb; }
 
-                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 360px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-left: 5px solid #e84336; padding: 12px 16px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
+                /* Ultra-Readable High-Contrast Sales Toast Styling */
+                .sale-toast-notification { position: fixed; bottom: 25px; left: 25px; z-index: 1040; max-width: 380px; background: #ffffff; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.18); border-left: 5px solid #e84336; padding: 14px 18px; animation: salesToastSlide 0.5s ease-out; transition: opacity 0.4s ease; }
+                .sale-toast-notification .toast-title { color: #0f172a !important; font-weight: 700; font-size: 0.9rem; }
+                .sale-toast-notification .toast-time { background-color: #f1f5f9; color: #475569 !important; font-weight: 600; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; }
+                .sale-toast-notification p { color: #334155 !important; font-size: 0.85rem; line-height: 1.35; margin-bottom: 0; }
+                .sale-toast-notification p strong { color: #e84336 !important; font-weight: 700; }
             </style>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     if (!document.querySelector('.sale-toast-notification')) {
                         let toasts = [
                             { name: "Anh Minh (TP.HCM)", text: "vừa gửi yêu cầu báo giá sỉ <strong>Cà Phê Robusta Honey</strong>", time: "2 phút trước", image: "" },
-                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 hộp <strong>Xoài Sấy Dẻo Export</strong>", time: "5 phút trước", image: "" },
+                            { name: "Chị Thu Hà (Hà Nội)", text: "vừa đặt mua 100 thùng <strong>Xoài Sấy Dẻo Export</strong>", time: "5 phút trước", image: "" },
                             { name: "Công ty Nông Sản Á Châu", text: "vừa đăng ký đại lý <strong>Hạt Điều Rang Muối</strong>", time: "12 phút trước", image: "" }
                         ];
 
@@ -87,17 +89,17 @@
                             if (!toasts.length) return;
                             const item = toasts[index];
                             const imgHtml = item.image 
-                                ? `<img src="${item.image}" class="rounded-circle shadow-sm" style="width: 42px; height: 42px; object-fit: cover; flex-shrink: 0;" onerror="this.style.display='none'"/>`
-                                : `<div class="toast-icon bg-danger bg-opacity-10 text-danger rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; flex-shrink: 0;"><i class="fa fa-shopping-bag fs-5"></i></div>`;
+                                ? `<img src="${item.image}" class="rounded-circle shadow-sm" style="width: 44px; height: 44px; object-fit: cover; flex-shrink: 0;" onerror="this.style.display='none'"/>`
+                                : `<div class="toast-icon bg-danger bg-opacity-10 text-danger rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; flex-shrink: 0;"><i class="fa fa-shopping-bag fs-5"></i></div>`;
 
                             toastContainer.innerHTML = `
                                 ${imgHtml}
                                 <div class="toast-body flex-grow-1">
                                     <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <strong class="fs-7 text-dark">${item.name}</strong>
-                                        <span class="badge bg-light text-secondary fs-8">${item.time}</span>
+                                        <strong class="toast-title">${item.name}</strong>
+                                        <span class="toast-time">${item.time}</span>
                                     </div>
-                                    <p class="mb-0 fs-8 text-secondary lh-sm">${item.text}</p>
+                                    <p class="mb-0 lh-sm">${item.text}</p>
                                 </div>
                                 <button type="button" class="btn-close btn-close-toast fs-8 ms-1" aria-label="Close"></button>
                             `;
@@ -238,9 +240,9 @@
                                     </a>
                                 </t>
 
-                                <!-- 🚀 Primary CCVI Red CTA Button -->
-                                <a href="/contactus" class="btn btn-ccvi-red rounded-pill px-3 py-2 fw-bold text-white shadow-sm d-inline-block">
-                                    <i class="fa fa-paper-plane me-1"/> Yêu cầu Báo Giá
+                                <!-- 🚀 CTA Button -->
+                                <a href="/contactus" class="btn btn-ccvi-red rounded-pill px-3 py-2 fw-bold text-white fs-7 d-none d-sm-inline-block shadow-sm">
+                                    <i class="fa fa-paper-plane me-1"/> Nhận Báo Giá B2B
                                 </a>
                             </div>
                         </div>
@@ -249,79 +251,106 @@
             </header>
         </xpath>
 
-        <!-- Footer Replacement (High Contrast CCVI Tech Style) -->
+        <!-- Footer Replacement -->
         <xpath expr="//footer" position="replace">
-            <footer class="sale-footer bg-dark text-white pt-5 pb-3">
-                <div class="container">
-                    <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
-                        <div class="col-lg-4 col-md-6">
-                            <a class="sale-footer-logo text-decoration-none fs-3 fw-bold text-white d-inline-flex align-items-center gap-2 mb-3" href="/">
-                                <img src="/logo.png" alt="CCVI Technology" class="img-fluid" style="max-height: 42px; object-fit: contain;"/>
+            <footer id="bottom" class="sale-footer bg-dark text-white pt-5 pb-3 border-top border-dark position-relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;">
+                <div class="container py-4">
+                    <div class="row g-4 mb-4">
+                        <!-- Brand Info Column -->
+                        <div class="col-lg-4 col-md-6 pe-lg-4">
+                            <a href="/" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                                <img src="/logo.png" alt="CCVI Technology Logo" style="max-height: 45px; object-fit: contain;"/>
                             </a>
-                            <p class="text-light-muted fs-6 pe-lg-4">
-                                CCVI Technology — Nền tảng Giải pháp Bán hàng &amp; Quản lý ERP Doanh nghiệp toàn diện. Tối ưu hóa chuỗi cung ứng và tự động hóa quy trình kinh doanh B2B.
+                            <p class="text-white-50 fs-7 lh-base mb-3">
+                                <t t-out="website.company_id.name"/> — Hệ thống tích hợp toàn diện giải pháp Website Bán Hàng, Thương Mại Điện Tử &amp; Quản Trị Doanh Nghiệp ERP chuẩn hóa quy trình xuất khẩu B2B.
                             </p>
-                            <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="Facebook"><i class="fa fa-facebook"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
-                                <a href="#" class="btn btn-sm btn-outline-light rounded-circle text-white" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                            <div class="d-flex align-items-center gap-2 text-white">
+                                <span class="badge bg-danger bg-opacity-20 text-danger border border-danger border-opacity-30 px-3 py-2 rounded-pill fs-8 fw-semibold">
+                                    ✓ Verified Partner
+                                </span>
+                                <span class="badge bg-success bg-opacity-20 text-success border border-success border-opacity-30 px-3 py-2 rounded-pill fs-8 fw-semibold">
+                                    ✓ SSL 256-bit
+                                </span>
                             </div>
                         </div>
 
+                        <!-- Quick Links -->
                         <div class="col-lg-2 col-md-6">
-                            <h6 class="text-uppercase fw-bold text-ccvi-red mb-3">Về chúng tôi</h6>
-                            <ul class="list-unstyled sale-footer-links">
-                                <li class="mb-2"><a href="/about-us" class="footer-link text-decoration-none">Giới thiệu</a></li>
-                                <li class="mb-2"><a href="/about-us#mission" class="footer-link text-decoration-none">Tầm nhìn &amp; Sứ mệnh</a></li>
-                                <li class="mb-2"><a href="/about-us#certificates" class="footer-link text-decoration-none">Năng lực doanh nghiệp</a></li>
-                                <li class="mb-2"><a href="/contactus" class="footer-link text-decoration-none">Đối tác &amp; Đại lý</a></li>
+                            <h6 class="fw-bold text-white text-uppercase tracking-wider fs-7 mb-3">Sản Phẩm Main</h6>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 fs-7">
+                                <li><a href="/shop" class="text-white-50 text-decoration-none hover-white">Nông sản sấy dẻo</a></li>
+                                <li><a href="/shop" class="text-white-50 text-decoration-none hover-white">Cà phê Robusta / Arabica</a></li>
+                                <li><a href="/shop" class="text-white-50 text-decoration-none hover-white">Hạt dinh dưỡng xuất khẩu</a></li>
+                                <li><a href="/shop" class="text-white-50 text-decoration-none hover-white">Bảng giá sỉ B2B</a></li>
                             </ul>
                         </div>
 
-                        <div class="col-lg-3 col-md-6">
-                            <h6 class="text-uppercase fw-bold text-ccvi-red mb-3">Sản phẩm &amp; Dịch vụ</h6>
-                            <ul class="list-unstyled sale-footer-links">
-                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Tất cả sản phẩm</a></li>
-                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Sản phẩm bán chạy</a></li>
-                                <li class="mb-2"><a href="/shop" class="footer-link text-decoration-none">Sản phẩm mới về</a></li>
-                                <li class="mb-2"><a href="/contactus" class="footer-link text-decoration-none">Báo giá sỉ / Xuất khẩu</a></li>
+                        <!-- Company Links -->
+                        <div class="col-lg-2 col-md-6">
+                            <h6 class="fw-bold text-white text-uppercase tracking-wider fs-7 mb-3">Về Chúng Tôi</h6>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 fs-7">
+                                <li><a href="/about-us" class="text-white-50 text-decoration-none hover-white">Giới thiệu doanh nghiệp</a></li>
+                                <li><a href="/contactus" class="text-white-50 text-decoration-none hover-white">Chứng nhận chất lượng</a></li>
+                                <li><a href="/blog" class="text-white-50 text-decoration-none hover-white">Tin tức nông sản</a></li>
+                                <li><a href="/contactus" class="text-white-50 text-decoration-none hover-white">Liên hệ hợp tác</a></li>
                             </ul>
                         </div>
 
-                        <div class="col-lg-3 col-md-6">
-                            <h6 class="text-uppercase fw-bold text-ccvi-red mb-3">Thông tin liên hệ</h6>
-                            <ul class="list-unstyled sale-contact-list text-light-muted">
-                                <li t-if="website.company_id.phone" class="mb-2">
-                                    <i class="fa fa-phone text-ccvi-red me-2"/>
-                                    <span class="text-light"><t t-out="website.company_id.phone"/></span>
+                        <!-- Contact Info Column -->
+                        <div class="col-lg-4 col-md-6">
+                            <h6 class="fw-bold text-white text-uppercase tracking-wider fs-7 mb-3">Thông Tin Liên Hệ</h6>
+                            <ul class="list-unstyled mb-3 d-flex flex-column gap-2 fs-7 text-white-50">
+                                <li class="d-flex align-items-start gap-2">
+                                    <i class="fa fa-map-marker text-ccvi-red mt-1"/>
+                                    <span>Tòa nhà CCVI Building, TP. Hồ Chí Minh, Việt Nam</span>
                                 </li>
-                                <li t-if="website.company_id.email" class="mb-2">
-                                    <i class="fa fa-envelope text-ccvi-blue me-2"/>
-                                    <span class="text-light"><t t-out="website.company_id.email"/></span>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="fa fa-phone text-ccvi-red"/>
+                                    <span>Hotline: <a t-att-href="'tel:%s' % website.company_id.phone" class="text-white fw-bold text-decoration-none"><t t-out="website.company_id.phone"/></a></span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="fa fa-envelope text-ccvi-blue"/>
+                                    <span>Email: <a t-att-href="'mailto:%s' % website.company_id.email" class="text-white text-decoration-none"><t t-out="website.company_id.email"/></a></span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 fs-7 text-light-muted">
-                        <span class="text-light-muted">© 2026 CCVI Technology JSC. All rights reserved. Powered by Odoo ERP.</span>
+                    <!-- Bottom Bar Copyright -->
+                    <div class="border-top border-white border-opacity-10 pt-3 d-flex flex-wrap align-items-center justify-content-between gap-2 fs-8 text-white-50">
+                        <div>
+                            © <t t-out="datetime.datetime.now().year"/> <strong class="text-white"><t t-out="website.company_id.name"/></strong>. All Rights Reserved. Powered by Odoo ERP Enterprise.
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="/privacy" class="text-white-50 text-decoration-none hover-white">Chính sách bảo mật</a>
+                            <span>•</span>
+                            <a href="/terms" class="text-white-50 text-decoration-none hover-white">Điều khoản dịch vụ</a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Floating Contact Action Group -->
-                <div class="sale-floating-contact d-none d-sm-flex">
-                    <a href="https://zalo.me/0901234567" target="_blank" rel="noopener" class="btn-floating btn-zalo" title="Chat Zalo B2B">
-                        <i class="fa fa-comments"/>
-                    </a>
-                    <a href="tel:0901234567" class="btn-floating btn-phone" title="Gọi Hotline 090 123 4567">
-                        <i class="fa fa-phone"/>
-                    </a>
-                    <a href="/contactus" class="btn-floating btn-quote" title="Nhận Báo Giá Sỉ">
-                        <i class="fa fa-paper-plane"/>
-                    </a>
                 </div>
             </footer>
+
+            <!-- Floating Contact Quick Action Buttons -->
+            <div class="sale-floating-contact">
+                <a t-if="website.company_id.phone"
+                   t-att-href="'https://zalo.me/%s' % website.company_id.phone.replace(' ', '')"
+                   target="_blank"
+                   class="btn-floating btn-zalo shadow"
+                   title="Chat Zalo ngay">
+                    <span class="fw-bold fs-7">Zalo</span>
+                </a>
+                <a t-if="website.company_id.phone"
+                   t-att-href="'tel:%s' % website.company_id.phone.replace(' ', '')"
+                   class="btn-floating btn-phone shadow"
+                   title="Gọi Hotline tư vấn">
+                    <i class="fa fa-phone"/>
+                </a>
+                <a href="/contactus"
+                   class="btn-floating btn-quote shadow"
+                   title="Nhận báo giá nhanh">
+                    <i class="fa fa-paper-plane"/>
+                </a>
+            </div>
         </xpath>
     </template>
 </odoo>

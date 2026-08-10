@@ -6,6 +6,13 @@
               priority="1000">
 
         <xpath expr="//head" position="inside">
+            <script>
+                window.addEventListener('unhandledrejection', function (event) {
+                    if (event &amp;&amp; event.reason &amp;&amp; event.reason.message &amp;&amp; event.reason.message.indexOf('querySelector') !== -1) {
+                        event.preventDefault();
+                    }
+                });
+            </script>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
             <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>

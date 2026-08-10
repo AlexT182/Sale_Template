@@ -53,7 +53,7 @@
         <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-danger bg-opacity-10 text-ccvi-red fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
+                    <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">Danh mục sản phẩm</span>
                     <h2 class="display-6 fw-bold text-dark mb-3">Khám Phá Danh Mục Nông Sản B2B</h2>
                     <p class="text-secondary-dark fs-6 max-w-2xl mx-auto fw-medium" style="color: #334155;">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
                 </div>
@@ -93,7 +93,7 @@
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
                     <div>
-                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">🔥 Sản phẩm bán chạy</span>
+                        <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">🔥 Sản phẩm bán chạy</span>
                         <h2 class="display-6 fw-bold text-dark mb-0">Sản Phẩm Xuất Khẩu Tiêu Biểu</h2>
                     </div>
                     <a href="/shop" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Tất cả sản phẩm <i class="fa fa-arrow-right ms-1"></i></a>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <span class="badge bg-success bg-opacity-10 text-success fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Về Sale Demo</span>
+                        <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">Về CCVI Technology</span>
                         <h2 class="display-6 fw-bold text-dark mb-4">Năng Lực Cung Ứng và Xuất Khẩu Toàn Cầu</h2>
                         <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">
                             Chúng tôi chuyên sản xuất và cung ứng các mặt hàng nông sản sấy dẻo, hạt dinh dưỡng và cà phê chất lượng cao. Với quy trình kiểm soát nghiêm ngặt từ nông trại tới nhà máy, Sale Demo tự hào là đối tác tin cậy của hơn 500+ doanh nghiệp bán lẻ và đối tác xuất khẩu.
@@ -241,7 +241,7 @@
         </section>
     </template>
 
-    <!-- Homepage Layout Override with Native Sections and Drag-and-Drop Dropzones -->
+    <!-- Homepage Layout Override with Native Sections and White Badge Text for ALL Languages -->
     <template id="sale_homepage" inherit_id="website.homepage" name="Sale Website Homepage" priority="1000">
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="ew-homepage oe_structure oe_empty">
@@ -291,11 +291,11 @@
                     </div>
                 </section>
 
-                <!-- Native Categories Section -->
+                <!-- Native Categories Section with White Badge Text -->
                 <section class="sale-categories py-5 bg-light position-relative overflow-hidden">
                     <div class="container">
                         <div class="text-center mb-5">
-                            <span class="badge bg-danger bg-opacity-10 text-ccvi-red fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Danh mục sản phẩm</span>
+                            <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">Danh mục sản phẩm</span>
                             <h2 class="display-6 fw-bold text-dark mb-3">Khám Phá Danh Mục Nông Sản B2B</h2>
                             <p class="text-secondary-dark fs-6 max-w-2xl mx-auto fw-medium" style="color: #334155;">Tất cả sản phẩm đều được kiểm định chất lượng xuất khẩu chuẩn quốc tế</p>
                         </div>
@@ -328,12 +328,12 @@
                     </div>
                 </section>
 
-                <!-- Native Featured Products Section -->
+                <!-- Native Featured Products Section with White Badge Text -->
                 <section class="sale-featured-products py-5 bg-white position-relative">
                     <div class="container">
                         <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
                             <div>
-                                <span class="badge bg-danger bg-opacity-10 text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">🔥 Sản phẩm bán chạy</span>
+                                <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">🔥 Sản phẩm bán chạy</span>
                                 <h2 class="display-6 fw-bold text-dark mb-0">Sản Phẩm Xuất Khẩu Tiêu Biểu</h2>
                             </div>
                             <a href="/shop" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Tất cả sản phẩm <i class="fa fa-arrow-right ms-1"></i></a>
@@ -387,7 +387,7 @@
                     </div>
                 </section>
 
-                <!-- Native About Section -->
+                <!-- Native About Section with White Badge Text -->
                 <section class="sale-about py-5 bg-light position-relative">
                     <div class="container py-lg-4">
                         <div class="row align-items-center g-5">
@@ -401,7 +401,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <span class="badge bg-success bg-opacity-10 text-success fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Về Sale Demo</span>
+                                <span class="badge bg-ccvi-red text-white fw-bold text-uppercase px-3 py-2 rounded-pill mb-2 shadow-sm">Về CCVI Technology</span>
                                 <h2 class="display-6 fw-bold text-dark mb-4">Năng Lực Cung Ứng và Xuất Khẩu Toàn Cầu</h2>
                                 <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">
                                     Chúng tôi chuyên sản xuất và cung ứng các mặt hàng nông sản sấy dẻo, hạt dinh dưỡng và cà phê chất lượng cao. Với quy trình kiểm soát nghiêm ngặt từ nông trại tới nhà máy, Sale Demo tự hào là đối tác tin cậy của hơn 500+ doanh nghiệp bán lẻ và đối tác xuất khẩu.

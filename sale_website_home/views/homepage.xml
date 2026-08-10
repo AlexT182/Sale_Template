@@ -26,12 +26,14 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <!-- Fully Editable High-Contrast Hero Card -->
+                        <!-- Fully Editable High-Contrast Hero Card with Direct Image Support -->
                         <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4" style="border-top-color: #e84336 !important;">
                             <div class="mb-3 hero-media-box d-flex justify-content-center align-items-center">
-                                <i class="fa fa-line-chart text-ccvi-red display-4 p-3 bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
-                                   style="width: 80px; height: 80px; cursor: pointer;"
-                                   title="Nhấp đúp để đổi Icon hoặc Ảnh"></i>
+                                <img src="/web/static/src/img/placeholder.png"
+                                     class="img-fluid hero-media-img p-2 bg-danger bg-opacity-10 rounded-circle"
+                                     style="width: 80px; height: 80px; object-fit: contain; cursor: pointer;"
+                                     alt="Hero Media"
+                                     title="Nhấp đúp để thay thế Ảnh hoặc Upload ảnh mới"/>
                             </div>
                             <h3 class="fw-bold text-dark mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h3>
                             <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">

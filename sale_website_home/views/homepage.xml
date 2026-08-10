@@ -75,7 +75,7 @@
                                             <i class="fa fa-cubes fs-3"/>
                                         </t>
                                     </div>
-                                    <h5 class="fw-bold text-dark mb-2"><t t-out="cat.name"/></h5>
+                                    <h5 class="fw-bold text-dark mb-2"><span t-out="cat.name"/></h5>
                                     <span class="btn btn-sm btn-outline-primary rounded-pill px-3 mt-2 fw-semibold">Xem ngay <i class="fa fa-arrow-right ms-1"/></span>
                                 </div>
                             </a>
@@ -119,11 +119,11 @@
                                 <div class="card-body p-4 d-flex flex-column justify-content-between">
                                     <div>
                                         <span t-if="product.public_categ_ids" class="text-ccvi-blue fs-7 fw-bold text-uppercase d-block mb-1">
-                                            <t t-out="product.public_categ_ids[0].name"/>
+                                            <span t-out="product.public_categ_ids[0].name"/>
                                         </span>
                                         <h6 class="fw-bold text-dark mb-2 text-truncate-2" style="min-height: 2.8rem;">
                                             <a t-att-href="'/shop/%s' % product.id" class="text-dark text-decoration-none hover-primary">
-                                                <t t-out="product.name"/>
+                                                <span t-out="product.name"/>
                                             </a>
                                         </h6>
                                     </div>
@@ -131,7 +131,7 @@
                                     <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-3">
                                         <div>
                                             <span class="fs-5 fw-bold text-danger">
-                                                <t t-out="'{:,.0f}'.format(product.list_price).replace(',', '.') + ' đ'"/>
+                                                <span t-out="'{:,.0f}'.format(product.list_price).replace(',', '.') + ' đ'"/>
                                             </span>
                                         </div>
                                         <a t-att-href="'/shop/%s' % product.id" class="btn btn-ccvi-red rounded-circle btn-icon shadow-sm text-white" title="Xem chi tiết">

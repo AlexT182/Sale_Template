@@ -64,6 +64,7 @@ Sale_Template/
 │       └── src/
 │           ├── img/ccvi_logo.png       # Logo thương hiệu CCVI Technology
 │           └── css/style.css           # CSS tùy chỉnh màu sắc & UI
+├── odoo/                               # Cấu hình Odoo server
 ├── README.md                           # File này
 └── docker-compose.yml                  # Khởi chạy Odoo 19 + Postgres 16 Local
 ```

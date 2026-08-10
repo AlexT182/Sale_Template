@@ -21,7 +21,7 @@ Tài liệu hướng dẫn chi tiết dành cho Người quản trị (Admin) v�
 1. Truy cập đường dẫn: `https://saledemo.ccvi.com.vn/web/login`
 2. Nhập tài khoản:
    - **Tên đăng nhập (Username)**: `admin`
-   - **Mật khẩu (Password)**: `admin`
+   - **Mật khẩu (Password)**: `Ccvi@123#`
 3. Sau khi đăng nhập thành công, truy cập lại trang chủ `https://saledemo.ccvi.com.vn/`.
 
 ### 📌 Bước 2: Bật chế độ chỉnh sửa giao diện kéo thả (WYSIWYG Editor)
@@ -63,7 +63,7 @@ Tài liệu hướng dẫn chi tiết dành cho Người quản trị (Admin) v�
 
 1. Ở chế độ **Edit**, nhìn sang bảng điều khiển bên phải màn hình tab **Theme**.
 2. **Màu sắc chủ đạo (Primary Color)**:
-   - Chọn tông màu nhận diện thương hiệu của bạn (Ví dụ: Blue Royal `#0d6efd`, Emerald Green `#10b981`, Deep Navy `#0f172a`).
+   - Chọn tông màu nhận diện thương hiệu của bạn (Ví dụ: CCVI Red `#e84336`, Blue Royal `#2563eb`, Emerald Green `#31a853`, Deep Navy `#0f172a`).
    - Tất cả các nút bấm CTA, badge và đường viền trên website sẽ tự động chuyển sang màu mới một cách đồng bộ.
 3. **Phông chữ (Typography)**:
    - Thay đổi phông chữ Tiêu đề & Phông chữ Văn bản (Google Fonts có sẵn: Outfit, Inter, Roboto, Montserrat).
@@ -102,4 +102,4 @@ Khi khách hàng điền thông tin vào Form **"Yêu Cầu Báo Giá Xuất Kh�
 
 ---
 
-📌 *Tài liệu này lưu trữ tại mã nguồn dự án file `USER_GUIDE.md`.*
+📌 *Tài liệu này lưu trữ tại mã nguồn dự án file `docs/USER_GUIDE.md`.*

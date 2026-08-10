@@ -5,14 +5,14 @@
 ## 📌 1. Tổng Quan Hệ Thống Giao Diện (Design System & Color Psychology)
 
 ### 🎨 1.1 Bộ Bảng Màu & Tâm Lý Học Thiết Kế B2B
-- **Primary Color (`#0d6efd` - Deep Royal Blue)**: 
+- **Primary Color (`#e84336` - CCVI Coral Red)**: 
+  - *Mục đích*: Tông màu chủ đạo nhận diện thương hiệu CCVI Technology. Sử dụng cho Nút bấm CTA, Badge HOT, Highlight giá sỉ và nút báo giá gấp.
+- **Accent Color (`#2563eb` - Royal Blue)**:
   - *Mục đích*: Tạo sự tin tưởng tuyệt đối, tính chính trực và chuyên nghiệp của một doanh nghiệp cung ứng B2B quy mô lớn.
 - **Dark Mode Background (`#0f172a` - Slate Dark)**:
   - *Mục đích*: Tăng chiều sâu thị giác ở Topbar, Hero Overlay và Footer, tạo cảm giác sang trọng và tập trung ánh nhìn vào các khối nội dung trắng giữa trang.
 - **Light Surface (`#f8fafc` - Soft Snow White)**:
   - *Mục đích*: Làm nền cho sản phẩm nông sản / cà phê, giúp hình ảnh nổi bật 100% không bị chi phối bởi màu sắc tương phản gắt.
-- **Accent Color (`#ff4757` - Vibrant Coral Red)**:
-  - *Mục đích*: Dùng cho các nút báo giá gấp, badge *"🔥 HOT"* và icon số điện thoại để kích thích hành động (Call To Action).
 
 ### ✒️ 1.2 Typography & Quy Tắc Tỷ Lệ Vàng Về Độ Tương Phản (WCAG 2.1)
 - **Font Tiêu đề**: `'Outfit', sans-serif` (Bo tròn hiện đại, mạnh mẽ).
@@ -170,7 +170,7 @@
 | +------------------+ +------------------+ +------------------+ +------------------+ |
 | | 📈 DOANH SỐ      | | 📑 LEAD BÁO GIÁ  | | 📦 TỒN KHO CANH  | | 🛒 ĐƠN HÀNG MỚI  | |
 | | 1.250.000.000 đ  | | 48 Yêu cầu mới   | | 12 Mặt hàng      | | 15 Đơn chờ duyệt| |
-+------------------+ +------------------+ +------------------+ +------------------+ |
+| +------------------+ +------------------+ +------------------+ +------------------+ |
 +-----------------------------------------------------------------------------------+
 ```
 

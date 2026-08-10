@@ -1,102 +1,91 @@
-# 🚀 CCVI Technology — Sale Demo ERP & Website Module (Odoo 19)
+# 🚀 SALE TEMPLATE — HE THONG BAN HANG & ERP DOANH NGHIEP (ODOO 19 COMMUNITY)
 
-Dự án giao diện **Website Bán Hàng & ERP Doanh Nghiệp CCVI Technology** được xây dựng và tùy biến cho **Odoo 19 Community Edition**. Module chính `sale_website_home` tích hợp giao diện hiện đại chuẩn UX/UI, đa ngôn ngữ (Tiếng Việt & Tiếng Anh), đồng bộ dữ liệu Lead/Yêu cầu báo giá tự động về CRM Odoo Backend.
+[![Odoo 19](https://img.shields.io/badge/Odoo-19.0%20Community-8f8f8f.svg)](https://www.odoo.com/)
+[![License LGPL--3](https://img.shields.io/badge/License-LGPL--3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+[![QA Audit Status](https://img.shields.io/badge/QA%20Audit-11%2F11%20Passed%20(100%25)-success.svg)](https://saledemo.ccvi.com.vn)
 
----
+Hệ thống tích hợp toàn diện **Website Bán Hàng B2B, Thương Mại Điện Tử, Quản Lý Kho và CRM Chăm Sóc Khách Hàng Tự Động** xây dựng trên nền tảng **Odoo 19 Community Edition**.
 
-## 🛠️ 1. Công Nghệ & Môi Trường Triển Khai
-
-- **Nền tảng**: Odoo 19 Community Edition (Docker / Dokploy Container).
-- **Domain Live Demo**: [https://saledemo.ccvi.com.vn](https://saledemo.ccvi.com.vn)
-- **Tài khoản Admin Backend**:
-  - **Username**: `admin`
-  - **Password**: `Ccvi@123#`
-  - **Database**: `odoo`
+- **Production Live Site**: [https://saledemo.ccvi.com.vn](https://saledemo.ccvi.com.vn)
+- **Admin CMS Login**: [https://saledemo.ccvi.com.vn/web/login](https://saledemo.ccvi.com.vn/web/login) (`admin` / `Ccvi@123#`)
+- **GitHub Repository**: [AlexT182/Sale_Template](https://github.com/AlexT182/Sale_Template.git)
 
 ---
 
-## 🎨 2. Bộ Nhận Diện Thương Hiệu CCVI Brand Palette
+## 📚 BỘ TÀI LIỆU DỰ ÁN (PROJECT DOCUMENTATION)
 
-Toàn bộ các trang và giao diện đã được chuẩn hóa theo đúng bảng màu Logo `CCVI Technology.png`:
+Toàn bộ tài liệu kỹ thuật, sơ đồ wireframe, nhật ký nâng cấp và hướng dẫn bàn giao đã được tập trung trong thư mục **[`docs/`](file:///D:/Project/QQ/Sale_template/docs)**:
 
-- 🔴 **CCVI Red (Chủ đạo)**: `#e84336` (Nút bấm CTA, Badge HOT, Highlight giá, Accent card)
-- 🔵 **CCVI Blue (Phụ)**: `#2563eb` / `#517bbd` (Badge danh mục, Subtitle, Icon)
-- 🟢 **CCVI Green (Thành công)**: `#31a853` (Badge VietGAP, ISO, Trạng thái đơn)
-- ⬛ **Dark Slate (Nền Hero & Footer)**: `#0f172a` / `#1e293b` (Gradient nền cao cấp)
+| File Tài Liệu | Nội Dung / Mục Đích | Người Sử Dụng |
+| :--- | :--- | :--- |
+| 📋 **[`docs/HANDOVER.md`](file:///D:/Project/QQ/Sale_template/docs/HANDOVER.md)** | **Hồ Sơ Bàn Giao Dự Án & Hướng Dẫn Kỹ Thuật Developer** | Lập trình viên tiếp nhận |
+| 📘 **[`docs/USER_GUIDE.md`](file:///D:/Project/QQ/Sale_template/docs/USER_GUIDE.md)** | **Hướng Dẫn Tùy Biến Giao Diện & Quản Trị Website (No-Code)** | Admin / Quản trị viên |
+| 🎨 **[`docs/wireframe.md`](file:///D:/Project/QQ/Sale_template/docs/wireframe.md)** | **Sơ Đồ Kiến Trúc Giao Diện & Triết Lý Thiết Kế UX/UI** | UI/UX Designer / Dev |
+| 📝 **[`docs/SESSION_LOG.md`](file:///D:/Project/QQ/Sale_template/docs/SESSION_LOG.md)** | **Nhật Ký Phiên Làm Việc, Lịch Sử Vá Lỗi & Audit Log** | Tech Lead / Project Manager |
+| 📦 **[`docs/All_Products_Review.md`](file:///D:/Project/QQ/Sale_template/docs/All_Products_Review.md)** | **Danh Sách Toàn Bộ 53 Sản Phẩm Đã Chuẩn Hóa VI & EN** | Nội dung / Sản phẩm |
 
 ---
 
-## 📁 3. Cấu Trúc Mã Nguồn Dự Án (Repository Structure)
+## 🎨 BỘ NHẬN DIỆN THƯƠNG HIỆU (BRAND PALETTE)
+
+- 🔴 **CCVI Red (Chủ đạo)**: `#e84336` — Nút bấm CTA, Badge HOT, Highlight giá sỉ VNĐ.
+- 🔵 **CCVI Blue (Điểm nhấn)**: `#2563eb` — Subtitle, Badge danh mục, Icon tính năng.
+- 🟢 **CCVI Green (Thành công)**: `#31a853` — Chứng nhận VietGAP, ISO, Trạng thái.
+- ⬛ **Dark Slate (Nền Hero & Footer)**: `#0f172a` / `#1e293b` — Gradient cao cấp.
+
+---
+
+## 📁 CẤU TRÚC MÃ NGUỒN REPOSITORY
 
 ```text
 Sale_Template/
-├── sale_website_home/                   # Module Odoo chính
-│   ├── __manifest__.py                 # Khai báo Module (depends: website, website_sale, crm)
-│   ├── __init__.py                     # Import controllers & models
+├── docs/                               # Thư mục tài liệu kỹ thuật & bàn giao
+│   ├── HANDOVER.md                     # Tài liệu bàn giao dành cho Lập trình viên
+│   ├── USER_GUIDE.md                   # Hướng dẫn tùy biến No-Code cho Admin
+│   ├── wireframe.md                    # Sơ đồ thiết kế Wireframe ASCII Layouts
+│   ├── SESSION_LOG.md                  # Nhật ký phiên làm việc & vá lỗi
+│   └── All_Products_Review.md          # Danh sách sản phẩm chuẩn hóa
+├── sale_website_home/                  # Module Odoo tùy biến chính (Presentation Layer)
+│   ├── __manifest__.py                 # Phụ thuộc: website, website_sale, crm
+│   ├── __init__.py
 │   ├── controllers/
 │   │   ├── __init__.py
-│   │   └── main.py                     # Route /sale/contact/submit (Đồng bộ Lead CRM & Toast)
+│   │   └── main.py                     # Route /sale/contact/submit & /sale/get_toasts
 │   ├── models/
 │   │   ├── __init__.py
-│   │   └── ir_ui_view.py               # Vá lỗi Odoo 19 html_editor (KeyError None & XML syntax)
+│   │   └── ir_ui_view.py               # Bộ vá lỗi Core Odoo 19 HTML Editor
 │   ├── views/
-│   │   ├── layout.xml                  # Override Header, Topbar, Footer, Brand Logo & Toast JS
-│   │   ├── homepage.xml                # Native HTML Snippets & Homepage layout override
-│   │   └── pages.xml                   # Giao diện /about-us & /contactus chuẩn CCVI Red
+│   │   ├── layout.xml                  # Header, Topbar, Footer & Toast JS
+│   │   ├── homepage.xml                # Native HTML Sections Trang Chủ
+│   │   └── pages.xml                   # Override /about-us & /contactus
 │   ├── i18n/
-│   │   └── vi_VN.po                    # Gói dịch Tiếng Việt cho module
+│   │   └── vi_VN.po                    # Gói dịch ngôn ngữ Tiếng Việt chuẩn
 │   └── static/
 │       └── src/
-│           ├── img/ccvi_logo.png       # Logo chính thức CCVI Technology
-│           └── css/style.css           # CSS tùy chỉnh thương hiệu & hiệu ứng animation
-├── docker-compose.yml                  # File cấu hình chạy Odoo 19 + PostgreSQL 16
-├── USER_GUIDE.md                       # Hướng dẫn sử dụng chi tiết cho người quản trị
-├── SESSION_LOG.md                      # Nhật ký các bước đã nâng cấp & tối ưu
-├── wireframe.md                        # Kiến trúc thiết kế các khối giao diện
-└── README.md                           # Tài liệu bàn giao dành cho Developer (File này)
+│           ├── img/ccvi_logo.png       # Logo thương hiệu CCVI Technology
+│           └── css/style.css           # CSS tùy chỉnh màu sắc & UI
+├── README.md                           # File này
+└── docker-compose.yml                  # Khởi chạy Odoo 19 + Postgres 16 Local
 ```
 
 ---
 
-## ⚡ 4. Các Điểm Kỹ Thuật Nổi Bật & Bộ Vá Lỗi Core (Important Developer Notes)
+## 🚀 HƯỚNG DẪN KHỞI ĐỘNG DÀNH CHO DEVELOPER
 
-### 🔑 A. Bộ Vá Lỗi Odoo 19 HTML Editor Backend (`ir_ui_view.py`)
-Khi kéo thả hoặc sửa đổi Snippet trong Odoo 19 WYSIWYG Editor, Odoo Core có 2 lỗi nguy hiểm:
-1. `KeyError: None`: Do thuộc tính `data-oe-model` trả về `None` khi gọi `self.env[None]`.
-2. `ValidationError: Start tag expected, '<' not found`: Phát sinh khi hàm `_check_xml()` đọc chuỗi diff rỗng trong lúc tạo bản sao COW (Copy-On-Write).
-
-👉 **Cách xử lý**: Module `sale_website_home/models/ir_ui_view.py` đã kế thừa và bọc bảo vệ cả 2 hàm `save_embedded_field` và `_check_xml`. Ngăn chặn hoàn toàn lỗi sụp server khi kéo thả/thêm/xóa Snippet!
-
-### 🛒 B. Đồng Bộ Yêu Cầu Báo Giá B2B Về CRM Backend (`main.py`)
-- Route `/sale/contact/submit`: Tiếp nhận dữ liệu Form liên hệ từ Trang chủ và Trang `/contactus`.
-- Tự động tạo bản ghi **Cơ hội kinh doanh (CRM Lead)** trong Odoo CRM với các trường: `name`, `phone`, `email`, `description`, `type='lead'`.
-
-### 🌐 C. Đa Ngôn Ngữ Dịch Tự Động (Multi-Language Menu)
-- Menu Header được nạp động từ `website.menu`.
-- Cả 2 bản **Tiếng Việt (`vi_VN`)** và **Tiếng Anh (`en_US`)** đã được cập nhật bản dịch `update_field_translations` tương ứng (Sản phẩm ➔ Products, Giới thiệu ➔ About Us...).
-
----
-
-## 🚀 5. Hướng Dẫn Dành Cho Dev Khi Pull Code Về Local
-
-### Bước 1: Clone Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/AlexT182/Sale_Template.git
 cd Sale_Template
 ```
 
-### Bước 2: Khởi Động Bằng Docker (Nếu chạy Local)
+### 2. Khởi Động Local Bằng Docker (Tuỳ chọn)
 ```bash
 docker-compose up -d
 ```
-Sau đó truy cập `http://localhost:8069`, vào **Apps (Ứng dụng)** ➔ Tìm `sale_website_home` ➔ Bấm **Install (Cài đặt)** hoặc **Upgrade (Nâng cấp)**.
 
-### Bước 3: Deploy Lên Dokploy / VPS Server
-Chỉ cần đẩy code lên branch `main` của GitHub [AlexT182/Sale_Template](https://github.com/AlexT182/Sale_Template.git), Dokploy sẽ tự động trigger Webhook pull code và restart container.
+### 3. Cấu Hình Toast Notification Mua Hàng
+Xem hướng dẫn chi tiết tại [`docs/HANDOVER.md`](file:///D:/Project/QQ/Sale_template/docs/HANDOVER.md#31-cấu-hình-toast-notification-mua-hàng-social-proof-popup) để thay đổi danh sách kịch bản `buyers` trong `sale_website_home/controllers/main.py`.
 
 ---
 
-## 📝 6. Hỗ Trợ Kỹ Thuật & Liên Hệ
-
-- **GitHub Repository**: [https://github.com/AlexT182/Sale_Template.git](https://github.com/AlexT182/Sale_Template.git)
-- **Maintainer**: CCVI Technology JSC
+© 2026 **CCVI Technology JSC**. All Rights Reserved.

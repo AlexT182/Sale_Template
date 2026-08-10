@@ -18,10 +18,10 @@
                         </p>
                         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                             <a href="/shop" class="btn btn-ccvi-red btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg text-white">
-                                <i class="fa fa-shopping-cart me-2"/> Khám Phá Sản Phẩm
+                                <i class="fa fa-shopping-cart me-2"></i> Khám Phá Sản Phẩm
                             </a>
                             <a href="/contactus" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold text-white">
-                                <i class="fa fa-paper-plane me-2"/> Nhận Báo Giá Sỉ
+                                <i class="fa fa-paper-plane me-2"></i> Nhận Báo Giá Sỉ
                             </a>
                         </div>
                     </div>
@@ -29,16 +29,16 @@
                         <!-- Fully Editable High-Contrast Hero Card -->
                         <div class="hero-card bg-white rounded-4 p-4 p-lg-5 shadow-2xl text-center border-top border-4" style="border-top-color: #e84336 !important;">
                             <div class="mb-3 hero-media-box d-flex justify-content-center align-items-center">
-                                <span class="fa fa-line-chart text-ccvi-red display-4 p-3 bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
-                                      style="width: 80px; height: 80px; cursor: pointer;"
-                                      title="Nhấp đúp để đổi Icon hoặc Ảnh"/>
+                                <i class="fa fa-line-chart text-ccvi-red display-4 p-3 bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center hero-media-icon"
+                                   style="width: 80px; height: 80px; cursor: pointer;"
+                                   title="Nhấp đúp để đổi Icon hoặc Ảnh"></i>
                             </div>
                             <h3 class="fw-bold text-dark mb-2">Tối Ưu 300% Tỷ Lệ Chuyển Đổi</h3>
                             <p class="text-secondary-dark fs-6 mb-4 fw-normal" style="color: #334155;">
                                 Giao diện tối ưu chuẩn UX/UI, tốc độ tải trang dưới 1s, tự động đồng bộ Yêu cầu Báo giá về CRM Odoo Backend.
                             </p>
                             <a href="/contactus" class="btn btn-ccvi-red rounded-pill w-100 fw-bold py-3 shadow-md text-white fs-6">
-                                Tư Vấn Giải Pháp Trực Tiếp <i class="fa fa-arrow-right ms-1"/>
+                                Tư Vấn Giải Pháp Trực Tiếp <i class="fa fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </div>
@@ -72,11 +72,11 @@
                                                  style="object-fit: cover;"/>
                                         </t>
                                         <t t-else="">
-                                            <i class="fa fa-cubes fs-3"/>
+                                            <i class="fa fa-cubes fs-3"></i>
                                         </t>
                                     </div>
                                     <h5 class="fw-bold text-dark mb-2"><span t-out="cat.name"/></h5>
-                                    <span class="btn btn-sm btn-outline-primary rounded-pill px-3 mt-2 fw-semibold">Xem ngay <i class="fa fa-arrow-right ms-1"/></span>
+                                    <span class="btn btn-sm btn-outline-primary rounded-pill px-3 mt-2 fw-semibold">Xem ngay <i class="fa fa-arrow-right ms-1"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -95,7 +95,7 @@
                         <span class="badge bg-danger bg-opacity-10 text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">🔥 Sản phẩm bán chạy</span>
                         <h2 class="display-6 fw-bold text-dark mb-0">Sản Phẩm Xuất Khẩu Tiêu Biểu</h2>
                     </div>
-                    <a href="/shop" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Tất cả sản phẩm <i class="fa fa-arrow-right ms-1"/></a>
+                    <a href="/shop" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Tất cả sản phẩm <i class="fa fa-arrow-right ms-1"></i></a>
                 </div>
                 
                 <t t-set="featured_prods" t-value="request.env['product.template'].search([('website_published', '=', True)], limit=8)"/>
@@ -135,7 +135,7 @@
                                             </span>
                                         </div>
                                         <a t-att-href="'/shop/%s' % product.id" class="btn btn-ccvi-red rounded-circle btn-icon shadow-sm text-white" title="Xem chi tiết">
-                                            <i class="fa fa-shopping-cart"/>
+                                            <i class="fa fa-shopping-cart"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                     <div class="col-lg-6">
                         <div class="position-relative">
                             <div class="p-5 bg-danger bg-opacity-10 rounded-5 border border-danger border-opacity-20 text-center">
-                                <span class="fa fa-shield text-ccvi-red display-1 mb-3 d-inline-block"/>
+                                <span class="fa fa-shield text-ccvi-red display-1 mb-3 d-inline-block"></span>
                                 <h3 class="fw-bold text-dark mb-2">Chứng Nhận Chất Lượng Quốc Tế</h3>
                                 <p class="text-dark fw-semibold mb-0">HACCP • ISO 22000 • FDA Certified • VietGAP</p>
                             </div>
@@ -170,18 +170,18 @@
                         <div class="row g-3 mb-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
+                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"></i></div>
                                     <span class="fw-semibold text-dark">Nguồn hàng ổn định</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"/></div>
+                                    <div class="bg-ccvi-red text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;"><i class="fa fa-check"></i></div>
                                     <span class="fw-semibold text-dark">Giá gốc tận xưởng</span>
                                 </div>
                             </div>
                         </div>
-                        <a href="/about-us" class="btn btn-dark rounded-pill px-4 py-2 fw-bold text-white">Tìm Hiểu Thêm <i class="fa fa-arrow-right ms-1"/></a>
+                        <a href="/about-us" class="btn btn-dark rounded-pill px-4 py-2 fw-bold text-white">Tìm Hiểu Thêm <i class="fa fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
                                     <textarea name="description" class="form-control rounded-3 px-3" rows="3" placeholder="Sản phẩm quan tâm và Số lượng dự kiến..."/>
                                 </div>
                                 <button type="submit" class="btn btn-ccvi-red rounded-pill w-100 fw-bold py-2 shadow-sm">
-                                    Gửi Yêu Cầu Báo Giá <i class="fa fa-paper-plane ms-1"/>
+                                    Gửi Yêu Cầu Báo Giá <i class="fa fa-paper-plane ms-1"></i>
                                 </button>
                             </form>
                         </div>

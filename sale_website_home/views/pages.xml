@@ -5,14 +5,14 @@
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="sale-about-page bg-light">
                 <!-- Hero Header Banner -->
-                <section class="bg-gradient-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0d6efd 100%);">
+                <section class="bg-gradient-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #e84336 100%);">
                     <div class="container py-lg-4 text-center">
-                        <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
+                        <span class="badge bg-white bg-opacity-20 text-white border border-white border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
                             🏢 Doanh Nghiệp Cung Ứng Nông Sản B2B
                         </span>
-                        <h1 class="display-4 fw-extrabold text-white mb-3">Về Chúng Tôi — Sale Demo</h1>
+                        <h1 class="display-4 fw-extrabold text-white mb-3">Về Chúng Tôi — CCVI Technology</h1>
                         <p class="lead text-white fw-medium max-w-2xl mx-auto fs-5 opacity-90">
-                            Năng lực cung ứng &amp; xuất khẩu nông sản, cà phê, hạt dinh dưỡng hàng đầu Việt Nam. Tối ưu chuỗi cung ứng từ nông trại tới doanh nghiệp toàn cầu.
+                            Năng lực cung ứng và xuất khẩu nông sản, cà phê, hạt dinh dưỡng hàng đầu Việt Nam. Tối ưu chuỗi cung ứng từ nông trại tới doanh nghiệp toàn cầu.
                         </p>
                     </div>
                 </section>
@@ -23,19 +23,19 @@
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 h-100 bg-light">
-                                    <div class="p-3 bg-primary bg-opacity-10 text-primary rounded-circle d-inline-block mb-3" style="width:60px; height:60px; text-align:center;">
-                                        <i class="fa fa-eye fs-3"/>
+                                    <div class="p-3 bg-danger bg-opacity-10 text-ccvi-red rounded-circle d-inline-block mb-3" style="width:60px; height:60px; text-align:center;">
+                                        <i class="fa fa-eye fs-3"></i>
                                     </div>
                                     <h3 class="fw-bold text-dark mb-3">Tầm Nhìn Chiến Lược</h3>
                                     <p class="text-secondary-dark fs-6 mb-0" style="color: #334155;">
-                                        Trở thành đối tác cung ứng và xuất khẩu nông sản sấy dẻo, cà phê &amp; hạt dinh dưỡng uy tín số 1 Việt Nam, tiên phong áp dụng công nghệ quản trị ERP &amp; CRM tự động hóa chuỗi cung ứng.
+                                        Trở thành đối tác cung ứng và xuất khẩu nông sản sấy dẻo, cà phê và hạt dinh dưỡng uy tín số 1 Việt Nam, tiên phong áp dụng công nghệ quản trị ERP và CRM tự động hóa chuỗi cung ứng.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 h-100 bg-light">
                                     <div class="p-3 bg-success bg-opacity-10 text-success rounded-circle d-inline-block mb-3" style="width:60px; height:60px; text-align:center;">
-                                        <i class="fa fa-bullseye fs-3"/>
+                                        <i class="fa fa-bullseye fs-3"></i>
                                     </div>
                                     <h3 class="fw-bold text-dark mb-3">Sứ Mệnh Doanh Nghiệp</h3>
                                     <p class="text-secondary-dark fs-6 mb-0" style="color: #334155;">
@@ -50,34 +50,34 @@
                 <!-- Certifications Block -->
                 <section class="py-5 bg-light">
                     <div class="container text-center">
-                        <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Tiêu chuẩn quốc tế</span>
+                        <span class="badge bg-danger bg-opacity-10 text-ccvi-red fw-bold text-uppercase px-3 py-2 rounded-pill mb-2">Tiêu chuẩn quốc tế</span>
                         <h2 class="display-6 fw-bold text-dark mb-5">Chứng Nhận Chất Lượng Quốc Tế</h2>
                         
                         <div class="row g-4">
                             <div class="col-lg-3 col-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 bg-white hover-lift">
-                                    <i class="fa fa-shield text-primary fs-1 mb-3"/>
+                                    <i class="fa fa-shield text-ccvi-red fs-1 mb-3"></i>
                                     <h5 class="fw-bold text-dark mb-1">HACCP</h5>
                                     <span class="text-muted fs-7">An toàn thực phẩm</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 bg-white hover-lift">
-                                    <i class="fa fa-certificate text-success fs-1 mb-3"/>
+                                    <i class="fa fa-certificate text-success fs-1 mb-3"></i>
                                     <h5 class="fw-bold text-dark mb-1">ISO 22000</h5>
                                     <span class="text-muted fs-7">Quản lý chất lượng</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 bg-white hover-lift">
-                                    <i class="fa fa-globe text-warning fs-1 mb-3"/>
+                                    <i class="fa fa-globe text-warning fs-1 mb-3"></i>
                                     <h5 class="fw-bold text-dark mb-1">FDA Certified</h5>
                                     <span class="text-muted fs-7">Tiêu chuẩn Mỹ</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="card border-0 shadow-sm rounded-4 p-4 bg-white hover-lift">
-                                    <i class="fa fa-check-circle text-info fs-1 mb-3"/>
+                                    <i class="fa fa-check-circle text-info fs-1 mb-3"></i>
                                     <h5 class="fw-bold text-dark mb-1">VietGAP</h5>
                                     <span class="text-muted fs-7">Nông nghiệp sạch</span>
                                 </div>
@@ -94,12 +94,12 @@
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="sale-contact-page bg-light">
                 <!-- Hero Header Banner -->
-                <section class="bg-gradient-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0d6efd 100%);">
+                <section class="bg-gradient-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #e84336 100%);">
                     <div class="container py-lg-4 text-center">
-                        <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
+                        <span class="badge bg-white bg-opacity-20 text-white border border-white border-opacity-30 px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
                             📩 Tư Vấn B2B 24/7
                         </span>
-                        <h1 class="display-4 fw-extrabold text-white mb-3">Liên Hệ &amp; Nhận Báo Giá B2B</h1>
+                        <h1 class="display-4 fw-extrabold text-white mb-3">Liên Hệ và Nhận Báo Giá B2B</h1>
                         <p class="lead text-white fw-medium max-w-2xl mx-auto fs-5 opacity-90">
                             Đội ngũ chuyên viên tư vấn sẽ gửi bảng giá sỉ chi tiết và chính sách chiết khấu tới bạn trong 15 phút.
                         </p>
@@ -116,8 +116,8 @@
                                     <h3 class="fw-bold text-dark mb-4">Thông Tin Liên Hệ</h3>
                                     
                                     <div class="d-flex align-items-start gap-3 mb-4">
-                                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
-                                            <i class="fa fa-map-marker fs-4"/>
+                                        <div class="bg-danger bg-opacity-10 text-ccvi-red rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
+                                            <i class="fa fa-map-marker fs-4"></i>
                                         </div>
                                         <div>
                                             <h6 class="fw-bold text-dark mb-1">Địa Chỉ Trụ Sở Main Office</h6>
@@ -126,20 +126,20 @@
                                     </div>
 
                                     <div class="d-flex align-items-start gap-3 mb-4">
-                                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
-                                            <i class="fa fa-phone fs-4"/>
+                                        <div class="bg-danger bg-opacity-10 text-ccvi-red rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
+                                            <i class="fa fa-phone fs-4"></i>
                                         </div>
                                         <div>
                                             <h6 class="fw-bold text-dark mb-1">Hotline Tư Vấn Báo Giá</h6>
                                             <p class="text-secondary-dark fs-7 mb-0" style="color: #334155;">
-                                                <a href="tel:0901234567" class="text-primary text-decoration-none fw-bold">090 123 4567</a> (T2 - T7: 08:00 - 18:00)
+                                                <a href="tel:0901234567" class="text-ccvi-red text-decoration-none fw-bold">090 123 4567</a> (T2 - T7: 08:00 - 18:00)
                                             </p>
                                         </div>
                                     </div>
 
                                     <div class="d-flex align-items-start gap-3 mb-4">
-                                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
-                                            <i class="fa fa-envelope fs-4"/>
+                                        <div class="bg-danger bg-opacity-10 text-ccvi-red rounded-circle p-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px; flex-shrink:0;">
+                                            <i class="fa fa-envelope fs-4"></i>
                                         </div>
                                         <div>
                                             <h6 class="fw-bold text-dark mb-1">Email Tiếp Nhận Hồ Sơ B2B</h6>
@@ -172,11 +172,11 @@
                                             </div>
                                         </div>
                                         <div class="mb-4">
-                                            <label class="form-label fw-semibold text-dark">Sản phẩm quan tâm &amp; Số lượng dự kiến</label>
+                                            <label class="form-label fw-semibold text-dark">Sản phẩm quan tâm và Số lượng dự kiến</label>
                                             <textarea name="description" class="form-control rounded-3 p-3" rows="4" placeholder="Ví dụ: Cần báo giá 500kg Cà phê Robusta Honey xuất khẩu..."/>
                                         </div>
-                                        <button type="submit" class="btn btn-primary rounded-pill w-100 fw-bold py-3 fs-6 shadow-md">
-                                            Gửi Yêu Cầu Báo Giá Ngay <i class="fa fa-paper-plane ms-1"/>
+                                        <button type="submit" class="btn btn-ccvi-red rounded-pill w-100 fw-bold py-3 fs-6 shadow-md text-white">
+                                            Gửi Yêu Cầu Báo Giá Ngay <i class="fa fa-paper-plane ms-1"></i>
                                         </button>
                                     </form>
                                 </div>
